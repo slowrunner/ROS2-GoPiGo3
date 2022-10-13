@@ -206,16 +206,12 @@ $ su pi
 Password: robots1234  
 ```
 
+```
 $ cd ~  
-
-
-$ wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/setup_gopigo3_on_ubuntu.sh  
-
-
-
+$ wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/setup_gopigo3_on_ubuntu.sh  
 $ chmod +x setup_gopigo3_on_ubuntu.sh  
 $ ./setup_gopigo3_on_ubuntu.sh  
-
+```
 
 When completes:  
 1) change pi password from robots1234 if you used that  
