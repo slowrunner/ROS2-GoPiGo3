@@ -34,7 +34,7 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 echo "export ROS_DOMAIN_ID=0" >> ~/.bashrc
 
 # === Install build environment
-sudo apt-get install build-essential
+sudo apt install -y build-essential
 pip3 install setuptools==58.2.0
 
 # (does transforms3d need sudo pip3 ?)
@@ -73,6 +73,7 @@ sudo pip3 install imu4gopigo3ros2
 
 # === Build everything
 . ~/.bashrc
+cd ~/ros2ws
 ./build_all.sh
 . install/setup.bash
 
