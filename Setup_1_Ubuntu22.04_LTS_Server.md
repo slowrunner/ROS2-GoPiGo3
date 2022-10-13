@@ -31,7 +31,7 @@ After setup:
     - SSID:  __your_WiFi_SSID__  
     - Password:  __your_WiFi_password__  
     - Wireless LAN country:  US  
-  - Set local settings:  
+  - Set locale settings:  
     - Time zone:  America/New_York  
     - Keyboard layout: us  
 
