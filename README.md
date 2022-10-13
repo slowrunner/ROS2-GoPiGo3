@@ -34,13 +34,15 @@ ROS2 Humble Hawksbill
 GoPiGo3 Robot drivers/API
 
 Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi 
-(Suggest Pi4 2GB, Pi3B+ is minimum)
-- with zswap enabled
-- IPv6 disabled
+(Suggest Pi4 2GB, Pi3B+ is minimum) 
+- with zswap enabled 
+- IPv6 disabled 
 
-Step 1: Setup_1_Ubuntu22.04_LTS_Server
-Step 2: Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3
-Step 3: Test all helper scripts and topics
+Step 1: Setup_1_Ubuntu22.04_LTS_Server 
+
+Step 2: Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3 
+
+Step 3: Test all helper scripts and topics 
 
 ```
 GoPiGo3 NODE INFO :
