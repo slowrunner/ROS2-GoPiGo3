@@ -136,7 +136,7 @@ $ sudo apt upgrade -y
 $ sudo reboot  
 
 
-==== Setup zswap (Needed for Pi4 2GB to run a desktop GUI)  
+==== Setup zswap (Speed improvement for compiles, and needed for Pi4 2GB to run a desktop GUI)  
 
 sudo nano /boot/firmware/cmdline.txt  
   add to end of line:  
