@@ -38,6 +38,8 @@ Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi
 - with zswap enabled 
 - IPv6 disabled 
 
+# INSTALLATION STEPS:  
+
 Step 1: Follow steps in Setup_1_Ubuntu22.04_LTS_Server.txt
 
 Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh 
