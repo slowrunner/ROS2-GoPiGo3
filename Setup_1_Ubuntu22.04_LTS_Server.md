@@ -203,7 +203,7 @@ chmod +x mk_pi_user.sh
 ==== GOPIGO3 LIBRARIES   
 ```
 $ su pi  
-Password: robots1234  (or use your favorite password)
+Password: robots1234  
 ```
 
 $ cd ~  
