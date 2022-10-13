@@ -45,7 +45,7 @@ cd ..
 rm master.zip
 
 
-sudo cp /home/pi/pigpiod.service /etc/systemd/system
+sudo cp /home/ubuntu/utils/pigpiod.service /etc/systemd/system
 sudo systemctl enable pigpiod.service
 sudo systemctl start pigpiod.service
 systemctl status pigpiod.service
@@ -74,7 +74,7 @@ sudo python3 setup.py install
 
 # ==== Setup non-root access rules ====
 
-sudo cp /home/pi/99-com.rules /etc/udev/rules.d
+sudo cp /home/ubuntu/utils/99-com.rules /etc/udev/rules.d
 
 cp /home/pi/Dexter/GoPiGo3/Install/list_of_serial_numbers.pkl /home/pi/Dexter/.list_of_serial_numbers.pkl
 
