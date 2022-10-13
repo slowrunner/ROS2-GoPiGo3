@@ -23,7 +23,6 @@ wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/99-com.rules
 
 # Will need the following after this script finishes
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
-wget https://github.com/slowrunner/ROS2-GoPiGo3/raw/main/gopigo3ros2ws.tgz
 chmod 777 Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 
 # sudo git clone -b install_on_ubuntu http://www.github.com/DexterInd/GoPiGo3.git /home/pi/Dexter/GoPiGo3
