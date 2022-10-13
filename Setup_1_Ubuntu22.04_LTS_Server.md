@@ -192,13 +192,13 @@ $ sudo grep -r . /sys/kernel/debug/zswap
 # ==== BEGIN GOPIGO3 SPECIFIC STEPS  
 
 ===== Create a Pi user with a /home/pi default directory, /bin/bash login shell ===  
-
+```
 mkdir utils  
 cd utils  
-wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/mk_pi_user.sh  
+wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/mk_pi_user.sh  
 chmod +x mk_pi_user.sh  
 ./mk_pi_user.sh  
-
+```
 
 ==== GOPIGO3 LIBRARIES   
 ```
