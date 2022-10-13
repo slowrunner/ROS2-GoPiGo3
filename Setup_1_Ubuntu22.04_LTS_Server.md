@@ -205,9 +205,9 @@ chmod +x mk_pi_user.sh
 $ su pi  
 Password: robots1234  
 ```
+(Note: Continuing in as user pi in /home/ubuntu/utils)
 
-```
-$ cd ~  
+```  
 $ wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/setup_gopigo3_on_ubuntu.sh  
 $ chmod +x setup_gopigo3_on_ubuntu.sh  
 $ ./setup_gopigo3_on_ubuntu.sh  
