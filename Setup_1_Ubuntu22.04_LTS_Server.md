@@ -133,7 +133,7 @@ After reboot, probably some packages still to upgrade:
 
 $ sudo apt update  
 $ sudo apt upgrade -y  
-(Probably will pop a dialog with <OK> highlighted - press ENTER key)  
+(Probably will pop a dialog with \<OK\> highlighted - press ENTER key)  
 (May next display list of services to be restarted - press TAB, then ENTER key)  
 
 $ sudo reboot  
