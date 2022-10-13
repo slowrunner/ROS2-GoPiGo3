@@ -42,7 +42,13 @@ Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi
 
 Step 1: Follow steps in Setup_1_Ubuntu22.04_LTS_Server.txt
 
-Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh 
+Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh  
+- login as ubuntu
+- cd utils
+- run:  
+```
+./Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
+```
 
 Step 3: Test all helper scripts and topics 
 
