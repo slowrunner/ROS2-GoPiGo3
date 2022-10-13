@@ -72,10 +72,13 @@ or
 sed '$ s/$/ ipv6.disable=1/' cmdline.txt >cmdline.txt.new && mv cmdline.txt.new cmdline.txt  
 ```
 
+unmount microSD card
+
 ==== Ubuntu Server First Boot  
--insert micro SD card  
+-insert micro SD card in GoPiGo3 robot  
 -power on  
-- on mac:  arp -a to check IP  (may not show up or may show "incomplete" for some reason)  
+  (ignore flashing green LED for time being)  
+- on mac:  arp -a to check IP  
 
 === First Login  (may take a few minutes before alive..)  
 ssh ubuntu@x.x.x.x  
