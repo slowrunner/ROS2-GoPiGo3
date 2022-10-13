@@ -214,7 +214,7 @@ $ ./setup_gopigo3_on_ubuntu.sh
 ```
 
 When completes:  
-1) change pi password from robots1234 if you used that  
+1) change pi password from robots1234   
 ```
 passwd
 ```
