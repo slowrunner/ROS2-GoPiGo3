@@ -4,7 +4,8 @@ Ubuntu 22.04 LTS Server on Pi4 2GB+
 10/12/2022 Initial
 
 
-This procedure is fully headless by configuring WiFi before the first boot, and uses ssh access to complete everything, also adds zswap and GoPiGo3 drivers/API.
+This procedure is fully headless by configuring WiFi before the first boot,  
+uses ssh access to complete everything, and also adds zswap and GoPiGo3 drivers/API.
 
 After setup:
 - load on my Pi4B 2GB processor is about 1-3% of the processor total (load .05/4 to .1/4)
