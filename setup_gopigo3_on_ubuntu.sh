@@ -21,6 +21,7 @@ sudo chmod 770 /sys/class/gpio/unexport
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/pigpiod.service  
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/99-com.rules
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
+chmod 777 Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 
 # sudo git clone -b install_on_ubuntu http://www.github.com/DexterInd/GoPiGo3.git /home/pi/Dexter/GoPiGo3
 git clone http://www.github.com/DexterInd/GoPiGo3.git /home/pi/Dexter/GoPiGo3
