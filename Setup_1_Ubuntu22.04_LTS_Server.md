@@ -11,7 +11,7 @@ After setup:
 - load on my Pi4B 2GB processor is about 1-3% of the processor total (load .05/4 to .1/4)  
   Mostly seems to be the pigpiod daemon  
 - Memory usage   login reports "10%" - "free -h" reports 1.5GB free of 1.8GB total memory  
-- Disk usage 3.75GB  
+- Disk usage 4GB  
 - proc temp 51C in 25C room  
 
 *** Flash SD card with Raspberry Pi Imager v1.73 or higher:  
