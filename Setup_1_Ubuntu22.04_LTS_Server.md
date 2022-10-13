@@ -64,13 +64,13 @@ NOTE:  this info is "eaten" by cloud-init and put in /etc/netplan/50-cloud-init.
 
 nano cmdline.txt  
 ctrl-e to end of line  
-add ipv6.disable=1  
+add at end of line with a space in front:  ipv6.disable=1  
 ctrl-x y  
 
 or  
-
+```
 sed '$ s/$/ ipv6.disable=1/' cmdline.txt >cmdline.txt.new && mv cmdline.txt.new cmdline.txt  
-
+```
 
 ==== Ubuntu Server First Boot  
 -insert micro SD card  
@@ -79,13 +79,14 @@ sed '$ s/$/ ipv6.disable=1/' cmdline.txt >cmdline.txt.new && mv cmdline.txt.new 
 
 === First Login  (may take a few minutes before alive..)  
 ssh ubuntu@x.x.x.x  
-    username: ubuntu  password: __what_you_set_in_settings__  
+    username: ubuntu  
+    password: __what_you_set_in_settings__  
 
     If see SSH HOST KEY verification failed  
      on mac:  ssh-keygen -R x.x.x.x   
 
-  System information as of Fri Oct  7 22:43:31 EDT 2022  
-
+  System information at login:  
+```
   System load:            0.271484375
   Usage of /:             7.8% of 28.94GB  (2.3GB)
   Memory usage:           11%
@@ -93,16 +94,17 @@ ssh ubuntu@x.x.x.x
   Temperature:            43.3 C
   Processes:              157
   Users logged in:        0
- 
+ ```
 
 === CONFIGURE SUDO GROUP PASSWORD-LESS SUDO  
 
 sudo nano /etc/sudoers  
 
 make sudo group look like:  
+```
 # Allow members of group sudo to execute any command with no password  
 %sudo	ALL=(ALL:ALL) NOPASSWD: ALL  
-
+```
 === UPDATING  
 
 - Check for unattended upgrade  
@@ -110,13 +112,16 @@ $ pgrep -a unattended
 
 809 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal  
 
+ok to continue
 
-==== DISABLE FUTURE UNATTENDED UPDATES ??? ===
+==== DISABLE FUTURE UNATTENDED UPDATES (its a robot not a server) ===
 
 $ sudo nano /etc/apt/apt.conf.d/20auto-upgrades  
 Change the "1" to "0" in both lines:  
+```
 APT::Periodic::Update-Package-Lists "0";  
 APT::Periodic::Unattended-Upgrade "0";  
+```
 
 $ sudo apt purge -y unattended-upgrades  
 $ sudo reboot  
@@ -132,14 +137,16 @@ $ sudo reboot
 
 sudo nano /boot/firmware/cmdline.txt  
   add to end of line:  
-zswap.enabled=1 zswap.compressor=lz4 zswap.zpool=z3fold  
-
+```
+ zswap.enabled=1 zswap.compressor=lz4 zswap.zpool=z3fold  
+```
 
 $ sudo nano /etc/initramfs-tools/modules  
   add at bottom:  
+```  
 lz4  
 z3fold  
-
+```
 
 
 $ sudo update-initramfs -u  
@@ -188,8 +195,10 @@ chmod +x mk_pi_user.sh
 
 
 ==== GOPIGO3 LIBRARIES   
+```
 $ su pi  
-Password: robots1234  
+Password: robots1234  (or use your favorite password)
+```
 
 $ cd ~  
 
@@ -203,7 +212,10 @@ $ ./setup_gopigo3_on_ubuntu.sh
 
 
 When completes:  
-1) change pi password from robots1234  
+1) change pi password from robots1234 if you used that  
+```
+passwd
+```
 2) try the tests below  
 3) exit (back to user ubuntu)  
 4) try the tests below  
