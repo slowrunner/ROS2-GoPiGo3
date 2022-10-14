@@ -1,12 +1,12 @@
 # SETUP_3_TEST
 Test and learn about the ROS2 GoPiGo3 
 
-All tests assume remote login:
-- ssh ubuntu@x.x.x.x
-  password: robots1234
+All tests assume remote login:  
+- ssh ubuntu@x.x.x.x  
+  password: robots1234  
 
 and execution from ~/ros2ws:
-- cd ros2/ws
+- cd ros2ws
   
   
 # TEST 1: Talker - Listener Test
@@ -41,16 +41,16 @@ e/c : increase/decrease only angular speed by 10%
 CTRL-C to quit remote control - (does not kill ROS2 GoPiGo3 Nodes)
 
 3) From either shell:
-   .stop_gopigo3_nodes.sh
+   ./stop_gopigo3_nodes.sh
    (Ignore all the errors - investigating 10/2022)
 ```
 
 
 # TEST 3:  GETTING TO KNOW THE ROS2 GoPiGo3 NODES
-1) From "First Remote Shell":
-   ./start_gopigo3_nodes.sh
+1) From "First Remote Shell":  
+   ./start_gopigo3_nodes.sh  
    
-2) From "Second Remote Shell":
+2) From "Second Remote Shell":  
 - List Running Nodes
 ```
    ./list_running_nodes.sh
