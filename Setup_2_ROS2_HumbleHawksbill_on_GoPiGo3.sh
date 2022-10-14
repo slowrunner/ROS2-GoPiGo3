@@ -2,7 +2,7 @@
 
 # (Headless) SETUP ROS2 GoPiGo3 (HUMBLE HAWKSBILL) ON Ubuntu 22.04 64-bit Server (Jammy Jellyfish)
 
-# === Make sure system is up to date before running this script
+# === Make sure system is up to date before continuing
 sudo apt update
 sudo apt upgrade -y
 
