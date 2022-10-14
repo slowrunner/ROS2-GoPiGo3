@@ -3,6 +3,7 @@
 Procedure to install Ubuntu 22.04 Server on Raspberry Pi,  
 with ROS2 GoPiGo3 robot nodes,  
 over ROS2 Humble Hawksbill  
+for a [GoPiGo3 robot](https://gopigo.io/gopigo-core/)
 
 # INSTALLATION STEPS:  
 
