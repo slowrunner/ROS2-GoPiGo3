@@ -220,5 +220,5 @@ $ python3 /home/pi/Dexter/GoPiGo3/Software/Python/Examples/Servo.py
 $ python3 /home/pi/Dexter/GoPiGo3/Software/Python/Examples/Motor_Turn.py
 ```
 
-==== FULL POWEROFF FOR CLEAN TEST  
+==== FULL POWEROFF BEFORE CONTINUING TO SETUP_2 (Don't skip this!) 
 $ sudo shutdown -h now  
