@@ -151,8 +151,10 @@ $ sudo nano /etc/initramfs-tools/modules
 lz4  
 z3fold  
 ```
-sudo update-initramfs -u
-(wait till completes)
+
+Then:  
+sudo update-initramfs -u  
+(wait till completes)  
 $ sudo reboot  
 
 
