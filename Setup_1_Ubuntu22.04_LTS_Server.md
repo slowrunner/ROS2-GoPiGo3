@@ -134,9 +134,7 @@ After reboot, probably some packages still to upgrade:
 $ sudo apt update  
 $ sudo apt upgrade -y  
 (Probably will pop a dialog with \<OK\> highlighted - press ENTER key)  
-(May next display list of services to be restarted - press TAB, then ENTER key)  
-
-$ sudo reboot  
+(May next display list of services to be restarted - press ESC key)  
 
 
 ==== Setup zswap (Speed improvement for compiles, and needed for Pi4 2GB to run a desktop GUI)  
@@ -153,13 +151,9 @@ $ sudo nano /etc/initramfs-tools/modules
 lz4  
 z3fold  
 ```
-
-
-$ sudo update-initramfs -u  
-  (wait till completes)  
-
+sudo update-initramfs -u
+(wait till completes)
 $ sudo reboot  
-
 
 
 Verify:  
@@ -176,17 +170,6 @@ $ sudo dmesg | grep "loaded using pool"
 
 [    1.072982] zswap: loaded using pool lz4/z3fold
 
-$ sudo grep -r . /sys/kernel/debug/zswap 
-/sys/kernel/debug/zswap/same_filled_pages:0
-/sys/kernel/debug/zswap/stored_pages:0
-/sys/kernel/debug/zswap/pool_total_size:0
-/sys/kernel/debug/zswap/duplicate_entry:0
-/sys/kernel/debug/zswap/written_back_pages:0
-/sys/kernel/debug/zswap/reject_compress_poor:0
-/sys/kernel/debug/zswap/reject_kmemcache_fail:0
-/sys/kernel/debug/zswap/reject_alloc_fail:0
-/sys/kernel/debug/zswap/reject_reclaim_fail:0
-/sys/kernel/debug/zswap/pool_limit_hit:0
 ```
 
 # ==== BEGIN GOPIGO3 SPECIFIC STEPS  
