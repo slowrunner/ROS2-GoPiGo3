@@ -50,7 +50,8 @@ Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 ./Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 ```
 
-Step 3: Follow steps in Setup_3_Tests.txt 
+Step 3: Test ROS2 GoPiGo3  
+- Follow steps in ![Setup_3_Test.md](Setup_3_Test.md)
 
 
 # INFO FOR NODES
