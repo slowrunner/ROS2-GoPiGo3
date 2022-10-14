@@ -58,9 +58,8 @@ echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 echo "export _colcon_cd_root=~/ros2ws" >> ~/.bashrc
 
 # === Bring down ROS2 GoPiGo3 nodes and helper scripts
-cd ~/ros2ws
-wget 
-tar -xzvf gopigo3ros2ws.tgz
+wget https://github.com/slowrunner/ROS2-GoPiGo3/raw/main/gopigo3ros2ws.tgz
+tar -xzvf gopigo3ros2ws.tgz -C ~/ros2ws
 
 # === SETUP ROSDEP
 sudo apt install -y python3-rosdep2
