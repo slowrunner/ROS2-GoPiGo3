@@ -57,6 +57,9 @@ echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 # === Setup colcon to know where workspace is
 echo "export _colcon_cd_root=~/ros2ws" >> ~/.bashrc
 
+# setup to run GoPiGo3 ROS2 nodes when login 
+echo "source ~/ros2ws/install/setup.bash" >> ~/.bashrc
+
 # === Bring down ROS2 GoPiGo3 nodes and helper scripts
 wget https://github.com/slowrunner/ROS2-GoPiGo3/raw/main/gopigo3ros2ws.tgz
 tar -xzvf gopigo3ros2ws.tgz -C ~/ros2ws
