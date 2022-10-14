@@ -1,6 +1,25 @@
 # Full headless setup for a ROS2 GoPiGo3 robot
 
-Procedure creates:
+Procedure to install Ubuntu 22.04 Server on Raspberry Pi,  
+with ROS2 GoPiGo3 robot nodes,  
+over ROS2 Humble Hawksbill  
+
+# INSTALLATION STEPS:  
+
+Step 1: Follow steps in [Setup_1_Ubuntu22.04_LTS_Server.txt](Setup_1_Ubuntu22.04_LTS_Server.txt)
+
+Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
+- login as ubuntu
+- cd utils
+- run:  
+```
+./Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
+```
+
+Step 3: Test ROS2 GoPiGo3  
+- Follow steps in [Setup_3_Test.md](Setup_3_Test.md)
+
+# Creates:
 
 ROS2 GoPiGo3 Robot nodes
 - (ros2_gopigo3_msg)
@@ -37,21 +56,6 @@ Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi
 (Suggest Pi4 2GB, Pi3B+ is minimum) 
 - with zswap enabled 
 - IPv6 disabled 
-
-# INSTALLATION STEPS:  
-
-Step 1: Follow steps in Setup_1_Ubuntu22.04_LTS_Server.txt
-
-Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh  
-- login as ubuntu
-- cd utils
-- run:  
-```
-./Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
-```
-
-Step 3: Test ROS2 GoPiGo3  
-- Follow steps in ![Setup_3_Test.md](Setup_3_Test.md)
 
 
 # INFO FOR NODES
