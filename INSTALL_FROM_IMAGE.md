@@ -43,6 +43,60 @@ https://drive.google.com/file/d/1JojrIoto7Cy3iwkMuSY2OfPKnEhRgnN3/view?usp=shari
     - Enter the user password on your laptop/desktop you logged as
   
   When complete and "safe to remove", pull the ROS2HH microSD card out
+  
+=== Mount the card to allow headless configuration  
+- Pull card out, reinsert for next step  
+```
+NOTE:  On some computers (e.g. Linux MATE on my 9 yr old laptop) 
+       Imager may result in an error message:
+       "Could not mount FAT32 partition for writing"
+
+       If you see this, the network-config and user-data settings 
+       were not written, you must 
+       - manually edit network-config for your WiFi
+       - ssh in as user ubuntu with password robots1234
+```
+
+=== Verify WiFi Headless config  
+Re-Insert the uSD card to your computer:
+- On Mac:
+  - Browse system-boot partition  
+  - Show in enclosing folder   
+  - Open Terminal at folder
+
+- On Linux: 
+  - In terminal: cd /media/\<user\>/system-boot
+
+
+$ nano network-config  
+```
+wifis:  
+  wlan0:  
+    dhcp4: true  
+    optional: true             
+    access-points:  
+      "your_SSID":  
+        password: "your_netpswd"  (This may be a long encrypted thing if written correctly by Imager)  
+```
+- exit ctrl-x y  
+
+NOTE:  this info is "eaten" by cloud-init and put in /etc/netplan/50-cloud-init.yaml  
+
+
+=== Disable ipv6  
+Check for "ipv6.disable=1" in cmdline.txt, If not present:
+
+nano cmdline.txt  
+ctrl-e to end of line  
+add at end of line with a space in front:  ipv6.disable=1  
+ctrl-x y  
+
+or  
+```
+sed '$ s/$/ ipv6.disable=1/' cmdline.txt >cmdline.txt.new && mv cmdline.txt.new cmdline.txt  
+```
+
+unmount microSD card  
 
 
 
