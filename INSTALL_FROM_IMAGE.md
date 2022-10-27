@@ -95,13 +95,17 @@ unmount microSD card
   - Power On  
   - Wait till GoPiGo3 Green LED stops flashing  
   - Press the GoPiGo3 power (off) button (next to the GoPiGo3 green LED)  
- 
+  - Watch for no green light activity on the RPi board,  
+    Press Battery Power switch to Off  
+
 ## 4) Second Boot  
-  - Cycle Battery Switch to off, then back to On  
+  - Battery Switch to On  
   - Press the GoPiGo3 power (on) button to start the second boot  
   - Wait till the GoPiGo3 Green LED stops flashing  
   - Press the GoPiGo3 power (off) button again to shutdown  
- 
+  - Watch for no green light activity on the RPi board,  
+    Press Battery Power switch to Off  
+
 ## 5) Third Boot  
   - Cycle Battery Switch to off, then back to On  
   - Press the GoPiGo3 power (on) button to start the third boot  
