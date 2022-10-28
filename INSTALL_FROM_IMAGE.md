@@ -72,10 +72,12 @@ $ nano network-config
 ethernets:
   eth0:
     dhcp4: true
+    dhcp6: false
     optional: true
 wifis:  
   wlan0:  
-    dhcp4: true  
+    dhcp4: true 
+    dhcp6: false
     optional: true             
     access-points:  
       "your_SSID":  
