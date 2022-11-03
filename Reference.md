@@ -3,7 +3,7 @@
 
 # ros2ws Files and Folders:
 
-- build/
+- build
 - build_all.sh
 - call_odom_reset_srv.sh
 - check_battery.sh
@@ -18,21 +18,20 @@
 - echo_ultrasonic_topic.sh
 - export_jpg_map.sh
 - gopigo3_battery.py
-- install/
+- install
 - install_slam_toolbox.sh
 - list_active_topics.sh
-- list_active_topics_with_type.sh
 - list_running_nodes.sh
 - list_services.sh
-- log/
+- list_topics_with_type.sh
+- log
 - monitor.sh
 - my_mapper_params_online_async.yaml
-- nohup.out
 - odometer.log
 - pub_center_servo.sh
 - pub_servo_right_45.sh
 - rebuild.sh
-- roslogs/
+- roslogs
 - run_teleop_gopigo3_keyboard.sh
 - save_map.sh
 - show_distance_sensor_node_info.sh
@@ -40,7 +39,7 @@
 - show_imu_node_info.sh
 - show_lidar_node_info.sh
 - show_ultrasonic_ranger_node_info.sh
-- src/
+- src
 - start_camera_node.sh
 - start_dave_robot_and_joint_state.sh
 - start_demo_listener.sh
@@ -55,8 +54,10 @@
 - start_robot_finmark.sh
 - start_robot_gpgMin.sh
 - start_slam_toolbox.sh
+- start_ultrasonic_ranger_node.sh
 - start_ydlidar_x4.sh
 - stop.py
 - stop_robot.sh
 - stop_slam_toolbox.sh
 - v4l2_camera_params.yaml
+- versions.sh
