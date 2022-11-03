@@ -3,7 +3,7 @@
  [GoPiGo3 robot](https://gopigo.io/gopigo-core/)  
 
 # Two methods:  
-1) [Recommended: INSTALL FROM IMAGE](https://github.com/slowrunner/ROS2-GoPiGo3/blob/main/INSTALL_FROM_IMAGE.md) 
+1) [Recommended: INSTALL FROM IMAGE](https://github.com/slowrunner/ROS2-GoPiGo3/blob/v4/INSTALL_FROM_IMAGE.md) 
 
 2) Directed Install:  
   - Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi  
