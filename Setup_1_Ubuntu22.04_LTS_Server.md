@@ -222,3 +222,5 @@ $ python3 /home/pi/Dexter/GoPiGo3/Software/Python/Examples/Motor_Turn.py
 
 ==== FULL POWEROFF BEFORE CONTINUING TO SETUP_2 (Don't skip this!) 
 $ sudo shutdown -h now  
+
+# CONTINUE [Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3](https://github.com/slowrunner/ROS2-GoPiGo3/blob/v4/Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh)
