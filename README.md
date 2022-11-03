@@ -7,9 +7,9 @@ for a [GoPiGo3 robot](https://gopigo.io/gopigo-core/)
 
 # INSTALLATION STEPS:  
 
-Step 1: Follow steps in [Setup_1_Ubuntu22.04_LTS_Server.txt](Setup_1_Ubuntu22.04_LTS_Server.txt)
+## Step 1: Follow steps in [Setup_1_Ubuntu22.04_LTS_Server.txt](Setup_1_Ubuntu22.04_LTS_Server.txt)
 
-Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
+## Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 - login as ubuntu
 - cd utils
 - run:  
@@ -17,10 +17,10 @@ Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 ./Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 ```
 
-Step 3: Test ROS2 GoPiGo3  
+## Step 3: Test ROS2 GoPiGo3  
 - Follow steps in [Setup_3_Test.md](Setup_3_Test.md)
 
-# Creates:
+### Creates:
 
 ROS2 GoPiGo3 Robot nodes
 - (ros2_gopigo3_msg)
