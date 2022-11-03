@@ -255,8 +255,18 @@ pose:
 ```
 # TEST 3 - MONITOR MEMORY AND CPU 
 
-- Type ```./monitor.sh```  
+- In a separate ssh shell: Type ```./monitor.sh```  
 ```
+********** ROS2 GoPiGo3 MONITOR ******************************
+Thursday 11/03/22
+ 17:59:20 up 6 min,  3 users,  load average: 0.49, 0.44, 0.22
+temp=44.8'C
+frequency(48)=1300324224
+throttled=0x0
+               total        used        free      shared  buff/cache   available
+Mem:           1.8Gi       308Mi       1.2Gi        10Mi       300Mi       1.3Gi
+Swap:             0B          0B          0B
+GoPiGo3 Battery Voltage: 11.3 volts
 
 ```
 
