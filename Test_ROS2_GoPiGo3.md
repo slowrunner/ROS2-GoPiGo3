@@ -253,10 +253,16 @@ pose:
 ---
 
 ```
+# TEST 3 - MONITOR MEMORY AND CPU 
 
-# TEST 3 - (If your GoPiGo3 has a "Servo 1"): PUBLISHING COMMAND TOPICS TO THE ROS2 GOPIGO3
+- Type ```./monitor.sh```  
+```
 
-- Publish a data topic the GoPiGo3 node is subscribed to:
+```
+
+# TEST 4 - (If your GoPiGo3 has a "Servo 1"): PUBLISHING COMMAND TOPICS TO THE ROS2 GOPIGO3  
+
+- Publish a data topic the GoPiGo3 node is subscribed to:  
 ```
    Center Servo:  ./pub_center_servo.sh
    
@@ -264,10 +270,10 @@ pose:
    
 ```
 
-# INFO: LOG LOCATIONS
+# INFO: LOG LOCATIONS  
 - ROS2 Node Execution Logs:  ~/ros2ws/roslogs   
-- COLCON Build Logs: ~/ros2ws/log
+- COLCON Build Logs: ~/ros2ws/log  
 
-# INFO: LIST OF ALL HELPER SCRIPTS IN ~/ros2ws/
+# INFO: LIST OF ALL HELPER SCRIPTS IN ~/ros2ws/  
 
 see 
