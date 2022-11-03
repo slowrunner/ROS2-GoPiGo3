@@ -1,9 +1,9 @@
 # INSTALL "ROS2 FOR GOPIGO3" FROM IMAGE
 
-Updated: 10-27-2022 (Instructions and image link)
+Updated: 11-03-2022 (Instructions and image link)
 
 "ROS2 Humble Hawksbill on Ubuntu 22.04 LTS Server (64-bit) for GoPiGo3 Robots"  
-is available as a 2GB image at:  
+is available as a 2.7GB image at:  
 
 https://drive.google.com/file/d/1zz7hH7JhboGPJWlGVkS8RVd9aVddmPPc/view?usp=sharing
 
@@ -16,43 +16,43 @@ https://drive.google.com/file/d/1zz7hH7JhboGPJWlGVkS8RVd9aVddmPPc/view?usp=shari
   (See https://www.raspberrypi.com/software/ for latest Raspberry Pi Imager)  
   
   Select CHOOSE OS  
-  - (scroll to bottom) Use custom
-    - navigate to the ros2hhv3.img.gz image
-    - click Open
+  - (scroll to bottom) Use custom  
+    - navigate to the saved location of the ```ros2hhv4.img.gz``` image  
+    - click Open  
 
-  Select CHOOSE STORAGE (DANGER! - CHOOSE WISELY)
+  Select CHOOSE STORAGE (DANGER! - CHOOSE WISELY)  
   - Select your __GB SD Card (Minimum 8GB)  
   
   Select SETTINGS Gear in lower right  
-  - Set hostname:  used ROS2HH  
-  - Enable SSH: 
+  - Set hostname:  ROS2HH  
+  - Enable SSH:  
     - Use password authentication  
   - Set username and password:  
-    - ubuntu
+    - ubuntu  
     - robots1234  (cannot change it here!)  
-  - Configure wireless LAN for your WiFi
+  - Configure wireless LAN for your WiFi  
     - SSID:  "__Your_WiFi_SSID__"  
-    - Password:  "__Your_WiFi_password__"  
+    - Password:  "__Your_WiFi_password__"   
     - Wireless LAN country:  US  
   - Set locale settings:  
     - Time zone:  America/New_York  
     - Keyboard layout: us  
 
   Click SAVE  
-  Click WRITE
-    - Enter the user password on your laptop/desktop you logged as
+  Click WRITE  
+    - PopUp:  Enter the user password of your laptop/desktop (you login as)  
   
-  When complete and "safe to remove", pull the ROS2HH microSD card out
+  When complete and "safe to remove", pull the ROS2HH microSD card out  
   
 === Mount the card to allow headless configuration  
 - Pull card out, reinsert for next step  
 ```
-NOTE:  On some computers (e.g. Linux MATE on my 9 yr old laptop) 
-       Imager may result in an error message:
-       "Could not mount FAT32 partition for writing"
+NOTE:  On some computers (e.g. Linux MATE on my 9 yr old laptop)  
+       Imager may result in an error message:  
+       "Could not mount FAT32 partition for writing"  
 
-       If you see this, the network-config and user-data settings 
-       were not written, not a problem.
+       If you see this, the network-config   
+       was not rewritten, fix this in the next step.
        
 ```
 
@@ -69,12 +69,14 @@ Re-Insert the uSD card to your computer:
 
 $ nano network-config  
 ```
+version 2
 ethernets:
-  eth0:
-    dhcp4: true
-    dhcp6: false
-    optional: true
+   eth0:
+     dhcp4: true
+     dhcp6: false
+     optional: true
 wifis:  
+  renderer: networkd
   wlan0:  
     dhcp4: true 
     dhcp6: false
@@ -85,48 +87,72 @@ wifis:
 ```
 - exit ctrl-x y  
 
-NOTE:  this info is read by cloud-init to generate /etc/netplan/50-cloud-init.yaml  
-
+NOTE:  this info will be read by cloud-init to generate /etc/netplan/50-cloud-init.yaml on the first boot
 
 unmount microSD card  
 
-
-
-
-## 3) Insert ROS2HH microSD card in your GoPiGo3 - First Boot  
-  - Power On  
-  - Wait till GoPiGo3 Green LED stops flashing  
-  - Press the GoPiGo3 power (off) button (next to the GoPiGo3 green LED)  
-  - Watch for no green light activity on the RPi board,  
-    Press Battery Power switch to Off  
-
-## 4) Second Boot  
-  - Battery Switch to On  
-  - Press the GoPiGo3 power (on) button to start the second boot  
+## 3) First Boot  
+  - **Connect powered speaker or headphones**  
+  - Turn Battery Switch to On  
+  - Press the GoPiGo3 power (on) button to start the first boot  
   - Wait till the GoPiGo3 Green LED stops flashing  
-  - Press the GoPiGo3 power (off) button again to shutdown  
-  - Watch for no green light activity on the RPi board,  
-    Press Battery Power switch to Off  
-
-## 5) Third Boot  
-  - Cycle Battery Switch to off, then back to On  
-  - Press the GoPiGo3 power (on) button to start the third boot  
-  - Wait till the GoPiGo3 Green LED stops flashing  
+  - Listen for "WiFi IP x.x.x.x  ... Repeating, WiFi IP x.x.x.x"  
 now ...  
-  - Remove any existing ssh key for your GoPiGo3's IP  
+  - Open a command shell on your desktop/laptop  
+  - Remove any existing ssh key for your GoPiGo3's IP on your desktop/laptop  
     - ssh-keygen -R x.x.x.x  
   - SSH into your ROS2 GoPiGo3  
     - ssh ubuntu@x.x.x.x  
       - Answer yes to new ssh key question  
       - Enter robots1234  
       
-## 4)  === Test GoPiGo Functions  
-```
-$ python3 /home/pi/Dexter/GoPiGo3/Software/Python/Examples/Read_Info.py  
-$ python3 /home/pi/Dexter/GoPiGo3/Software/Python/Examples/Motor_Turn.py  
-```
+## 4)  === Change passwords   
+  - $ su pi  
+    Password: robots1234  
+    passwd  
+    Changing password for pi.  
+    Current password: robots1234  
+    New password: _______  
+    Retype new password: _______
+  - $ exit
+  - $ whoami    
+    ubuntu        <-- make sure it says ubuntu
+  - $ passwd    
+    Changing password for ubuntu.
+    Current Passwd: robots1234  
+    New password: __________  
+    Retype new password: __________
 
 
-## 5) Test ROS2 GoPiGo3  
-- Follow steps in [Setup_3_Test.md](Setup_3_Test.md)  
+## 5)  === TEST GoPiGo COMMUNICATION    
+(Test Raspberry Pi communication with GoPiGo3 red hardware controller)  
+- Type ```./test_c``` and press Tab key,   
+$ ./test_communication.sh     
+```
+*** ROS2 GOPIGO3 COMMUNICATION TEST - Read_info.py  
+Manufacturer    :  Dexter Industries  
+Board           :  GoPiGo3  
+Serial Number   :  xxx  
+Hardware version:  3.x.x  
+Firmware version:  1.0.0  
+Battery voltage :  10.065  
+5v voltage      :  4.985  
+```
+
+## 6) === TEST GoPiGo3 MOTORS
+- Type ```./test_m``` and press Tab key,
+$ ./test_motors.sh
+```
+*** TEST GOPIGO3 MOTORS  
+GOPIGO3 should:  
+- Spin right about 90 degrees  
+- Pause for a few seconds  
+- Spin left about 180 degrees  
+- Spin right, back approximately to starting heading  
+
+*** NOT A PROBLEM IF DID NOT TURN TO EXACT 90 and -90 HEADINGS  
+```
+
+## 7) Test ROS2 GoPiGo3  
+- Follow steps in [Test_ROS2_GoPiGo3.md](Test_ROS2_GoPiGo3.md)  
 
