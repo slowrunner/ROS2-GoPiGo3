@@ -18,7 +18,7 @@ ROS2 GoPiGo3 robot Dave with GoPiGo3 robot Carl
 
 ### INSTALLATION STEPS FOR Directed Install:  
 
-#### Step 1: Follow steps in [Setup_1_Ubuntu22.04_LTS_Server.txt](Setup_1_Ubuntu22.04_LTS_Server.txt)
+#### Step 1: Follow steps in [Setup_1_Ubuntu22.04_LTS_Server](Setup_1_Ubuntu22.04_LTS_Server.md)
 
 #### Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
 - login as ubuntu
