@@ -120,6 +120,10 @@ ros2 topic list                   <--- NOTE: The ROS2 command line for this
 /tf_static
 ```
 
+[Active Nodes And Topics Graph (from desktop rqt)](https://github.com/slowrunner/ROS2-GoPiGo3/blob/e5daf0c3193ef3f6c3554db23988b0a7b03dceed/Nodes%20and%20Topics%20ROS2%20GoPiGo3%20(gpgMin).jpg)
+
+&nbsp;
+
 - List Active Topics (with Topic Type)
 ```
    ./list_topics_with_type.sh
@@ -286,4 +290,5 @@ GoPiGo3 Battery Voltage: 11.3 volts
 
 # INFO: LIST OF ALL HELPER SCRIPTS IN ~/ros2ws/  
 
-see 
+[See Reference](https://github.com/slowrunner/ROS2-GoPiGo3/blob/e5daf0c3193ef3f6c3554db23988b0a7b03dceed/Reference.md)
+
