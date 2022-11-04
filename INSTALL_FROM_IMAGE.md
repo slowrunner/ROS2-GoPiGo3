@@ -1,11 +1,11 @@
 # INSTALL "ROS2 FOR GOPIGO3" FROM IMAGE
 
-Updated: 11-03-2022 (Instructions and image link)
+Updated: 11-04-2022 (Instructions and image link)
 
 "ROS2 Humble Hawksbill on Ubuntu 22.04 LTS Server (64-bit) for GoPiGo3 Robots"  
-is available as a 2.7GB image at:  
+is available as a 2.5GB image at:  
 
-https://drive.google.com/file/d/1LreihURcE2RW7f336PMsi27lv_vW3Koz/view?usp=sharing
+https://drive.google.com/file/d/1uO9DKB0-pmleClEeG9k7rv0IqWgRzz0Z/view?usp=sharing
 
 # Install From Image
 ## 1) Download the custom image to your computer
@@ -29,7 +29,7 @@ https://drive.google.com/file/d/1LreihURcE2RW7f336PMsi27lv_vW3Koz/view?usp=shari
     - Use password authentication  
   - Set username and password:  
     - ubuntu  
-    - robots1234  (cannot change it here!)  
+    - robots1234   
   - Configure wireless LAN for your WiFi  
     - SSID:  "__Your_WiFi_SSID__"  
     - Password:  "__Your_WiFi_password__"   
@@ -97,14 +97,14 @@ unmount microSD card
   - Press the GoPiGo3 power (on) button to start the first boot  
   - Wait till the GoPiGo3 Green LED stops flashing  
   - Listen for "WiFi IP x.x.x.x  ... Repeating, WiFi IP x.x.x.x"  
-now ...  
+now ... 
   - Open a command shell on your desktop/laptop  
   - Remove any existing ssh key for your GoPiGo3's IP on your desktop/laptop  
     - ssh-keygen -R x.x.x.x  
   - SSH into your ROS2 GoPiGo3  
     - ssh ubuntu@x.x.x.x  
       - Answer yes to new ssh key question  
-      - Enter robots1234  
+      - Enter robots1234 for the password
       
 ## 4)  === Change passwords   
   - $ su pi  
@@ -125,7 +125,7 @@ now ...
 
 
 ## 5)  === TEST GoPiGo COMMUNICATION    
-(Test Raspberry Pi communication with GoPiGo3 red hardware controller)  
+(Test Raspberry Pi communication with GoPiGo3 hardware control board)  
 - Type ```./test_c``` and press Tab key,   
 $ ./test_communication.sh     
 ```
