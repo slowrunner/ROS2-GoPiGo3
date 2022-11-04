@@ -1,6 +1,6 @@
 # Headless Setup For A ROS2 GoPiGo3 Robot
 
-![GoPiGo3 robot Carl with ROS2 GoPiGo3 robot Dave](https://github.com/slowrunner/ROS2-GoPiGo3/blob/Dave_and_Carl.jpg)
+![GoPiGo3 robot Carl with ROS2 GoPiGo3 robot Dave](https://github.com/slowrunner/ROS2-GoPiGo3/blob/main/Dave_and_Carl.jpg)
 
 [Get a GoPiGo3 robot here](https://gopigo.io/gopigo-core/)  
 
