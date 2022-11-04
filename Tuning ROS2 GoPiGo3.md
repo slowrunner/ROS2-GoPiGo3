@@ -1,15 +1,16 @@
 # Tuning the ROS2 GoPiGo3
 
-The GoPiGo3 has a nominal WHEEL-DIAMETER of 66.5 mm and WHEEL-BASE-WIDTH of 117 mm
+The GoPiGo3 has a nominal WHEEL-DIAMETER of 66.5 mm and WHEEL-BASE-WIDTH of 117 mm  
 but...  
 Due to reality the effective wheel diameter and wheel base will be different.  
 
 To have the most accurate encoder odometry, the effective values need to be determined and  
 put in the JSON parameter file:  ```/home/pi/Dexter/gpg3_config.json```  
 
-The first time your robot instantiates a GoPiGo3 or EasyGoPiGo3 class,  
-the default values will be writen to the file.  
-To view the file conveniently:
+The first time your robot instantiates a GoPiGo3 or EasyGoPiGo3 class, the default values will be writen to the file.  
+
+
+To view the file conveniently:  
 ```
 python3 ~/systests/gpg_config/print_gpg3_config.py
 
@@ -55,12 +56,12 @@ Note the default wheel diameter is displayed this first execution.
 - When satisified with the value:  
   Type ```j``` to update the gpg3_config.json file with your effective wheel diameter value  
   Type ```q``` to quit   
-7) Again print the gpg3_config.json file:  
+- Again print the gpg3_config.json file:  
 ```./print_gpg3_config.py```
 
-# Finding effective WHEEL-BASE-WIDTH
-Refine WHEEL-BASE-WIDTH value with ```./wheelBaseRotateTest.py```  
-   Program begins:
+# Finding effective WHEEL-BASE-WIDTH  
+7) Refine WHEEL-BASE-WIDTH value with ```./wheelBaseRotateTest.py```  
+   Program begins:  
 ```
 ubuntu@ROS2HH:~/systests/gpg_config$ ./wheelBaseRotateTest.py 
 Python Version: 3
@@ -70,7 +71,7 @@ wheel diameter and wheel-base read from /home/pi/Dexter/gpg_config.json
 Spin 360 Wheel Dia:66.00 Base:117.00 mm?  (? for help)
 
 ```
-Note the updated wheel diameter is displayed with the default wheel base value.
+Note the updated wheel diameter is displayed with the default wheel base value.  
 
 - Place your ROS2 GoPiGo3 with one side of the body aligned with a floor board  
   or other straight line on the floor as a "heading reference" 
@@ -83,9 +84,9 @@ Note the updated wheel diameter is displayed with the default wheel base value.
 - Press ```return or Enter key``` to perform the 360 spin again  
 - Repeat the bXXX.X and spin once steps to find a repeatbly good value for the wheel diameter  
 - To test further type ```x10``` to execute 10 consecutive 360 degree turns to further refine your value  
-  (Don't expect perfect every time.  Close is good.  **Dave's value for best x10 spins is 105.6 mm**) 
+  (Don't expect perfect every time.  Close is good.  **Dave's value for best x10 spins is 105.59 mm**) 
 - When satisified with the value:  
   Type ```j``` to update the gpg3_config.json file with your effective wheel base value  
   Type ```q``` to quit   
-7) Again print the gpg3_config.json file:  
-```./print_gpg3_config.py```
+- Again print the gpg3_config.json file:  
+```./print_gpg3_config.py```  
