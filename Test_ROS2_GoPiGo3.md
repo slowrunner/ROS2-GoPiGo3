@@ -288,6 +288,11 @@ GoPiGo3 Battery Voltage: 11.3 volts
    
 ```
 
+# TUNING THE ROS2 GoPiGo3  
+The GoPiGo3 has a nominal wheel-diameter of 66.5mm and wheel-base of 117mm.  
+Tuning these values will result in more accurate odometry position and heading estimates.  
+Follow the steps in [Tuning The ROS2 GoPiGo3](Tuning%20ROS2%20GoPiGo3.md)  
+
 # INFO: LOG LOCATIONS  
 - ROS2 Node Execution Logs:  ~/ros2ws/roslogs   
 - COLCON Build Logs: ~/ros2ws/log  
