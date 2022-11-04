@@ -29,7 +29,7 @@ https://drive.google.com/file/d/1uO9DKB0-pmleClEeG9k7rv0IqWgRzz0Z/view?usp=shari
     - Use password authentication  
   - Set username and password:  
     - ubuntu  
-    - robots1234   
+    - robots1234   (use this for first boot)
   - Configure wireless LAN for your WiFi  
     - SSID:  "__Your_WiFi_SSID__"  
     - Password:  "__Your_WiFi_password__"   
