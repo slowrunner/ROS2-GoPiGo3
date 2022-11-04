@@ -1,6 +1,8 @@
 # Headless Setup For A ROS2 GoPiGo3 Robot
 
- [GoPiGo3 robot](https://gopigo.io/gopigo-core/)  
+![GoPiGo3 robot Carl with ROS2 GoPiGo3 robot Dave](https://github.com/slowrunner/ROS2-GoPiGo3/blob/Dave_and_Carl.jpg)
+
+[Get a GoPiGo3 robot here](https://gopigo.io/gopigo-core/)  
 
 # Two methods:  
 1) [Recommended: INSTALL FROM IMAGE](https://github.com/slowrunner/ROS2-GoPiGo3/blob/v4/INSTALL_FROM_IMAGE.md) 
