@@ -288,6 +288,15 @@ GoPiGo3 Battery Voltage: 11.3 volts
    
 ```
 
+# SHUTTING DOWN THE ROS2 GoPiGo3 NODES  
+- ```cd ~/ros2ws```  
+- Type ```./stop_robot.sh``` to shutdown nodes running in the background  
+- Confirm with ```./list_running_nodes.sh```  (Repeat if some nodes have not shutdown yet.)  
+
+# SHUTTING DOWN THE GoPiGo3 ROBOT 
+- Confirm no ROS2 nodes are running with ```./list_running_nodes.sh```  
+- Press the power button (below the Green LED)
+
 # TUNING THE ROS2 GoPiGo3  
 The GoPiGo3 has a nominal wheel-diameter of 66.5mm and wheel-base of 117mm.  
 Tuning these values will result in more accurate odometry position and heading estimates.  
