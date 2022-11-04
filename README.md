@@ -1,11 +1,14 @@
 # Headless Setup For A ROS2 GoPiGo3 Robot
 
-![GoPiGo3 robot Carl with ROS2 GoPiGo3 robot Dave](https://github.com/slowrunner/ROS2-GoPiGo3/blob/28e63059071b2c483138af5d13fcc968c22e7871/Dave_And_Carl.jpg | width=640)
+<img src="https://github.com/slowrunner/ROS2-GoPiGo3/blob/28e63059071b2c483138af5d13fcc968c22e7871/Dave_And_Carl.jpg" width="320"/>  
+ROS2 GoPiGo3 robot Dave with GoPiGo3 robot Carl  
+
+&nbsp;
 
 [Get a GoPiGo3 robot here](https://gopigo.io/gopigo-core/)  
 
 # Two methods:  
-1) [Recommended: INSTALL FROM IMAGE](https://github.com/slowrunner/ROS2-GoPiGo3/blob/v4/INSTALL_FROM_IMAGE.md) 
+1) [RECOMMENDED: INSTALL FROM IMAGE](https://github.com/slowrunner/ROS2-GoPiGo3/blob/v4/INSTALL_FROM_IMAGE.md) 
 
 2) Directed Install:  
   - Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi  
