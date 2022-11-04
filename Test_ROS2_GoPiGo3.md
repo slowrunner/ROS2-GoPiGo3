@@ -11,6 +11,10 @@ Test and learn about the ROS2 GoPiGo3
 ## IF YOUR BOT STARTS RUNNING OFF - type ```stop```
 (It sometimes happens mysteriously when shutting down the ROS2 robot nodes...)
   
+# View Version Info:
+```
+./versions.sh
+```
   
 # TEST 1: Talker - Listener Test
 ```
