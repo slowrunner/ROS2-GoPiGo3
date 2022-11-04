@@ -17,3 +17,12 @@ or of course:
 
 more ~/pi/Dexter/gpg3_config.json
 ```
+
+# Finding effective WHEEL-DIAMETER
+
+Use ```drive_1m.py``` and ```wheelBaseRotateTest.py``` to test and find the best WHEEL-DIAMETER value:
+1) ```cd ~/systests/gpg_config```
+2) Mark a starting location and 1 meter away
+3) Assess the default value with ```./drive_1m.py```
+4) Refine WHEEL-DIAMETER value with ```./wheelDiaDriveTest.py```
+   Program begins 
