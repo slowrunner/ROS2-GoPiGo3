@@ -8,7 +8,7 @@ ROS2 GoPiGo3 robot Dave with GoPiGo3 robot Carl
 [Get a GoPiGo3 robot here](https://gopigo.io/gopigo-core/)  
 
 # Two methods:  
-1) [RECOMMENDED: INSTALL FROM IMAGE](https://github.com/slowrunner/ROS2-GoPiGo3/blob/e87a97b89b234b634654fd7589cc402d518d6b26/INSTALL_FROM_IMAGE.md) 
+1) [RECOMMENDED: INSTALL FROM IMAGE](INSTALL_FROM_IMAGE.md) 
 
 2) Directed Install:  
   - Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi  
@@ -29,6 +29,6 @@ ROS2 GoPiGo3 robot Dave with GoPiGo3 robot Carl
 ```
 
 #### Step 3: Test ROS2 GoPiGo3  
-- Follow steps in [Test_ROS2_GoPiGo3.md](https://github.com/slowrunner/ROS2-GoPiGo3/blob/e87a97b89b234b634654fd7589cc402d518d6b26/Test_ROS2_GoPiGo3.md)
+- Follow steps in [Test_ROS2_GoPiGo3.md](Test_ROS2_GoPiGo3.md)
 
   
