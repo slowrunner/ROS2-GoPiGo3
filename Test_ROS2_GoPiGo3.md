@@ -310,3 +310,9 @@ Follow the steps in [Tuning The ROS2 GoPiGo3](Tuning%20ROS2%20GoPiGo3.md)
 
 [See Reference](https://github.com/slowrunner/ROS2-GoPiGo3/blob/e5daf0c3193ef3f6c3554db23988b0a7b03dceed/Reference.md)
 
+# ADVANCED USERS:
+
+## VISUALIZATION FOR ROS2 GoPiGo3  
+If you have a ROS2 Desktop environment available:  
+See [ROS2 GoPiGo3 Visualization](ROS2_GoPiGo3_Visualization.md)  
+
