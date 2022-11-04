@@ -1,4 +1,4 @@
-# Ubuntu 22.04 LTS Server and GoPiGo3 on Pi4 2GB+
+# SETUP 1: Ubuntu 22.04 LTS Server and GoPiGo3 on Pi4 2GB+
 
 10/13/2022 Mod for slowrunner/ROS2-GoPiGo3  
 10/12/2022 Initial  
