@@ -8,7 +8,7 @@ chmod +x get_ros2_gopigo3_desktop_visualization_files.sh
 chmod +x *.sh
 ```
 
-# Using rqt_graph to view nodes and topics
+## Using rqt_graph to view nodes and topics
 1) Install: ```sudo apt install ros-\<distro\>-rqt-graph```
    ```e.g. sudo apt install ros-humble-rqt-graph```
 2) Type ```rqt_graph``` or ```show_rqt_graph.sh```
@@ -20,9 +20,9 @@ chmod +x *.sh
     - Unreachable
   - Click the "Refresh ROS Graph" button (upper left double circular arrows)
   
-# Using rviz2
+## Using rviz2
 
-# Using rqt-image-view
+## Using rqt-image-view
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
    ```e.g. sudo apt install ros-humble-rqt-image-view```
 2) Start image publisher ```./start_image_pub.sh``` on [u]ROS2 GoPiGo3[/u]  
