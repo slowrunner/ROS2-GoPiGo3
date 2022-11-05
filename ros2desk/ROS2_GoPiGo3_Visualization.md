@@ -64,6 +64,7 @@ chmod +x *.sh
     - SAVE CONFIGURATION:  File->Save Config  
   - Add Map:  
     - In a Terminal Shell to the ROS2 GoPiGo: Start the slam-toolbox ```./start_slam_toolbox.sh```  
+      (or uncomment the STARTING ROS2 SLAM-TOOLBOX section in your start_robot_xxxx.sh script)  
     - In Rviz2: At bottom of "Displays" panel, Click Add, Double-Click "Map"  
     - Expand Map:Topic, Click to right of Topic, and select /map  
     - Set Reliability Policy to "Best Effort"  
