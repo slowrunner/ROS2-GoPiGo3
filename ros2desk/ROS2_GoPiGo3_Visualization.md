@@ -56,10 +56,22 @@ chmod +x *.sh
     - Finmark: finmark
     - Dave: dave
     - (```rviz2 -d gpgMin.rviz``` to Launch using this file rather than the .rviz2/default.rviz)
-6) ROBOTS w/YDKLidar X4
-  - At bottom of "Displays" panel, click Add, Select "Laser Scan", click OK
+6) ROS2 GoPiGo3 ROBOTS w/YDKLidar X4
+  - Add LaserScan: At bottom of "Displays" panel, click Add, Double-Click "Laser Scan"
     - Expand LaserScan:Topic, Click to right of Topic and select /scan
-    - Un
+    - Set Reliability Policy to "Best Effort"
+    - Set Durability Policy to "Volatile"
+    - SAVE CONFIGURATION:  File->Save Config
+  - Add Map:  
+    - In a Terminal Shell to the ROS2 GoPiGo: Start the slam-toolbox ```./start_slam_toolbox.sh```
+    - In Rviz2: At bottom of "Displays" panel, Click Add, Double-Click "Map"
+    - Expand Map:Topic, Click to right of Topic, and select /map
+    - Set Reliability Policy to "Best Effort"
+    - Set Durability Policy to "Volatile"
+    - Expand Map:Update Topic
+    - Set Reliability Policy to "Best Effort"
+    - Set Durability Policy to "Volatile"
+    - SAVE CONFIGURATION:  File->Save Config
 
 ## Using rqt-image-view
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
