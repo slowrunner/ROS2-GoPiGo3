@@ -20,6 +20,44 @@ chmod +x *.sh
   - Click the "Refresh ROS Graph" button (upper left double circular arrows)
   
 ## Using rviz2
+1) In first shell to ROS2 GoPiGo3 robot: Start ROS2 GoPiGo3 Robot nodes
+   - Minimal GoPiGo3:  ```./start_robot_gpgMin.sh```
+   - Finmark:  ```./start_robot_finmark.sh```
+   - Dave:  ```./start_robot_dave.sh```  
+
+2) In second shell to ROS2 GoPiGo3 robot: ```./run_teleop_gopigo3_keyboard.sh```  
+
+3) Start and configure rviz2 on ROS2 Desktop environment  
+  - Type ```rviz2``` in terminal window
+  - Click "Close Window" button of the right hand "Views" Panel
+  - Resize the "Displays" Panel to roughly half the RViz2 window
+  - Pull down Global Options:Fixed Frame option, change to odom, press return/enter key
+  - At the bottom of "Displays" panel, click "Add"
+    - Scroll down to see "RobotModel", click it, OK
+    - Pull down RobotModel:Description Source, change to File, press return/enter key
+    - Click in the right column of "Description File", three dots button will appear on the right
+      Click the three dots, dialog box appears, choose desired urdf file, click "Open" button upper right
+      Minimal GoPiGo3: gpgMin.urdf
+      Finmark: finmark.urdf
+      Dave: dave.urdf
+    - The robot model should appear in the grid window (Grid is 1 meter squares)
+    - Click in the grid window, then scroll down with mouse to zoom in on the robot with two or three meters around it
+4) Move Robot around with teleop 
+  - (Remember: Click in teleop_gopigo3_keyboard shell to issue key commands)
+  - SPIN "Left" CounterClockwise: ```j``` key, visualize robot spin in rviz2
+  - STOP: ```k``` or ```space bar```` to make robot stop
+  - DRIVE: Forward: ```i``` or Backward: ```, (comma)```
+5) SAVE RVIZ2 CONFIGURATION BEFORE QUITTING
+  - Pull down "File" menu, Click "Save"
+    (will save to ~/.rviz2/default.rviz in your Desktop/Laptop machine)
+  - Pull down "File->Save As..." 
+    Enter Name:  
+    - Minimal GoPiGo3: gpgMin
+    - Finmark: finmark
+    - Dave: dave
+    - (```rviz2 -d gpgMin.rviz``` to Launch using this file rather than the .rviz2/default.rviz)
+6) ROBOTS w/YDKLidar X4
+  - 
 
 ## Using rqt-image-view
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
