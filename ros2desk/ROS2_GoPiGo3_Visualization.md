@@ -3,9 +3,8 @@
 ## Get ROS2 GoPiGo3 Desktop Visualization Files
 ```
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/ros2desk/get_ros2_gopigo3_desktop_visualization_files.sh
-chmod +x get_ros2_gopigo3_desktop_visualization_files.sh
-./get_ros2_gopigo3_desktop_visualization_files.sh
 chmod +x *.sh
+./get_ros2_gopigo3_desktop_visualization_files.sh
 ```
 
 ## Using rqt_graph to view nodes and topics
