@@ -56,7 +56,7 @@ chmod +x *.sh
     - Finmark: finmark  
     - Dave: dave  
     - (```rviz2 -d gpgMin.rviz``` to Launch using this file rather than the .rviz2/default.rviz)  
-6) ROS2 GoPiGo3 ROBOTS w/YDKLidar X4  
+6) ROS2 GoPiGo3 ROBOTS w/YDKLidar X4:  
   - Add LaserScan: At bottom of "Displays" panel, click Add, Double-Click "Laser Scan"  
     - Expand LaserScan:Topic, Click to right of Topic and select /scan  
     - Set Reliability Policy to "Best Effort"  
