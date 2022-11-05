@@ -57,7 +57,9 @@ chmod +x *.sh
     - Dave: dave
     - (```rviz2 -d gpgMin.rviz``` to Launch using this file rather than the .rviz2/default.rviz)
 6) ROBOTS w/YDKLidar X4
-  - 
+  - At bottom of "Displays" panel, click Add, Select "Laser Scan", click OK
+    - Expand LaserScan:Topic, Click to right of Topic and select /scan
+    - Un
 
 ## Using rqt-image-view
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
