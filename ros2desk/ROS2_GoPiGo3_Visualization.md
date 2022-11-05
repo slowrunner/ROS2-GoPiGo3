@@ -26,5 +26,5 @@ chmod +x *.sh
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
    ```e.g. sudo apt install ros-humble-rqt-image-view```
 2) Start image publisher ```./start_image_pub.sh``` on [u]ROS2 GoPiGo3[/u]  
-3) Start rqt-image-viewer ```./start_image_view.sh``` on [u]desktop ROS2 environment[/u] 
+3) Start rqt-image-viewer ```./run_image_view.sh``` on [u]desktop ROS2 environment[/u] 
 4) ROS2 GoPiGo3 publishes a new image from the Pi Camera about once every 10 seconds  
