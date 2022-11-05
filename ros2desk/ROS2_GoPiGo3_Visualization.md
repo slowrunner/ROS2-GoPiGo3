@@ -27,7 +27,7 @@ chmod +x *.sh
 
 2) In second shell to ROS2 GoPiGo3 robot: ```./run_teleop_gopigo3_keyboard.sh```  
 
-3) Start and configure rviz2 on ROS2 Desktop environment  
+3) Start and configure rviz2 on ROS2 Desktop environment:  
   - Type ```rviz2``` in terminal window
   - Click "Close Window" button of the right hand "Views" Panel
   - Resize the "Displays" Panel to roughly half the RViz2 window
