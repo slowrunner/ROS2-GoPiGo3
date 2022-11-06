@@ -57,6 +57,7 @@ chmod +x *.sh
     - Dave: dave  
     - (```rviz2 -d gpgMin.rviz``` to Launch using this file rather than the .rviz2/default.rviz)  
 6) ROS2 GoPiGo3 ROBOTS w/YDKLidar X4:  
+![rviz2 Displaying 1cm resolution map and LidarScan](Map_10cm_Resolution_w_LaserScan_Finmark.jpg)
   - Add LaserScan: At bottom of "Displays" panel, click Add, Double-Click "Laser Scan"  
     - Expand LaserScan:Topic, Click to right of Topic and select /scan  
     - Set Reliability Policy to "Best Effort"  
@@ -75,6 +76,7 @@ chmod +x *.sh
     - SAVE CONFIGURATION:  File->Save Config  
 
 ## Using rqt-image-view  
+
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
    ```e.g. sudo apt install ros-humble-rqt-image-view``` 
 2) Start image publisher ```./start_image_pub.sh``` on [u]ROS2 GoPiGo3[/u]  
