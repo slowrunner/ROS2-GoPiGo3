@@ -53,7 +53,8 @@ chmod +x *.sh
     - Click in the right column next to Topic  
       Pull down, and double-click /odom  
     - Expand "Shape"  
-    - Change "Shaft Length", "Shaft Radius", "Head Length", and "Head Radius" each to 0.01  
+    - Change "Shaft Length", "Shaft Radius", and "Head Radius" each to 0.01  
+    - Change "Head Length" to 0.05  
 
 4) Move Robot around with teleop  
   - (Remember: Click in teleop_gopigo3_keyboard shell to issue key commands)  
