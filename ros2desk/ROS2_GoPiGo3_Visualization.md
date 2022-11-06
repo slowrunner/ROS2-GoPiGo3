@@ -2,6 +2,9 @@
 
 ## Get ROS2 GoPiGo3 Desktop Visualization Files
 ```
+cd ~/ubuntu  
+mkdir ros2desk  
+cd ros2desk  
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/ros2desk/get_ros2_gopigo3_desktop_visualization_files.sh  
 chmod +x *.sh  
 ./get_ros2_gopigo3_desktop_visualization_files.sh  
@@ -20,6 +23,8 @@ chmod +x *.sh
   - Click the "Refresh ROS Graph" button (upper left double circular arrows)  
   
 ## Using rviz2  
+![rviz2 GoPiGo3 Min showing path](rviz2_gpgMin_w_odometry.jpg)
+
 1) In first shell to ROS2 GoPiGo3 robot: Start ROS2 GoPiGo3 Robot nodes  
    - Minimal GoPiGo3:  ```./start_robot_gpgMin.sh```  
    - Finmark:  ```./start_robot_finmark.sh```  
@@ -42,20 +47,34 @@ chmod +x *.sh
       Dave: dave.urdf  
     - The robot model should appear in the grid window (Grid is 1 meter squares)  
     - Click in the grid window, then scroll down with mouse to zoom in on the robot with two or three meters around it  
+  - Again at the bottom of "Displays" panel, click "Add"  
+    - Double-click "Odometry"  
+    - Expand the Odometry visualization line  
+    - Click in the right column next to Topic  
+      Pull down, and double-click /odom  
+    - Expand "Shape"  
+    - Change "Shaft Length", "Shaft Radius", "Head Length", and "Head Radius" each to 0.01  
+
 4) Move Robot around with teleop  
   - (Remember: Click in teleop_gopigo3_keyboard shell to issue key commands)  
   - SPIN "Left" CounterClockwise: ```j``` key, visualize robot spin in rviz2  
   - STOP: ```k``` or ```space bar```` to make robot stop  
   - DRIVE: Forward: ```i``` or Backward: ```, (comma)```  
+  - To start again with the robot at a known starting point:  
+    In shell to ROS2 GoPiGo3 robot (~/ubuntu/ros2ws): type ```./call_odom_reset_srv.sh```  
+  - To clear the displayed path from rviz2:  
+    Click the "Reset" button in the lower left corner of the rviz2 window  
+
 5) SAVE RVIZ2 CONFIGURATION BEFORE QUITTING  
   - Pull down "File" menu, Click "Save"  
     (will save to ~/.rviz2/default.rviz in your Desktop/Laptop machine)  
-  - Pull down "File->Save As..."   
+  - Pull down "File->Save As..." 
+    Navigate to your ros2desk folder (~/ubuntu/ros2desk)  
     Enter Name:   
     - Minimal GoPiGo3: gpgMin  
     - Finmark: finmark  
     - Dave: dave  
-    - (```rviz2 -d gpgMin.rviz``` to Launch using this file rather than the .rviz2/default.rviz)  
+    - (Next time type: ```rviz2 -d gpgMin.rviz``` to launch using this file rather than the .rviz2/default.rviz)  
 6) ROS2 GoPiGo3 ROBOTS w/YDKLidar X4:  
 ![rviz2 Displaying 1cm resolution map and LidarScan](Map_10cm_Resolution_w_LaserScan_Finmark.jpg)
   - Add LaserScan: At bottom of "Displays" panel, click Add, Double-Click "Laser Scan"  
