@@ -11,6 +11,9 @@ chmod +x *.sh
 ```
 
 ## Using rqt_graph to view nodes and topics  
+![rqt_graph minimal GoPiGo3](rqt_graph_Nodes_Topics_gpgMin.jpg)
+
+
 1) Install: ```sudo apt install ros-\<distro\>-rqt-graph```  
    ```e.g. sudo apt install ros-humble-rqt-graph```  
 2) Type ```rqt_graph``` or ```show_rqt_graph.sh```  
