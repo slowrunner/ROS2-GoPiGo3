@@ -99,6 +99,7 @@ chmod +x *.sh
     - SAVE CONFIGURATION:  File->Save Config  
 
 ## Using rqt-image-view  
+![rqt-image-view](rqt_image_view.jpg)
 
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
    ```e.g. sudo apt install ros-humble-rqt-image-view``` 
