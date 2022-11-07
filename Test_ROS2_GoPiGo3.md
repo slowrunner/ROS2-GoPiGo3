@@ -310,7 +310,7 @@ Follow the steps in [Tuning The ROS2 GoPiGo3](Tuning%20ROS2%20GoPiGo3.md)
 
 # INFO: LIST OF ALL HELPER SCRIPTS IN ~/ros2ws/  
 
-[See Reference](https://github.com/slowrunner/ROS2-GoPiGo3/blob/e5daf0c3193ef3f6c3554db23988b0a7b03dceed/Reference.md)
+[See Reference](Reference.md)
 
 # ADVANCED USERS:
 
