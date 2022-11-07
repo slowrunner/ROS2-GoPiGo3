@@ -11,8 +11,11 @@
 
 
 - build_all.sh                : Runs COLCON build on all nodes
+
 - call_odom_reset_srv.sh      : publishes to gopigo3 node to reset the pose values (x,y,z,heading to 0)
+
 - check_battery.sh            : Uses Both GoPiGo3 API directly and ROS2 echo of /battery_voltage topic 
+
 - echo_battery_voltage.sh     : Uses ROS2 to display one /battery_voltage topic
 - echo_distance_topic.sh      : ROS2 echo of /distance_sensor/distance topic
 - echo_encoder_topics.sh      : Performs one echo of /motor/encoder/left and /motor/encoder/right topic
@@ -22,28 +25,36 @@
 - echo_motor_status_topic.sh  : Performs one echo of /motor/status topic ( [low_voltage flag, overloaded flag, power, encoder value, speed] for left and right motor )
 - echo_odom_topic.sh          : echo one /odom topic contains x,y,z position and heading with speed in x,y,z axes and angular velocities around the x,y,z axes
 - echo_ultrasonic_topic.sh    : Echos one /ultrasonic_ranger/range topic (meters)
+
 - export_jpg_map.sh           : Outputs jpeg file from pgm format saved map
 
 
 - gopigo3_battery.py
 - install_slam_toolbox.sh
+
 - list_active_topics.sh
 - list_running_nodes.sh
 - list_services.sh
 - list_topics_with_type.sh
+
 - monitor.sh
 - my_mapper_params_online_async.yaml
 - odometer.log
+
 - pub_center_servo.sh
 - pub_servo_right_45.sh
+
 - rebuild.sh
+
 - run_teleop_gopigo3_keyboard.sh
 - save_map.sh
+
 - show_distance_sensor_node_info.sh
 - show_gopigo3_node_info.sh
 - show_imu_node_info.sh
 - show_lidar_node_info.sh
 - show_ultrasonic_ranger_node_info.sh
+
 - start_camera_node.sh
 - start_dave_robot_and_joint_state.sh
 - start_demo_listener.sh
@@ -60,9 +71,12 @@
 - start_slam_toolbox.sh
 - start_ultrasonic_ranger_node.sh
 - start_ydlidar_x4.sh
+
 - stop.py
 - stop_robot.sh
 - stop_slam_toolbox.sh
+
 - v4l2_camera_params.yaml
+
 - versions.sh
 ```
