@@ -11,7 +11,7 @@ chmod +x *.sh
 ```
 
 ## Using rqt_graph to view nodes and topics  
-![rqt_graph minimal GoPiGo3](rqt_graph_Nodes_Topics_gpgMin.jpg)
+<img src="rqt_graph_Nodes_Topics_gpgMin.jpg" width="600" />  
 
 
 1) Install: ```sudo apt install ros-\<distro\>-rqt-graph```  
@@ -26,7 +26,7 @@ chmod +x *.sh
   - Click the "Refresh ROS Graph" button (upper left double circular arrows)  
   
 ## Using rviz2  
-![rviz2 GoPiGo3 Min showing path](rviz2_gpgMin_w_odometry.jpg)
+<img src="rviz2_gpgMin_w_odometry.jpg" width="800"/>  
 
 1) In first shell to ROS2 GoPiGo3 robot: Start ROS2 GoPiGo3 Robot nodes  
    - Minimal GoPiGo3:  ```./start_robot_gpgMin.sh```  
@@ -80,7 +80,8 @@ chmod +x *.sh
     - Dave: dave  
     - (Next time type: ```rviz2 -d gpgMin.rviz``` to launch using this file rather than the .rviz2/default.rviz)  
 6) ROS2 GoPiGo3 ROBOTS w/YDKLidar X4:  
-![rviz2 Displaying 1cm resolution map and LidarScan](Map_1cm_Resolution_w_LaserScan_Finmark.jpg)
+<img src="Map_1cm_Resolution_w_LaserScan_Finmark.jpg" width="800"/>  
+
   - Add LaserScan: At bottom of "Displays" panel, click Add, Double-Click "Laser Scan"  
     - Expand LaserScan:Topic, Click to right of Topic and select /scan  
     - Set Reliability Policy to "Best Effort"  
@@ -99,7 +100,7 @@ chmod +x *.sh
     - SAVE CONFIGURATION:  File->Save Config  
 
 ## Using rqt-image-view  
-![rqt-image-view](rqt_image_view.jpg)
+<img src="rqt_image_view.jpg" width="400" />
 
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
    ```e.g. sudo apt install ros-humble-rqt-image-view``` 
