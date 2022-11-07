@@ -1,0 +1,13 @@
+[Unit]
+Description=IP Feedback on Boot
+After=syslog.target network.target
+
+
+[Service]
+Type=simple
+user=pi
+WorkingDirectory=/home/ubuntu
+ExecStart=/bin/bash /home/ubuntu/utils/ip_feedback.sh
+
+[Install]
+WantedBy=multi-user.target
