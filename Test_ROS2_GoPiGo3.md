@@ -124,7 +124,9 @@ ros2 topic list                   <--- NOTE: The ROS2 command line for this
 /tf_static
 ```
 
-[Active Nodes And Topics Graph (from desktop rqt)](https://github.com/slowrunner/ROS2-GoPiGo3/blob/e5daf0c3193ef3f6c3554db23988b0a7b03dceed/Nodes%20and%20Topics%20ROS2%20GoPiGo3%20(gpgMin).jpg)
+Visualization with rqt_graph of Nodes and Topics For Minimal GoPiGo3 Robot
+<img src="https://github.com/slowrunner/ROS2-GoPiGo3/blob/e5daf0c3193ef3f6c3554db23988b0a7b03dceed/Nodes%20and%20Topics%20ROS2%20GoPiGo3%20(gpgMin).jpg" width="800"/>   
+
 
 &nbsp;
 
