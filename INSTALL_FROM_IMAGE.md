@@ -153,6 +153,6 @@ GOPIGO3 should:
 *** NOT A PROBLEM IF DID NOT TURN TO EXACT 90 and -90 HEADINGS  
 ```
 
-## 7) Test ROS2 GoPiGo3  
+## 7) Test ROS2 GoPiGo3 (and Learn A Little About ROS2!)  
 - Follow steps in [Test_ROS2_GoPiGo3.md](Test_ROS2_GoPiGo3.md)  
 
