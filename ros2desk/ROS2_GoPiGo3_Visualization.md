@@ -10,6 +10,9 @@ chmod +x *.sh
 ./get_ros2_gopigo3_desktop_visualization_files.sh  
 ```
 
+&nbsp;  
+&nbsp;  
+
 ## Using rqt_graph to view nodes and topics  
 <img src="rqt_graph_Nodes_Topics_gpgMin.jpg" width="600" />  
 
@@ -25,6 +28,9 @@ chmod +x *.sh
     - Unreachable  
   - Click the "Refresh ROS Graph" button (upper left double circular arrows)  
   
+&nbsp;  
+&nbsp;  
+
 ## Using rviz2  
 <img src="rviz2_gpgMin_w_odometry.jpg" width="800"/>  
 
@@ -69,6 +75,9 @@ chmod +x *.sh
   - To clear the displayed path from rviz2:  
     Click the "Reset" button in the lower left corner of the rviz2 window  
 
+&nbsp;  
+&nbsp;  
+
 5) SAVE RVIZ2 CONFIGURATION BEFORE QUITTING  
   - Pull down "File" menu, Click "Save"  
     (will save to ~/.rviz2/default.rviz in your Desktop/Laptop machine)  
@@ -79,7 +88,11 @@ chmod +x *.sh
     - Finmark: finmark  
     - Dave: dave  
     - (Next time type: ```rviz2 -d gpgMin.rviz``` to launch using this file rather than the .rviz2/default.rviz)  
-6) ROS2 GoPiGo3 ROBOTS w/YDKLidar X4:  
+
+&nbsp;  
+&nbsp;  
+
+6) RVIZ2 FOR ROS2 GoPiGo3 ROBOTS w/YDKLidar X4:  
 <img src="Map_1cm_Resolution_w_LaserScan_Finmark.jpg" width="800"/>  
 
   - Add LaserScan: At bottom of "Displays" panel, click Add, Double-Click "Laser Scan"  
@@ -98,6 +111,9 @@ chmod +x *.sh
     - Set Reliability Policy to "Best Effort"  
     - Set Durability Policy to "Volatile"  
     - SAVE CONFIGURATION:  File->Save Config  
+
+&nbsp;  
+&nbsp;  
 
 ## Using rqt-image-view  
 <img src="rqt_image_view.jpg" width="400" />
