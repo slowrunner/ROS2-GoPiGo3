@@ -165,7 +165,7 @@ deg)
                 print(printMsg)
 
             heading_deg = math.degrees(self.current_heading)
-            printMsg = "stop_point - x: {:.3f} y: {:.3f} z: {:.3f} heading: {:>4.0f} - moved: {:.3f} meters in {:.1f}s".format(
+            printMsg = "stop_point -  x: {:>6.3f} y: {:>6.3f} z: {:>6.3f} heading: {:>4.0f} - moved: {:>6.3f} meters in {:.1f}s".format(
                        self.current_point.x, self.current_point.y, self.current_point.z, heading_deg, self.moved_dist, moving_seconds)
             print(printMsg)
             # Log this travel segment to odom.log
@@ -192,7 +192,7 @@ heading_deg)
 
 
             heading_deg = math.degrees(self.start_heading)
-            printMsg = "start_point - x: {:.4f} y: {:.4f} z: {:.4f} heading: {:>4.1f}".format(self.start_point.x, self.start_point.y, self.start_point.z, heading_deg)
+            printMsg = "start_point - x: {:>6.3f} y: {:>6.3f} z: {:>6.3f} heading: {:>4.1f}".format(self.start_point.x, self.start_point.y, self.start_point.z, heading_deg)
             print(printMsg)
             self.odoLog.info(printMsg)
             self.start_timestamp = self.last_timestamp
