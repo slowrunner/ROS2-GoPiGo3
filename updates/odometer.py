@@ -147,8 +147,7 @@ class OdometerNode(Node):
          math.isclose(self.current_heading + TWO_PI, self.last_heading, abs_tol=CLOSE_HEADING_TOLERANCE) ):
         if (self.moving == True):   # end of motion
             self.total_dist += abs(self.moved_dist)
-            moving_seconds = self.current_timestamp.sec + (self.current_timestamp.nanosec/1000000000.0) - self.start_timestamp.sec - (self.start_timestamp.nanosec/100
-0000000.0)
+            moving_seconds = self.current_timestamp.sec + (self.current_timestamp.nanosec/1000000000.0) - self.start_timestamp.sec - (self.start_timestamp.nanosec/1000000000.0)
 
             print("\n*** stopped moving")
 
@@ -160,8 +159,7 @@ class OdometerNode(Node):
                 heading_deg = math.degrees(self.last_heading)
                 printMsg = "last_point - x: {:.4f} y: {:.4f} z: {:.4f} heading: {:>4.1f}".format(self.last_point.x, self.last_point.y, self.last_point.z, heading_deg)
                 heading_deg = math.degrees(self.start_heading)
-                printMsg = "start_point - x: {:.4f} y: {:.4f} z: {:.4f} heading: {:>4.1f}".format(self.start_point.x, self.start_point.y, self.start_point.z, heading_
-deg)
+                printMsg = "start_point - x: {:.4f} y: {:.4f} z: {:.4f} heading: {:>4.1f}".format(self.start_point.x, self.start_point.y, self.start_point.z, heading_deg)
                 print(printMsg)
 
             heading_deg = math.degrees(self.current_heading)
@@ -187,12 +185,11 @@ deg)
                 heading_deg = math.degrees(self.last_heading)
                 printMsg = "last_point - x: {:.4f} y: {:.4f} z: {:.4f} heading: {:>4.1f}".format(self.last_point.x, self.last_point.y, self.last_point.z, heading_deg)
                 heading_deg = math.degrees(self.current_heading)
-                printMsg = "current_point - x: {:.4f} y: {:.4f} z: {:.4f} heading: {:>4.1f}".format(self.current_point.x, self.current_point.y, self.current_point.z, 
-heading_deg)
+                printMsg = "current_point - x: {:.4f} y: {:.4f} z: {:.4f} heading: {:>4.1f}".format(self.current_point.x, self.current_point.y, self.current_point.z, heading_deg)
 
 
             heading_deg = math.degrees(self.start_heading)
-            printMsg = "start_point - x: {:>6.3f} y: {:>6.3f} z: {:>6.3f} heading: {:>4.1f}".format(self.start_point.x, self.start_point.y, self.start_point.z, heading_deg)
+            printMsg = "start_point - x: {:>6.3f} y: {:>6.3f} z: {:>6.3f} heading: {:>4.0f}".format(self.start_point.x, self.start_point.y, self.start_point.z, heading_deg)
             print(printMsg)
             self.odoLog.info(printMsg)
             self.start_timestamp = self.last_timestamp
@@ -203,8 +200,7 @@ heading_deg)
             self.moved_dist += distance(self.current_point, self.last_point)
             # heading_deg = math.degrees(self.current_heading)
             # print("current heading {:.3f} rads".format(self.current_heading))
-            # print("current_point - x: {:.3f} y: {:.3f} z: {:.3f} heading: {:.0f} - moved: {:.3f}".format(self.current_point.x, self.current_point.y, self.current_po
-int.z, heading_deg, self.moved_dist))
+            # print("current_point - x: {:.3f} y: {:.3f} z: {:.3f} heading: {:.0f} - moved: {:.3f}".format(self.current_point.x, self.current_point.y, self.current_point.z, heading_deg, self.moved_dist))
 
     self.last_point = self.current_point
     self.last_heading = self.current_heading
