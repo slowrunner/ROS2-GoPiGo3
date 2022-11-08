@@ -16,3 +16,11 @@ Apply fix:
     cp odometer.py odometer.py.v4
     wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/updates/odometer.py
 ```
+
+## YDLidar X4 returning zero 25% of readings
+Apply fix:
+```
+   cd ~/ros2ws/src/ydlidar_ros2_driver/params
+   cp ydlidar.yaml ydlidar.yaml.v4
+   wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/updates/ydlidar.yaml
+```
