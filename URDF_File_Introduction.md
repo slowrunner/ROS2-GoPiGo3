@@ -11,18 +11,15 @@ URDF: Unified Robot Description Format
     where these parts are located in relation to the “base_link”
     the shape and size of the parts belonging to the base_link
   - the parts of a robot that have their own frame
-    (with shape, orientation, reference point of the part)
-```    
+    (with shape, orientation, reference point of the part)    
     * Left Wheel
     * Right Wheel
     * LiDAR: “laser_frame”
     * Servo
     * Distance/Ultrasonic Sensor
     * Bumper
-```
-
-  - Joints describe  
-    relation between “part frames” and the “robot frame”  
+  - Joints  
+    define relation between “part frames” and the “robot frame”  
     degrees of freedom of a part - rotation about an some axis  
 
 
@@ -30,7 +27,7 @@ These are a few of the XML elements from the Minimal ROS2 GoPiGo3 URDF file gpgM
 
 <img src="Graphics/URDF_gpgMin.jpg" width="640"/>  
 
-Even if a GoPiGo3 robot does not have a LiDAR, the ROS will know about the parts that do exist to keep track of where the robot (base_link / “robot frame” ) is in the world frame
+Even if a GoPiGo3 robot does not have a LiDAR, ROS will know about the parts that do exist to keep track of where the robot (base_link / “robot frame” ) is in the world frame
 - when the “odometry function” announces a change (in a /odom topic message)
 (odometry comes only from encoders in the minimalist ROS2 GoPiGo3)
 
@@ -52,6 +49,6 @@ dave.urdf (no jokes please - I didn’t model Dave’s pants and his goggles)
 <img src="Graphics/Dave_LFQtr.jpg" width="320"/>  
  
 
-This is the urdf file of Bernardo R Japon, the author of the “Hands On ROS: ROS For Robotics Programming” showing the use of xacro to the fullest:  
+This is the URDF file of Bernardo R Japon, the author of the “Hands On ROS: ROS For Robotics Programming” showing the use of xacro to the fullest:  
 
 <img src="Graphics/HandsOnROS_gopigo3_urdf.jpg" width="320"/>  
