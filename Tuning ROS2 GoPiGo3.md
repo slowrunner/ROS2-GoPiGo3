@@ -93,7 +93,7 @@ Note the updated wheel diameter is displayed with the default wheel base value.
 
 
 # Verify URDF LaserScan Link to Base Link x,y  
-(Requires Desktop Visualization with rviz2)  
+[(Requires Desktop Visualization with rviz2)](ros2desk/ROS2_GoPiGo3_Visualization.md)  
 1) Place bot square to a walled corner (suggest 50cm from front wall, 50cm from side wall)  
    - Measure distance from a front wall to center of wheels  
      Front Distance (wall to center of wheels) _____ mm   
