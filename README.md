@@ -7,28 +7,15 @@ ROS2 GoPiGo3 robot Dave with GoPiGo3 robot Carl
 
 [Get a GoPiGo3 robot here](https://gopigo.io/gopigo-core/)  
 
-# Two methods:  
-1) [RECOMMENDED: INSTALL FROM IMAGE](INSTALL_FROM_IMAGE.md) 
-
-2) Directed Install:  
+The ROS2 GoPiGo3 Install covers:  
   - Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi  
   - GoPiGo3 API and Drivers  
   - ROS2 Humble Hawksbill  
   - ROS2 for GoPiGo3 nodes and tools  
+  - ROS2 Desktop Visualization
 
-### INSTALLATION STEPS FOR Directed Install:  
-
-#### Step 1: Follow steps in [Setup_1_Ubuntu22.04_LTS_Server](Setup_1_Ubuntu22.04_LTS_Server.md)
-
-#### Step 2: Run Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
-- login as ubuntu
-- cd utils
-- run:  
-```
-./Setup_2_ROS2_HumbleHawksbill_on_GoPiGo3.sh
-```
-
-#### Step 3: Test ROS2 GoPiGo3  
-- Follow steps in [Test_ROS2_GoPiGo3.md](Test_ROS2_GoPiGo3.md)
+# Two methods:  
+1) [RECOMMENDED: INSTALL FROM IMAGE](INSTALL_FROM_IMAGE.md) 
 
   
+2) [Directed Install](Directed_install.md)
