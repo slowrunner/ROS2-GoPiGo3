@@ -40,17 +40,18 @@ The gpgMin.urdf file includes an example LiDAR mounting position that would need
 
 These are the three URDF examples included in the ROS2 GoPiGo3 uSDcard image:
 
-gpgMin.urdf
+gpgMin.urdf  
+<img src="Graphics/gpgMin_urdf.jpg" width="320"/>  
 
+finmark.urdf  
+<img src="Graphics/finmark_urdf.jpg" width="320"/>  
 
-finmark.urdf
+dave.urdf (no jokes please - I didn’t model Dave’s pants and his goggles)  
+<img src="Graphics/dave_urdf.jpg" width="320"/>  
 
-dave.urdf (no jokes please - I didn’t model Dave’s pants and his goggles)
-
-
-Dave_LFQtr
+<img src="Graphics/Dave_LFQtr.jpg" width="320"/>  
  
 
-This is the urdf file of Bernardo R Japon, the author of the “Hands On ROS: ROS For Robotics Programming” showing the use of xacro to the fullest:
+This is the urdf file of Bernardo R Japon, the author of the “Hands On ROS: ROS For Robotics Programming” showing the use of xacro to the fullest:  
 
-HandsOnROS_gopigo3_urdf
+<img src="Graphics/HandsOnROS_gopigo3_urdf.jpg" width="320"/>  
