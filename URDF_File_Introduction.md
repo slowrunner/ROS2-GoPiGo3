@@ -19,13 +19,16 @@ URDF: Unified Robot Description Format
     * Servo
     * Distance/Ultrasonic Sensor
     * Bumper
-  - Joints describe
-    relation between “part frames” and the “robot frame”
-    degrees of freedom of a part - rotation about an some axis
 ```
 
-These are a few of the XML elements from the Minimal ROS2 GoPiGo3 URDF file gpgMin.urdf:
+  - Joints describe  
+    relation between “part frames” and the “robot frame”  
+    degrees of freedom of a part - rotation about an some axis  
 
+
+These are a few of the XML elements from the Minimal ROS2 GoPiGo3 URDF file gpgMin.urdf:  
+
+<img src="Graphics/URDF_gpgMin.jpg" width="640"/>  
 
 Even if a GoPiGo3 robot does not have a LiDAR, the ROS will know about the parts that do exist to keep track of where the robot (base_link / “robot frame” ) is in the world frame
 - when the “odometry function” announces a change (in a /odom topic message)
