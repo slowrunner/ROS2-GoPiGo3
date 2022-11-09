@@ -18,4 +18,4 @@ The ROS2 GoPiGo3 Install covers:
 1) [RECOMMENDED: INSTALL FROM IMAGE](INSTALL_FROM_IMAGE.md) 
 
   
-2) [Directed Install](Directed_install.md)
+2) [Directed Install](Directed_Install.md)
