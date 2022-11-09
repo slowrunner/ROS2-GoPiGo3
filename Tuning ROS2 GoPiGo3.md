@@ -90,3 +90,18 @@ Note the updated wheel diameter is displayed with the default wheel base value.
   Type ```q``` to quit   
 - Again print the gpg3_config.json file:  
 ```./print_gpg3_config.py```  
+
+
+# Verify URDF LaserScan Link to Base Link x,y
+(Requires Desktop Visualization with rviz2)
+1) Place bot square to a walled corner (suggest 50cm from front wall, 50sm from side wall)
+   - Measure distance from a front wall to center of wheels
+     Front Distance (wall to center of wheels) _____ mm
+   - Measure distance from side wall to center of bot between the wheels
+     Side Distance (wall to center of bot between wheels) _____ mm 
+1) ./start_robot_xxxx.sh on robot
+2) Start rviz2, load RobotModel with robot_xxxx urdf
+3) Select rviz2:Move Camera
+  - mouse-drag down to be looking straight down on bot
+  - shift mouse to put grid-cross under the wheels in center of big yellow circle in center of window
+ 
