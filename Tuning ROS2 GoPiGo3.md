@@ -94,9 +94,9 @@ Note the updated wheel diameter is displayed with the default wheel base value.
 
 # Verify URDF LaserScan Link to Base Link x,y  
 (Requires Desktop Visualization with rviz2)  
-1) Place bot square to a walled corner (suggest 50cm from front wall, 50sm from side wall)  
+1) Place bot square to a walled corner (suggest 50cm from front wall, 50cm from side wall)  
    - Measure distance from a front wall to center of wheels  
-     Front Distance (wall to center of wheels) _____ mm  
+     Front Distance (wall to center of wheels) _____ mm   
    - Measure distance from side wall to center of bot between the wheels  
      Side Distance (wall to center of bot between wheels) _____ mm   
 1) ./start_robot_xxxx.sh on robot  
