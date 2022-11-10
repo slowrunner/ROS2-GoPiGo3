@@ -1,6 +1,6 @@
 # Headless Setup For A ROS2 GoPiGo3 Robot
 
-<img src="https://github.com/slowrunner/ROS2-GoPiGo3/blob/28e63059071b2c483138af5d13fcc968c22e7871/Dave_And_Carl.jpg" width="320"/>  
+<img src="Graphics/Dave_And_Carl.jpg" width="320"/>  
 ROS2 GoPiGo3 robot Dave with GoPiGo3 robot Carl  
 
 &nbsp;
