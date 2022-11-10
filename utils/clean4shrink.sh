@@ -11,6 +11,7 @@ rm -f ~/ipcount
 rm -f ~/ip.number
 rm -f ~/ros2ws/*.log
 rm -f ~/ros2ws/nohup
+sudo rm -rf ~/ROS2-GoPiGo3
 
 sudo rm -f /home/pi/Dexter/gpg3_config.json
 sudo rm -f /etc/netplan/50-cloud-init.yaml
