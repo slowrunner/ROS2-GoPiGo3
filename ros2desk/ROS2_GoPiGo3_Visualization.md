@@ -14,7 +14,7 @@ chmod +x *.sh
 &nbsp;  
 
 ## Using rqt_graph to view nodes and topics  
-<img src="rqt_graph_Nodes_Topics_gpgMin.jpg" width="600" />  
+<img src="../Graphics/rqt_graph_Nodes_Topics_gpgMin.jpg" width="600" />  
 
 
 1) Install: ```sudo apt install ros-\<distro\>-rqt-graph```  
@@ -32,7 +32,7 @@ chmod +x *.sh
 &nbsp;  
 
 ## Using rviz2  
-<img src="rviz2_gpgMin_w_odometry.jpg" width="800"/>  
+<img src="../Graphics/rviz2_gpgMin_w_odometry.jpg" width="800"/>  
 
 1) In first shell to ROS2 GoPiGo3 robot: Start ROS2 GoPiGo3 Robot nodes  
    - Minimal GoPiGo3:  ```./start_robot_gpgMin.sh```  
@@ -93,7 +93,7 @@ chmod +x *.sh
 &nbsp;  
 
 6) RVIZ2 FOR ROS2 GoPiGo3 ROBOTS w/YDKLidar X4:  
-<img src="Map_1cm_Resolution_w_LaserScan_Finmark.jpg" width="800"/>  
+<img src="../Graphics/Map_1cm_Resolution_w_LaserScan_Finmark.jpg" width="800"/>  
 
   - Add LaserScan: At bottom of "Displays" panel, click Add, Double-Click "Laser Scan"  
     - Expand LaserScan:Topic, Click to right of Topic and select /scan  
@@ -116,7 +116,7 @@ chmod +x *.sh
 &nbsp;  
 
 ## Using rqt-image-view  
-<img src="rqt_image_view.jpg" width="400" />
+<img src="../Graphics/rqt_image_view.jpg" width="400" />
 
 1) Install: ```sudo apt install ros-\<distro\>-rqt-image-view```  
    ```e.g. sudo apt install ros-humble-rqt-image-view``` 
