@@ -1,4 +1,4 @@
-# Directed Install for ROS2 GoPiGo3:
+# [Obsolete] Directed Install for ROS2 GoPiGo3:
 
 Covers installation of:
   - Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi  
