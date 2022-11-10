@@ -6,4 +6,5 @@ wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/ros2desk/gpg
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/ros2desk/show_rqt_graph.sh
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/ros2desk/run_image_view.sh
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/ros2desk/view_frames.sh
+wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/ros2desk/check_all_urdfs.sh
 chmod +x *.sh
