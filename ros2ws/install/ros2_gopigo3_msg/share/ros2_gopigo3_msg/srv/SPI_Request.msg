@@ -1,0 +1,1 @@
+/home/ubuntu/ros2ws/build/ros2_gopigo3_msg/rosidl_cmake/srv/SPI_Request.msg

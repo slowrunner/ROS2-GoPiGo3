@@ -1,0 +1,9 @@
+/gopigo3_node:
+  ros__parameters:
+    S1LPW: 2098
+    S1RPW: 750
+    S1SECTOR: 2.443
+    S2LPW: 2425
+    S2RPW: 575
+    S2SECTOR: 1.5707963267948966
+    use_sim_time: false

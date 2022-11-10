@@ -1,0 +1,83 @@
+Alan's Notes for YDLiDAR X4 setup
+
+Setup YDLIDAR X4 on "ROS2 GoPiGo3" 
+
+Oct 15, 2022
+
+=== Prereqs  
+- Linux OS: Using Ubuntu 22.04 Server LTS 64-bit  
+- External 5v power connected to microUSB of Interface Card  
+- USB A to USB C cable from RPi to Interface Card  
+
+==== Install Requirement Packages
+
+sudo apt install -y cmake pkg-config
+sudo apt install -y swig
+
+==== Download and Install Latest SDK  
+```
+$ cd ~  (/home/ubuntu)  
+$ git clone https://github.com/YDLIDAR/YDLidar-SDK
+$ cd YDLidar-SDK
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+$ sudo make install
+$ pip3 install .
+...
+==== create /dev/ydlidar  (maybe didn't need to do this)
+
+cd ~/YDLidar-SDK/startup
+chmod +x initenv.sh
+sudo ./initenv.sh
+sudo reboot
+
+ubuntu@ROS2HH:~/YDLidar-SDK/startup$ ls -al /dev/ttyUSB0
+crw-rw-rw- 1 root dialout 188, 0 Oct 15 23:47 /dev/ttyUSB0
+ubuntu@ROS2HH:~/YDLidar-SDK/startup$ ls -al /dev/ydlidar
+lrwxrwxrwx 1 root root 7 Oct 15 09:19 /dev/ydlidar -> ttyUSB0
+
+
+=== Modify YDLidar/python/examples/ydlidar_test.py
+
+add:
+#!/usr/bin/env python3
+
+Change:
+   laser.setlidaropt(ydlidar.LidarPropSerialBaudrate, 128000);   # was 230400);
+    laser.setlidaropt(ydlidar.LidarPropSingleChannel, True);    # was False);
+
+chmod +x ydlidar_test.py
+./ydlidar_test.py
+
+sudo cp ydlidar_test.py /usr/local/bin/ydlidar_test
+
+
+
+$ /usr/local/bin/ydlidar_test
+
+YDLidar SDK initializing
+YDLidar SDK has been initialized
+[YDLIDAR]:SDK Version: 1.1.2
+LiDAR successfully connected
+[YDLIDAR]:Lidar running correctly ! The health status: good
+LiDAR init success, Elapsed time 631 ms
+Start to getting intensity flag
+End to getting intensity flag
+[CYdLidar] Successed to start scan mode, Elapsed time 2072 ms
+[YDLIDAR] Fixed Size: 720
+[YDLIDAR] Sample Rate: 3K
+[YDLIDAR] Fixed Size: 720
+[YDLIDAR] Sample Rate: 3K
+[YDLIDAR]:Single Fixed Size: 570
+[YDLIDAR]:Sample Rate: 3K
+[YDLIDAR INFO] Single Channel Current Sampling Rate: 3K
+[YDLIDAR INFO] Now YDLIDAR is scanning ......
+Scan received[ 1665898641109045000 ]: 574 ranges is [ 9.413093833765119 ]Hz
+Scan received[ 1665898641223520000 ]: 575 ranges is [ 9.368208152237983 ]Hz
+Scan received[ 1665898641338498000 ]: 574 ranges is [ 9.383151707340263 ]Hz
+Scan received[ 1665898641446176000 ]: 574 ranges is [ 8.217737105964254 ]Hz
+Scan received[ 1665898641567910000 ]: 574 ranges is [ 9.36654103527921 ]Hz
+Scan received[ 1665898641682891000 ]: 574 ranges is [ 9.383591887523073 ]Hz
+Scan received[ 1665898641797697000 ]: 569 ranges is [ 9.402473154300825 ]Hz

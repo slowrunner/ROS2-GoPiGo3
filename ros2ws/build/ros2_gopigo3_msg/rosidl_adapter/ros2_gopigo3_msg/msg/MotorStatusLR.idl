@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros2_gopigo3_msg/msg/MotorStatusLR.msg
+// generated code does not contain a copyright notice
+
+#include "ros2_gopigo3_msg/msg/MotorStatus.idl"
+#include "std_msgs/msg/Header.idl"
+
+module ros2_gopigo3_msg {
+  module msg {
+    struct MotorStatusLR {
+      std_msgs::msg::Header header;
+
+      ros2_gopigo3_msg::msg::MotorStatus left;
+
+      ros2_gopigo3_msg::msg::MotorStatus right;
+    };
+  };
+};

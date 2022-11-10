@@ -1,0 +1,24 @@
+[6.973s] Invoking command in '/home/ubuntu/ros2ws/build/ros2_libcamera_pub': PYTHONPATH=/home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/ros2_libcamera_pub --editable --build-directory /home/ubuntu/ros2ws/build/ros2_libcamera_pub/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/ros2_libcamera_pub
+[8.842s] running develop
+[9.980s] running egg_info
+[9.983s] creating ros2_libcamera_pub.egg-info
+[9.986s] writing ros2_libcamera_pub.egg-info/PKG-INFO
+[9.988s] writing dependency_links to ros2_libcamera_pub.egg-info/dependency_links.txt
+[9.992s] writing entry points to ros2_libcamera_pub.egg-info/entry_points.txt
+[9.996s] writing requirements to ros2_libcamera_pub.egg-info/requires.txt
+[10.001s] writing top-level names to ros2_libcamera_pub.egg-info/top_level.txt
+[10.004s] writing manifest file 'ros2_libcamera_pub.egg-info/SOURCES.txt'
+[10.009s] reading manifest file 'ros2_libcamera_pub.egg-info/SOURCES.txt'
+[10.012s] writing manifest file 'ros2_libcamera_pub.egg-info/SOURCES.txt'
+[10.020s] running build_ext
+[10.024s] Creating /home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/python3.10/site-packages/ros2-libcamera-pub.egg-link (link to .)
+[10.032s] Installing libcamera_jpg_pub script to /home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/ros2_libcamera_pub
+[10.035s] 
+[10.040s] Installed /home/ubuntu/ros2ws/build/ros2_libcamera_pub
+[10.047s] running install_data
+[10.054s] creating /home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ament_index
+[10.061s] creating /home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ament_index/resource_index
+[10.073s] creating /home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ament_index/resource_index/packages
+[10.076s] copying resource/ros2_libcamera_pub -> /home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ament_index/resource_index/packages
+[10.078s] copying package.xml -> /home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub
+[10.494s] Invoked command in '/home/ubuntu/ros2ws/build/ros2_libcamera_pub' returned '0': PYTHONPATH=/home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/ros2_libcamera_pub --editable --build-directory /home/ubuntu/ros2ws/build/ros2_libcamera_pub/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/ros2_libcamera_pub

@@ -1,0 +1,1 @@
+ros2_gopigo3_msg

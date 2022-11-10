@@ -1,0 +1,23 @@
+# SBC-BENCH NOTES
+
+REF: https://github.com/ThomasKaiser/sbc-bench
+
+=== INSTALL
+
+wget https://raw.githubusercontent.com/ThomasKaiser/sbc-bench/master/sbc-bench.sh
+
+
+=== RUNNING SBC-BENCH
+
+sudo /bin/bash ./sbc-bench.sh -c
+
+
+
+==== RESULTS ====
+
+Full Result:  http://ix.io/4dx4
+
+|   Device / details	                          |Clockspeed|Kernel|	Distro	               |7-zip |	AES   | AES   | mem  | mems |kH |
+                                                                                               |      |128_16 |	256-16|	cpy  | set  | /s| 
+| RPi 4 Model B Rev 1.5 / BCM2711 Rev C0 or later | 1800 MHz | 5.15 | Ubuntu 22.04.1 LTS arm64 | 5380 | 45430 | 36260 | 2410 | 3110 | - |
+

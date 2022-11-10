@@ -1,0 +1,8 @@
+{
+  "package_name": "ros2_gopigo3_msg",
+  "non_idl_tuples": [
+    "/home/ubuntu/ros2ws/src/ros2_gopigo3_msg:msg/MotorStatus.msg",
+    "/home/ubuntu/ros2ws/src/ros2_gopigo3_msg:msg/MotorStatusLR.msg",
+    "/home/ubuntu/ros2ws/src/ros2_gopigo3_msg:srv/SPI.srv"
+  ]
+}

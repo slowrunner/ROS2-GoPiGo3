@@ -1,0 +1,6 @@
+setup.py
+ros2_gopigo3_msg/__init__.py
+ros2_gopigo3_msg.egg-info/PKG-INFO
+ros2_gopigo3_msg.egg-info/SOURCES.txt
+ros2_gopigo3_msg.egg-info/dependency_links.txt
+ros2_gopigo3_msg.egg-info/top_level.txt

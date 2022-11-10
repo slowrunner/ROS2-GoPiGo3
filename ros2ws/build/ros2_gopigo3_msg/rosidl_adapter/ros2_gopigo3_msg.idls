@@ -1,0 +1,3 @@
+/home/ubuntu/ros2ws/build/ros2_gopigo3_msg/rosidl_adapter/ros2_gopigo3_msg:msg/MotorStatus.idl
+/home/ubuntu/ros2ws/build/ros2_gopigo3_msg/rosidl_adapter/ros2_gopigo3_msg:msg/MotorStatusLR.idl
+/home/ubuntu/ros2ws/build/ros2_gopigo3_msg/rosidl_adapter/ros2_gopigo3_msg:srv/SPI.idl

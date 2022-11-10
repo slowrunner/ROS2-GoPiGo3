@@ -1,0 +1,12 @@
+package.xml
+scan_client.py
+setup.cfg
+setup.py
+resource/scan_client
+scan_client.egg-info/PKG-INFO
+scan_client.egg-info/SOURCES.txt
+scan_client.egg-info/dependency_links.txt
+scan_client.egg-info/entry_points.txt
+scan_client.egg-info/requires.txt
+scan_client.egg-info/top_level.txt
+scan_client.egg-info/zip-safe

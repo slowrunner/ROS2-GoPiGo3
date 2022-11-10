@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: scan-client
+Version: 0.1
+Summary: ROS2 Client for /scan topicprints distance for 90,0,-90,180
+Home-page: UNKNOWN
+Author: slowrunner
+Maintainer: slowrunner
+Maintainer-email: slowrunner@noreply.githum.com
+License: BSD
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: BSD
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+
+UNKNOWN
+

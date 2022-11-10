@@ -1,0 +1,3 @@
+[console_scripts]
+teleop_gopigo3_keyboard = teleop_gopigo3_keyboard:main
+

@@ -1,0 +1,261 @@
+# Sysbench Notes
+
+
+== install
+sudo apt install sysbench
+
+=== Command Line Options
+
+Ref:  https://github.com/akopytov/sysbench#general-command-line-options
+
+
+== RUN TESTS
+
+$ sysbench cpu --threads=3 [--time=300] run
+$ sysbench memory run
+
+$ sysbench fileio --file_test_mode="rndrw" prepare
+$ sysbench fileio --file_test_mode="rndrw" run
+$ sysbench fileio --file_test_mode="rndrw" cleanup
+
+$ sysbench threads --threads=(number of cores) run
+$ sysbench mutex --threads=(number of cores) run
+
+=== RESULTS
+
+On Pi4B 2GB (1.8MHz) w/low profile heatsink, mounted in GoPiGo3 robot
+
+ - sysbench --threads=3 --time=300 run
+   - uptime 1min load 3.2
+   - reached 65-76degC 
+   - Max Robot Battery Load:  7W  (4.8W idle)
+ - sysbench memory run
+   - 2414.03 MiB/sec
+ - sysbench fileio rndrw
+    - read: ~4.8 MiB/s
+    - write: ~3 MiB/s
+ - sysbench threads --threads=(number of cores) run
+    - 4 threads:  ~13k events
+
+=== RUN CPU TEST
+
+```
+On Pi4B 2GB (1.8MHz) w/low profile heatsink, mounted in GoPiGo3 robot
+
+$ sysbench cpu --threads=3 --time=300 run
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 3
+Initializing random number generator from current time
+
+
+Prime numbers limit: 10000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:  5268.51
+
+General statistics:
+    total time:                          300.0005s
+    total number of events:              1580576
+
+Latency (ms):
+         min:                                    0.57
+         avg:                                    0.57
+         max:                                    1.75
+         95th percentile:                        0.58
+         sum:                               899625.08
+
+Threads fairness:
+    events (avg/stddev):           526858.6667/68.86
+    execution time (avg/stddev):   299.8750/0.00
+
+
+Tuesday 10/18/22
+ 09:58:55 up 1 day, 22:53,  2 users,  load average: 3.19, 2.36, 1.73
+temp=76.4'C
+frequency(48)=1800457088
+throttled=0x0
+
+Tuesday 10/18/22
+ 10:10:33 up 1 day, 23:04,  2 users,  load average: 3.20, 2.28, 1.71
+temp=64.7'C
+frequency(48)=1800457088
+throttled=0x0
+
+
+```
+
+=== RUN MEMORY TEST
+
+On Pi4B 2GB (1.8MHz) w/low profile heatsink, mounted in GoPiGo3 robot
+```
+$ sysbench memory run
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 102400MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 24730227 (2471963.00 per second)
+
+24150.61 MiB transferred (2414.03 MiB/sec)
+
+
+General statistics:
+    total time:                          10.0001s
+    total number of events:              24730227
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                    0.07
+         95th percentile:                        0.00
+         sum:                                 4766.19
+
+Threads fairness:
+    events (avg/stddev):           24730227.0000/0.00
+    execution time (avg/stddev):   4.7662/0.00
+```
+
+
+
+=== RUN FILEIO TEST
+
+On Pi4B 2GB (1.8MHz) w/low profile heatsink, mounted in GoPiGo3 robot
+
+```
+$ sysbench fileio --file_test_mode="rndrw" prepare
+$ sysbench fileio --file_test_mode="rndrw" run
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 16MiB each
+2GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      320.32
+    writes/s:                     213.55
+    fsyncs/s:                     685.33
+
+Throughput:
+    read, MiB/s:                  5.01
+    written, MiB/s:               3.34
+
+General statistics:
+    total time:                          10.1063s
+    total number of events:              12204
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.82
+         max:                                   68.11
+         95th percentile:                        5.47
+         sum:                                 9987.65
+
+Threads fairness:
+    events (avg/stddev):           12204.0000/0.00
+    execution time (avg/stddev):   9.9877/0.00
+
+```
+
+=== RUN THREADS TEST
+
+On Pi4B 2GB (1.8MHz) w/low profile heatsink, mounted in GoPiGo3 robot
+
+```
+$ sysbench threads --threads=4 run
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          10.0030s
+    total number of events:              12777
+
+Latency (ms):
+         min:                                    2.95
+         avg:                                    3.13
+         max:                                   56.76
+         95th percentile:                        3.25
+         sum:                                39999.36
+
+Threads fairness:
+    events (avg/stddev):           3194.2500/20.57
+    execution time (avg/stddev):   9.9998/0.00
+```
+
+
+=== RUN MUTEX TEST
+
+On Pi4B 2GB (1.8MHz) w/low profile heatsink, mounted in GoPiGo3 robot
+
+```
+$ sysbench mutex --threads=4 run
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          0.6014s
+    total number of events:              4
+
+Latency (ms):
+         min:                                  563.75
+         avg:                                  573.17
+         max:                                  599.30
+         95th percentile:                      601.29
+         sum:                                 2292.68
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.5732/0.02
+
+```

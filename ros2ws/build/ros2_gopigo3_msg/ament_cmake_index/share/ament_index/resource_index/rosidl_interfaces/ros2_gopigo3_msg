@@ -1,0 +1,8 @@
+msg/MotorStatus.idl
+msg/MotorStatus.msg
+msg/MotorStatusLR.idl
+msg/MotorStatusLR.msg
+srv/SPI.idl
+srv/SPI.srv
+srv/SPI_Request.msg
+srv/SPI_Response.msg

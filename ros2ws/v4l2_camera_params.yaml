@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    video_device: /dev/video0
+    pixel_format: YUYV
+    output_encoding: rgb8
+    image_size: [640, 480]
+    time_per_frame: [1, 30]
+    camera_frame_id: camera_optical_frame

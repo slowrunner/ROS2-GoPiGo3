@@ -1,0 +1,4 @@
+source;share/ydlidar_ros2_driver/local_setup.bash
+source;share/ydlidar_ros2_driver/local_setup.dsv
+source;share/ydlidar_ros2_driver/local_setup.sh
+source;share/ydlidar_ros2_driver/local_setup.zsh

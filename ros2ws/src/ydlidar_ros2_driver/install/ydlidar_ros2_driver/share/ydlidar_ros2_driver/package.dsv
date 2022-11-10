@@ -1,0 +1,8 @@
+source;share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1
+source;share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv
+source;share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh
+source;share/ydlidar_ros2_driver/local_setup.bash
+source;share/ydlidar_ros2_driver/local_setup.dsv
+source;share/ydlidar_ros2_driver/local_setup.ps1
+source;share/ydlidar_ros2_driver/local_setup.sh
+source;share/ydlidar_ros2_driver/local_setup.zsh

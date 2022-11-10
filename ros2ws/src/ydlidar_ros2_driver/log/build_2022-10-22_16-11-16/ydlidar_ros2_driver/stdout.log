@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target ydlidar_ros2_driver_node[0m
+[ 50%] Built target ydlidar_ros2_driver_client
+[ 75%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
+[100%] Built target ydlidar_ros2_driver_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+-- Symlinking: /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml

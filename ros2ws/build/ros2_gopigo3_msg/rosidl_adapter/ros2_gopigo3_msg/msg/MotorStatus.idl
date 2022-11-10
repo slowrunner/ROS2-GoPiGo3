@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ros2_gopigo3_msg/msg/MotorStatus.msg
+// generated code does not contain a copyright notice
+
+
+module ros2_gopigo3_msg {
+  module msg {
+    struct MotorStatus {
+      boolean low_voltage;
+
+      boolean overloaded;
+
+      @verbatim (language="comment", text=
+        "PWM duty cycle -100 ... 100")
+      int8 power;
+
+      @verbatim (language="comment", text=
+        "degree")
+      float encoder;
+
+      @verbatim (language="comment", text=
+        "degree per second")
+      float speed;
+    };
+  };
+};

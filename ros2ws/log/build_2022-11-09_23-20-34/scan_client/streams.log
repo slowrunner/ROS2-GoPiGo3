@@ -1,0 +1,24 @@
+[6.900s] Invoking command in '/home/ubuntu/ros2ws/build/scan_client': PYTHONPATH=/home/ubuntu/ros2ws/install/scan_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/scan_client --editable --build-directory /home/ubuntu/ros2ws/build/scan_client/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/scan_client
+[8.734s] running develop
+[9.878s] running egg_info
+[9.879s] creating scan_client.egg-info
+[9.881s] writing scan_client.egg-info/PKG-INFO
+[9.890s] writing dependency_links to scan_client.egg-info/dependency_links.txt
+[9.896s] writing entry points to scan_client.egg-info/entry_points.txt
+[9.901s] writing requirements to scan_client.egg-info/requires.txt
+[9.906s] writing top-level names to scan_client.egg-info/top_level.txt
+[9.911s] writing manifest file 'scan_client.egg-info/SOURCES.txt'
+[9.932s] reading manifest file 'scan_client.egg-info/SOURCES.txt'
+[9.968s] writing manifest file 'scan_client.egg-info/SOURCES.txt'
+[10.034s] running build_ext
+[10.038s] Creating /home/ubuntu/ros2ws/install/scan_client/lib/python3.10/site-packages/scan-client.egg-link (link to .)
+[10.046s] Installing scan_client script to /home/ubuntu/ros2ws/install/scan_client/lib/scan_client
+[10.054s] 
+[10.057s] Installed /home/ubuntu/ros2ws/build/scan_client
+[10.063s] running install_data
+[10.068s] creating /home/ubuntu/ros2ws/install/scan_client/share/ament_index
+[10.072s] creating /home/ubuntu/ros2ws/install/scan_client/share/ament_index/resource_index
+[10.079s] creating /home/ubuntu/ros2ws/install/scan_client/share/ament_index/resource_index/packages
+[10.085s] copying resource/scan_client -> /home/ubuntu/ros2ws/install/scan_client/share/ament_index/resource_index/packages
+[10.090s] copying package.xml -> /home/ubuntu/ros2ws/install/scan_client/share/scan_client
+[10.511s] Invoked command in '/home/ubuntu/ros2ws/build/scan_client' returned '0': PYTHONPATH=/home/ubuntu/ros2ws/install/scan_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/scan_client --editable --build-directory /home/ubuntu/ros2ws/build/scan_client/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/scan_client

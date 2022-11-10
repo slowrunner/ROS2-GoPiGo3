@@ -1,0 +1,83 @@
+[0.627s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.628s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb74a3490>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb74a2f20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb74a2f20>>)
+[0.753s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.753s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.754s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.754s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.754s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.754s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.754s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.808s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[0.808s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.809s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.915s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/ubuntu/ros2ws/install
+[0.923s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 184 installed packages in /opt/ros/humble
+[0.928s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.094s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.095s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver', 'symlink_install': True, 'test_result_base': None}
+[1.098s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.113s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.114s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[1.115s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver'
+[1.134s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.134s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.135s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.171s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver
+[8.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver
+[8.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/build/ydlidar_ros2_driver -- -j4 -l4
+[44.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/build/ydlidar_ros2_driver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/build/ydlidar_ros2_driver -- -j4 -l4
+[44.725s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[44.747s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver' for CMake module files
+[44.749s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver' for CMake config files
+[44.750s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/bin'
+[44.750s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[44.751s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[44.752s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/bin'
+[44.757s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[44.761s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[44.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[44.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[44.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[44.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[44.784s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[44.785s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[44.785s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[44.785s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[44.817s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[44.818s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[44.818s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[44.818s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[44.821s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[44.821s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[44.827s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/local_setup.ps1'
+[44.831s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/_local_setup_util_ps1.py'
+[44.837s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/setup.ps1'
+[44.844s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/local_setup.sh'
+[44.846s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/_local_setup_util_sh.py'
+[44.848s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/setup.sh'
+[44.854s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/local_setup.bash'
+[44.856s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/setup.bash'
+[44.862s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/local_setup.zsh'
+[44.863s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ydlidar_ros2_ws/src/ydlidar_ros2_driver/install/setup.zsh'

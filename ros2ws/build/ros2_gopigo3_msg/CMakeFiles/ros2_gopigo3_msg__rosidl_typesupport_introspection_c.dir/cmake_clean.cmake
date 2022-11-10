@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status__type_support.c.o"
+  "CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status__type_support.c.o.d"
+  "CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.c.o"
+  "CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.c.o.d"
+  "CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/srv/detail/spi__type_support.c.o"
+  "CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_gopigo3_msg/srv/detail/spi__type_support.c.o.d"
+  "libros2_gopigo3_msg__rosidl_typesupport_introspection_c.pdb"
+  "libros2_gopigo3_msg__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status__type_support.c"
+  "rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/ros2_gopigo3_msg/msg/detail/motor_status_lr__type_support.c"
+  "rosidl_typesupport_introspection_c/ros2_gopigo3_msg/srv/detail/spi__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/ros2_gopigo3_msg/srv/detail/spi__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/ros2_gopigo3_msg__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,457 @@
+[1.071s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--allow-overriding', 'ros2_gopigo3_msg', '--symlink-install']
+[1.071s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=['ros2_gopigo3_msg'], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff9130fd00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9130f790>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9130f790>>)
+[1.282s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.283s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.284s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ros2ws'
+[1.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.285s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.334s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.335s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extensions ['ignore', 'ignore_ament_install']
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'ignore'
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'ignore_ament_install'
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extensions ['colcon_pkg']
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'colcon_pkg'
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extensions ['colcon_meta']
+[1.336s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'colcon_meta'
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extensions ['ros']
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'ros'
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extensions ['cmake', 'python']
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'cmake'
+[1.337s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'python'
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extensions ['python_setup_py']
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(roslogs) by extension 'python_setup_py'
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.339s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.340s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['ignore', 'ignore_ament_install']
+[1.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ignore'
+[1.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ignore_ament_install'
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['colcon_pkg']
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'colcon_pkg'
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['colcon_meta']
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'colcon_meta'
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extensions ['ros']
+[1.342s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_msg) by extension 'ros'
+[1.351s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_gopigo3_msg' with type 'ros.ament_cmake' and name 'ros2_gopigo3_msg'
+[1.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['ignore', 'ignore_ament_install']
+[1.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ignore'
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ignore_ament_install'
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['colcon_pkg']
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'colcon_pkg'
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['colcon_meta']
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'colcon_meta'
+[1.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extensions ['ros']
+[1.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_gopigo3_node) by extension 'ros'
+[1.356s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_gopigo3_node' with type 'ros.ament_python' and name 'ros2_gopigo3_node'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['ignore', 'ignore_ament_install']
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ignore'
+[1.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ignore_ament_install'
+[1.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['colcon_pkg']
+[1.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'colcon_pkg'
+[1.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['colcon_meta']
+[1.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'colcon_meta'
+[1.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extensions ['ros']
+[1.358s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_libcamera_pub) by extension 'ros'
+[1.361s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_libcamera_pub' with type 'ros.ament_python' and name 'ros2_libcamera_pub'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['ignore', 'ignore_ament_install']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ignore'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ignore_ament_install'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['colcon_pkg']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'colcon_pkg'
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['colcon_meta']
+[1.362s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'colcon_meta'
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extensions ['ros']
+[1.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_client) by extension 'ros'
+[1.369s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scan_client' with type 'ros.ament_python' and name 'scan_client'
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['ignore', 'ignore_ament_install']
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ignore'
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ignore_ament_install'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['colcon_pkg']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'colcon_pkg'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['colcon_meta']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'colcon_meta'
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extensions ['ros']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_gopigo3_keyboard) by extension 'ros'
+[1.373s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_gopigo3_keyboard' with type 'ros.ament_python' and name 'teleop_gopigo3_keyboard'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ignore_ament_install'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_pkg']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_pkg'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['colcon_meta']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'colcon_meta'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extensions ['ros']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar_ros2_driver) by extension 'ros'
+[1.378s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar_ros2_driver' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[1.378s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.527s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.538s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.538s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.538s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ubuntu/ros2ws/install/scan_client' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.539s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ubuntu/ros2ws/install/ros2_libcamera_pub' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.539s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ubuntu/ros2ws/install/ros2_gopigo3_node' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.539s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.540s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.540s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.547s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/ubuntu/ros2ws/install
+[1.557s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 218 installed packages in /opt/ros/humble
+[1.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.763s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_args' from command line to 'None'
+[1.763s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_target' from command line to 'None'
+[1.763s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.763s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.764s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_clean_first' from command line to 'False'
+[1.764s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'cmake_force_configure' from command line to 'False'
+[1.764s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'ament_cmake_args' from command line to 'None'
+[1.764s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.764s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.764s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_gopigo3_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2ws/build/ros2_gopigo3_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg', 'merge_install': False, 'path': '/home/ubuntu/ros2ws/src/ros2_gopigo3_msg', 'symlink_install': True, 'test_result_base': None}
+[1.768s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_args' from command line to 'None'
+[1.768s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_target' from command line to 'None'
+[1.768s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.769s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_clean_cache' from command line to 'False'
+[1.769s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_clean_first' from command line to 'False'
+[1.769s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'cmake_force_configure' from command line to 'False'
+[1.769s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'ament_cmake_args' from command line to 'None'
+[1.769s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'catkin_cmake_args' from command line to 'None'
+[1.769s] Level 5:colcon.colcon_core.verb:set package 'ros2_libcamera_pub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.769s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_libcamera_pub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2ws/build/ros2_libcamera_pub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2ws/install/ros2_libcamera_pub', 'merge_install': False, 'path': '/home/ubuntu/ros2ws/src/ros2_libcamera_pub', 'symlink_install': True, 'test_result_base': None}
+[1.773s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_args' from command line to 'None'
+[1.773s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_target' from command line to 'None'
+[1.773s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.774s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_clean_cache' from command line to 'False'
+[1.774s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_clean_first' from command line to 'False'
+[1.774s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'cmake_force_configure' from command line to 'False'
+[1.774s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'ament_cmake_args' from command line to 'None'
+[1.774s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'catkin_cmake_args' from command line to 'None'
+[1.774s] Level 5:colcon.colcon_core.verb:set package 'scan_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.774s] DEBUG:colcon.colcon_core.verb:Building package 'scan_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2ws/build/scan_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2ws/install/scan_client', 'merge_install': False, 'path': '/home/ubuntu/ros2ws/src/scan_client', 'symlink_install': True, 'test_result_base': None}
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_args' from command line to 'None'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_target' from command line to 'None'
+[1.778s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.779s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_clean_cache' from command line to 'False'
+[1.779s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_clean_first' from command line to 'False'
+[1.779s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'cmake_force_configure' from command line to 'False'
+[1.779s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'ament_cmake_args' from command line to 'None'
+[1.779s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'catkin_cmake_args' from command line to 'None'
+[1.779s] Level 5:colcon.colcon_core.verb:set package 'teleop_gopigo3_keyboard' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.779s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_gopigo3_keyboard' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard', 'merge_install': False, 'path': '/home/ubuntu/ros2ws/src/teleop_gopigo3_keyboard', 'symlink_install': True, 'test_result_base': None}
+[1.783s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_args' from command line to 'None'
+[1.783s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[1.783s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.784s] Level 5:colcon.colcon_core.verb:set package 'ydlidar_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.784s] DEBUG:colcon.colcon_core.verb:Building package 'ydlidar_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2ws/build/ydlidar_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver', 'merge_install': False, 'path': '/home/ubuntu/ros2ws/src/ydlidar_ros2_driver', 'symlink_install': True, 'test_result_base': None}
+[1.788s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_args' from command line to 'None'
+[1.788s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_target' from command line to 'None'
+[1.788s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.789s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_clean_cache' from command line to 'False'
+[1.789s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_clean_first' from command line to 'False'
+[1.789s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'cmake_force_configure' from command line to 'False'
+[1.789s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'ament_cmake_args' from command line to 'None'
+[1.789s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'catkin_cmake_args' from command line to 'None'
+[1.789s] Level 5:colcon.colcon_core.verb:set package 'ros2_gopigo3_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.789s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_gopigo3_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2ws/build/ros2_gopigo3_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2ws/install/ros2_gopigo3_node', 'merge_install': False, 'path': '/home/ubuntu/ros2ws/src/ros2_gopigo3_node', 'symlink_install': True, 'test_result_base': None}
+[1.792s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.807s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.808s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2ws/src/ros2_gopigo3_msg' with build type 'ament_cmake'
+[1.809s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2ws/src/ros2_gopigo3_msg'
+[1.845s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.845s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.846s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.870s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2ws/src/ros2_libcamera_pub' with build type 'ament_python'
+[1.871s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_libcamera_pub', 'ament_prefix_path')
+[1.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/ament_prefix_path.ps1'
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/ament_prefix_path.dsv'
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/ament_prefix_path.sh'
+[1.896s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.896s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.916s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2ws/src/scan_client' with build type 'ament_python'
+[1.917s] Level 1:colcon.colcon_core.shell:create_environment_hook('scan_client', 'ament_prefix_path')
+[1.922s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/hook/ament_prefix_path.ps1'
+[1.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/hook/ament_prefix_path.dsv'
+[1.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/hook/ament_prefix_path.sh'
+[1.934s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.934s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.953s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2ws/src/teleop_gopigo3_keyboard' with build type 'ament_python'
+[1.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_gopigo3_keyboard', 'ament_prefix_path')
+[1.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/ament_prefix_path.ps1'
+[1.963s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/ament_prefix_path.dsv'
+[1.965s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/ament_prefix_path.sh'
+[1.971s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.971s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2ws/src/ros2_gopigo3_msg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2ws/install/ros2_gopigo3_msg
+[3.293s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2ws/src/ros2_libcamera_pub'
+[3.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.669s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2ws/src/scan_client'
+[4.674s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.674s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.084s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2ws/src/teleop_gopigo3_keyboard'
+[6.089s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.090s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard': PYTHONPATH=/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard --editable --build-directory /home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard
+[8.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/scan_client': PYTHONPATH=/home/ubuntu/ros2ws/install/scan_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/scan_client --editable --build-directory /home/ubuntu/ros2ws/build/scan_client/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/scan_client
+[8.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ros2_libcamera_pub': PYTHONPATH=/home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/ros2_libcamera_pub --editable --build-directory /home/ubuntu/ros2ws/build/ros2_libcamera_pub/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/ros2_libcamera_pub
+[12.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_gopigo3_keyboard', 'pythonpath_develop')
+[12.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard' returned '0': PYTHONPATH=/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard --editable --build-directory /home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard
+[12.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath_develop.ps1'
+[12.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath_develop.dsv'
+[12.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath_develop.sh'
+[12.248s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard' for CMake module files
+[12.251s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard' for CMake config files
+[12.256s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/lib'
+[12.258s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/bin'
+[12.259s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/lib/pkgconfig/teleop_gopigo3_keyboard.pc'
+[12.260s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/lib/python3.10/site-packages'
+[12.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_gopigo3_keyboard', 'pythonpath')
+[12.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath.ps1'
+[12.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath.dsv'
+[12.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/hook/pythonpath.sh'
+[12.280s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/bin'
+[12.281s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_gopigo3_keyboard)
+[12.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.ps1'
+[12.296s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.dsv'
+[12.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.sh'
+[12.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.bash'
+[12.310s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/teleop_gopigo3_keyboard/package.zsh'
+[12.314s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard/share/colcon-core/packages/teleop_gopigo3_keyboard)
+[12.318s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2ws/src/ydlidar_ros2_driver' with build type 'ament_cmake'
+[12.319s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2ws/src/ydlidar_ros2_driver'
+[12.325s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.325s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_libcamera_pub', 'pythonpath_develop')
+[12.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath_develop.ps1'
+[12.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ros2_libcamera_pub' returned '0': PYTHONPATH=/home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/ros2_libcamera_pub --editable --build-directory /home/ubuntu/ros2ws/build/ros2_libcamera_pub/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/ros2_libcamera_pub
+[12.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/build/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath_develop.dsv'
+[12.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath_develop.sh'
+[12.379s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_libcamera_pub' for CMake module files
+[12.381s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_libcamera_pub' for CMake config files
+[12.383s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib'
+[12.384s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/bin'
+[12.384s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/pkgconfig/ros2_libcamera_pub.pc'
+[12.385s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/lib/python3.10/site-packages'
+[12.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_libcamera_pub', 'pythonpath')
+[12.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath.ps1'
+[12.393s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath.dsv'
+[12.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/hook/pythonpath.sh'
+[12.401s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/bin'
+[12.401s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_libcamera_pub)
+[12.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.ps1'
+[12.410s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.dsv'
+[12.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.sh'
+[12.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.bash'
+[12.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/ros2_libcamera_pub/package.zsh'
+[12.417s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/ros2_libcamera_pub/share/colcon-core/packages/ros2_libcamera_pub)
+[12.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('scan_client', 'pythonpath_develop')
+[12.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/scan_client/share/scan_client/hook/pythonpath_develop.ps1'
+[12.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/scan_client' returned '0': PYTHONPATH=/home/ubuntu/ros2ws/install/scan_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/scan_client --editable --build-directory /home/ubuntu/ros2ws/build/scan_client/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/scan_client
+[12.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/build/scan_client/share/scan_client/hook/pythonpath_develop.dsv'
+[12.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/scan_client/share/scan_client/hook/pythonpath_develop.sh'
+[12.440s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/scan_client' for CMake module files
+[12.442s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/scan_client' for CMake config files
+[12.445s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/scan_client/lib'
+[12.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/scan_client/bin'
+[12.446s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/scan_client/lib/pkgconfig/scan_client.pc'
+[12.447s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/scan_client/lib/python3.10/site-packages'
+[12.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('scan_client', 'pythonpath')
+[12.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/hook/pythonpath.ps1'
+[12.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/hook/pythonpath.dsv'
+[12.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/hook/pythonpath.sh'
+[12.461s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/scan_client/bin'
+[12.462s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scan_client)
+[12.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/package.ps1'
+[12.470s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/package.dsv'
+[12.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/package.sh'
+[12.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/package.bash'
+[12.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/scan_client/share/scan_client/package.zsh'
+[12.478s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/scan_client/share/colcon-core/packages/scan_client)
+[12.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2ws/install/ydlidar_ros2_driver
+[15.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2ws/src/ros2_gopigo3_msg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2ws/install/ros2_gopigo3_msg
+[15.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2ws/build/ros2_gopigo3_msg -- -j4 -l4
+[24.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2ws/src/ydlidar_ros2_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2ws/install/ydlidar_ros2_driver
+[24.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2ws/build/ydlidar_ros2_driver -- -j4 -l4
+[44.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2ws/build/ros2_gopigo3_msg -- -j4 -l4
+[45.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2ws/build/ros2_gopigo3_msg
+[49.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_gopigo3_msg)
+[49.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2ws/build/ros2_gopigo3_msg
+[49.813s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg' for CMake module files
+[49.819s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg' for CMake config files
+[49.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'cmake_prefix_path')
+[49.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.ps1'
+[49.836s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.dsv'
+[49.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.sh'
+[49.842s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/lib'
+[49.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'ld_library_path_lib')
+[49.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.ps1'
+[49.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.dsv'
+[49.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.sh'
+[49.859s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/bin'
+[49.860s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/lib/pkgconfig/ros2_gopigo3_msg.pc'
+[49.861s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/lib/python3.10/site-packages'
+[49.863s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/bin'
+[49.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.ps1'
+[49.874s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.dsv'
+[49.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.sh'
+[49.880s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.bash'
+[49.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.zsh'
+[49.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/colcon-core/packages/ros2_gopigo3_msg)
+[50.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_gopigo3_msg)
+[50.590s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg' for CMake module files
+[50.595s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg' for CMake config files
+[50.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'cmake_prefix_path')
+[50.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.ps1'
+[50.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.dsv'
+[50.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/cmake_prefix_path.sh'
+[50.618s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/lib'
+[50.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_msg', 'ld_library_path_lib')
+[50.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.ps1'
+[50.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.dsv'
+[50.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/hook/ld_library_path_lib.sh'
+[50.635s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/bin'
+[50.636s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/lib/pkgconfig/ros2_gopigo3_msg.pc'
+[50.637s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/lib/python3.10/site-packages'
+[50.638s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/bin'
+[50.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.ps1'
+[50.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.dsv'
+[50.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.sh'
+[50.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.bash'
+[50.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/ros2_gopigo3_msg/package.zsh'
+[50.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/ros2_gopigo3_msg/share/colcon-core/packages/ros2_gopigo3_msg)
+[50.665s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/ros2ws/src/ros2_gopigo3_node' with build type 'ament_python'
+[50.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_node', 'ament_prefix_path')
+[50.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/ament_prefix_path.ps1'
+[50.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/ament_prefix_path.dsv'
+[50.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/ament_prefix_path.sh'
+[50.694s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[50.694s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[53.019s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/ros2ws/src/ros2_gopigo3_node'
+[53.026s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[53.028s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[55.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_node': CMAKE_PREFIX_PATH=/home/ubuntu/ros2ws/install/ros2_gopigo3_msg:/home/ubuntu/ros2ws/install/ydlidar_ros2_driver PYTHONPATH=/home/ubuntu/ros2ws/install/ros2_gopigo3_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/ros2_gopigo3_node --editable --build-directory /home/ubuntu/ros2ws/build/ros2_gopigo3_node/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/ros2_gopigo3_node
+[59.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_node', 'pythonpath_develop')
+[59.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath_develop.ps1'
+[59.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ros2_gopigo3_node' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/ros2ws/install/ros2_gopigo3_msg:/home/ubuntu/ros2ws/install/ydlidar_ros2_driver PYTHONPATH=/home/ubuntu/ros2ws/install/ros2_gopigo3_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/ubuntu/ros2ws/install/ros2_gopigo3_node --editable --build-directory /home/ubuntu/ros2ws/build/ros2_gopigo3_node/build --no-deps install_data --install-dir /home/ubuntu/ros2ws/install/ros2_gopigo3_node
+[59.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/build/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath_develop.dsv'
+[59.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/build/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath_develop.sh'
+[59.793s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_node' for CMake module files
+[59.796s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_node' for CMake config files
+[59.800s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/lib'
+[59.800s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/bin'
+[59.801s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/lib/pkgconfig/ros2_gopigo3_node.pc'
+[59.803s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/lib/python3.10/site-packages'
+[59.803s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_gopigo3_node', 'pythonpath')
+[59.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath.ps1'
+[59.811s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath.dsv'
+[59.813s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath.sh'
+[59.816s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/bin'
+[59.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_gopigo3_node)
+[59.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.ps1'
+[59.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.dsv'
+[59.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.sh'
+[59.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.bash'
+[59.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/ros2_gopigo3_node/package.zsh'
+[59.835s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/ros2_gopigo3_node/share/colcon-core/packages/ros2_gopigo3_node)
+[73.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2ws/build/ydlidar_ros2_driver -- -j4 -l4
+[73.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2ws/build/ydlidar_ros2_driver
+[74.726s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[74.737s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver' for CMake module files
+[74.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2ws/install/teleop_gopigo3_keyboard:/home/ubuntu/ros2ws/install/scan_client:/home/ubuntu/ros2ws/install/ros2_libcamera_pub:/home/ubuntu/ros2ws/install/ros2_gopigo3_node:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2ws/build/ydlidar_ros2_driver
+[74.741s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver' for CMake config files
+[74.745s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[74.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[74.752s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[74.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[74.755s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/lib'
+[74.756s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/bin'
+[74.756s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[74.757s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[74.758s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/bin'
+[74.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[74.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[74.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[74.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[74.770s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[74.772s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[74.937s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ydlidar_ros2_driver)
+[74.946s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver' for CMake module files
+[74.949s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver' for CMake config files
+[74.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('ydlidar_ros2_driver', 'cmake_prefix_path')
+[74.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.ps1'
+[74.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.dsv'
+[74.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/hook/cmake_prefix_path.sh'
+[74.964s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/lib'
+[74.965s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/bin'
+[74.965s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/lib/pkgconfig/ydlidar_ros2_driver.pc'
+[74.966s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/lib/python3.10/site-packages'
+[74.967s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/bin'
+[74.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.ps1'
+[74.975s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv'
+[74.977s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.sh'
+[74.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.bash'
+[74.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.zsh'
+[74.983s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2ws/install/ydlidar_ros2_driver/share/colcon-core/packages/ydlidar_ros2_driver)
+[74.984s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[74.985s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[74.985s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[74.986s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[75.046s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[75.047s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[75.047s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[75.047s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[75.116s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[75.117s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[75.125s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2ws/install/local_setup.ps1'
+[75.136s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2ws/install/_local_setup_util_ps1.py'
+[75.148s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2ws/install/setup.ps1'
+[75.159s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2ws/install/local_setup.sh'
+[75.162s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2ws/install/_local_setup_util_sh.py'
+[75.164s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2ws/install/setup.sh'
+[75.174s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2ws/install/local_setup.bash'
+[75.177s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2ws/install/setup.bash'
+[75.184s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2ws/install/local_setup.zsh'
+[75.189s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2ws/install/setup.zsh'

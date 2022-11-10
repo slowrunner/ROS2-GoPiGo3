@@ -1,0 +1,18 @@
+teleop_twist_joy_node:
+  ros__parameters:
+    axis_linear:  # Left thumb stick vertical
+      x: 1
+    scale_linear:
+      x: 0.1
+    scale_linear_turbo:
+      x: 0.19   # any more causes arc to right
+
+    axis_angular:  # Left thumb stick horizontal
+      yaw: 0
+    scale_angular:
+      yaw: 1.0  
+    scale_angular_turbo:
+      yaw: 0.25     # slower turning for when going forward fast
+
+    enable_button: 4  # Left Front button
+    enable_turbo_button: 5  # Right Front button

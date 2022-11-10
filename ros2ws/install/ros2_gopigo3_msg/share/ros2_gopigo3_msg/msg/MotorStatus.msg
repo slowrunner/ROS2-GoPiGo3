@@ -1,0 +1,1 @@
+/home/ubuntu/ros2ws/src/ros2_gopigo3_msg/msg/MotorStatus.msg

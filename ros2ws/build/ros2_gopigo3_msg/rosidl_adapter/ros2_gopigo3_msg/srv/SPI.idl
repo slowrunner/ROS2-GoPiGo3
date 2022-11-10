@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ros2_gopigo3_msg/srv/SPI.srv
+// generated code does not contain a copyright notice
+
+
+module ros2_gopigo3_msg {
+  module srv {
+    struct SPI_Request {
+      @verbatim (language="comment", text=
+        "sent byte array")
+      sequence<uint8> data_out;
+    };
+    struct SPI_Response {
+      @verbatim (language="comment", text=
+        "received byte array")
+      sequence<uint8> data_in;
+    };
+  };
+};

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: teleop-gopigo3-keyboard
+Version: 2.3.2
+Summary: A GoPiGo3 teleoperation node to convert keyboardcommands to Twist messages.
+Home-page: UNKNOWN
+Author: mods Alan McDonley
+Maintainer: slowrunner
+Maintainer-email: slowrunner@noreply.com
+License: BSD
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: BSD
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+
+UNKNOWN
+

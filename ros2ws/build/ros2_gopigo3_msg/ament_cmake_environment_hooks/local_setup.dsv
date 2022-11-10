@@ -1,0 +1,4 @@
+source;share/ros2_gopigo3_msg/environment/ament_prefix_path.sh
+source;share/ros2_gopigo3_msg/environment/library_path.sh
+source;share/ros2_gopigo3_msg/environment/path.sh
+source;share/ros2_gopigo3_msg/environment/pythonpath.sh

@@ -1,0 +1,132 @@
+<?xml version='1.0'?>
+
+<!-- FILE: gpgMin.urdf -->
+
+<!-- maintainer: slowrunner@users.noreply.github.com -->
+
+<!-- GoPiGo3 as a 220mm long,  104mm wide, 70mm high enclosing box (blue) -->
+<!--   with a 3/4 inch castor holding the chassis level (blue) -->
+<!--   with 65mm dia 25mm wide wheels (black) spaced 116mm (Wheel base) apart -->
+<!--   The wheels are 20mm forward of the chassis center -->
+
+<robot name="gpgMin">
+
+  <material name="yellow">
+    <color rgba="1 1 0 0.5"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0 0.5 1 0.5"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0 1 0 0.5"/>
+  </material>
+
+  <material name="red">
+    <color rgba="1 0 0 0.5"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1 1 1 0.5"/>
+  </material>
+
+
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.001"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+
+    <!-- Base Plate -->
+    <visual name="base_plate">
+      <origin xyz="-0.017 0 0.047" rpy="0 0 0" />
+      <geometry>
+          <box size="0.216 0.103 0.004"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+
+    <!-- Level 2 Plate -->
+    <visual name="level_2_plate">
+      <origin xyz="0 0 0.096" rpy="0 0 0" />
+      <geometry>
+          <box size="0.128 0.103 0.004"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+
+    <!-- Caster -->
+    <visual name="caster">
+      <origin xyz="-0.114 0 -0.01" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.01" />
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>    <!-- END OF BASE_LINK -->
+
+  <!-- Right Wheel -->
+  <link name="right_wheel">
+    <visual>
+      <origin xyz="0 0 0" rpy="1.570795 0 0" />
+      <geometry>
+          <cylinder length="0.025" radius="0.033385" />
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 0.5"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="joint_right_wheel" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin xyz="0.0 -0.058 0.033385" rpy="0 0 0" /> 
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- Left Wheel -->
+  <link name="left_wheel">
+    <visual>
+      <origin xyz="0 0 0" rpy="1.570795 0 0" />
+      <geometry>
+          <cylinder length="0.025" radius="0.0325" />
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+  
+  <joint name="joint_left_wheel" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin xyz="0.0 0.058 0.033385" rpy="0 0 0" /> 
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- LIDAR -->
+  <link name="laser_frame">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.020" radius="0.0325" />
+      </geometry>
+      <material name="yellow">
+        <color rgba="1 1 0 0.5"/>
+      </material>
+    </visual>
+  </link>
+  
+  <joint name="joint_ydlidar" type="fixed">
+    <parent link="base_link"/>
+    <child link="laser_frame"/>
+    <origin xyz="-0.014 0 0.110" rpy="0 0 0" /> 
+  </joint>
+
+
+</robot>

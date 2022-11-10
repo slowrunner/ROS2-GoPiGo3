@@ -1,0 +1,9 @@
+source;share/ros2_gopigo3_node/hook/pythonpath.ps1
+source;share/ros2_gopigo3_node/hook/pythonpath.dsv
+source;share/ros2_gopigo3_node/hook/pythonpath.sh
+source;share/ros2_gopigo3_node/hook/ament_prefix_path.ps1
+source;share/ros2_gopigo3_node/hook/ament_prefix_path.dsv
+source;share/ros2_gopigo3_node/hook/ament_prefix_path.sh
+source;../../build/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath_develop.ps1
+source;../../build/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath_develop.dsv
+source;../../build/ros2_gopigo3_node/share/ros2_gopigo3_node/hook/pythonpath_develop.sh

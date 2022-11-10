@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ros2-libcamera-pub
+Version: 2.3.2
+Summary: A hack to publish camera images on Unbuntu 22.04
+Home-page: UNKNOWN
+Author: slowrunner
+Maintainer: slowrunner
+Maintainer-email: slowrunner@noreply.com
+License: BSD
+Keywords: ROS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: BSD
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+
+UNKNOWN
+

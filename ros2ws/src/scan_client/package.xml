@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>scan_client</name>
+  <version>0.1.0</version>
+  <description>
+    A ROS2 node to display four cardinal scan distances
+  </description>
+
+  <maintainer email="slowrunner@noreply.github.com">slowrunner</maintainer>
+
+  <license>BSD License 2.0</license>
+
+  <url type="website"></url>
+
+  <author email="slowrunner@noreply.github.com">slowrunner</author>
+  <author>slowrunner</author>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
