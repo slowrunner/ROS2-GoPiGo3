@@ -316,5 +316,5 @@ Follow the steps in [Tuning The ROS2 GoPiGo3](Tuning_ROS2_GoPiGo3.md)
 
 ## VISUALIZATION FOR ROS2 GoPiGo3  
 If you have a ROS2 Desktop environment available:  
-See [ROS2 GoPiGo3 Visualization](ros2desk/ROS2_GoPiGo3_Visualization.md)  
+See [ROS2 GoPiGo3 Visualization](../ros2desk/ROS2_GoPiGo3_Visualization.md)  
 
