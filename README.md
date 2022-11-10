@@ -15,7 +15,7 @@ The ROS2 GoPiGo3 Install covers:
   - ROS2 Desktop Visualization
 
 # Two methods:  
-1) [RECOMMENDED: INSTALL FROM IMAGE](INSTALL_FROM_IMAGE.md) 
+1) [RECOMMENDED: INSTALL FROM IMAGE](Docs/INSTALL_FROM_IMAGE.md) 
 
   
-2) [Directed Install](Directed_Install.md)
+2) [[obsolete]Directed Install](Docs/Directed_Install.md)
