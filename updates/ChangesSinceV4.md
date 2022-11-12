@@ -24,3 +24,11 @@ Apply fix:
    cp ydlidar.yaml ydlidar.yaml.v4
    wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/updates/ydlidar.yaml
 ```
+## Image does not have swapfile setup
+Apply fix:
+```
+cd ~/utils
+wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/utils/make1GBswapfile.sh
+chmod +x make1GBswapfile.sh
+./make1GBswapfile.sh
+```
