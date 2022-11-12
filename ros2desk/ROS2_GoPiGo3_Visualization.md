@@ -144,6 +144,8 @@ Traceback (most recent call last):
     raise CalledProcessError(retcode, process.args,
 subprocess.CalledProcessError: Command '['libcamera-jpeg --rotation 180 --brightness 0.1 --contrast 1.1 -o /home/ubuntu/ros2ws/src/ros2_libcamera_pub/image_to_pub.jpg']' returned non-zero exit status 255.
 [ros2run]: Process exited with failure 1
+
+
 ubuntu@ROS2HH:~/ros2ws$ libcamera-jpeg -o x.jpg
 Preview window unavailable
 [0:07:15.576771418] [2844]  INFO Camera camera_manager.cpp:293 libcamera v0.0.0+4019-7c855784
@@ -153,6 +155,8 @@ Preview window unavailable
 [0:07:20.791637945] [2844]  INFO Camera camera.cpp:1026 configuring streams: (0) 2592x1944-YUV420 (1) 2592x1944-SGBRG10_CSI2P
 [0:07:20.793938692] [2845]  INFO RPI raspberrypi.cpp:800 Sensor: /base/soc/i2c0mux/i2c@1/ov5647@36 - Selected sensor format: 2592x1944-SGBRG10_1X10 - Selected unicam format: 2592x1944-pGAA
 Still capture image received
+
+
 ubuntu@ROS2HH:~/ros2ws$ ./start_image_pub.sh 
 
 *** Start Camera image pub Node
