@@ -14,4 +14,6 @@ echo "*** Custom built libcamera"
 
 echo "*** YDLIDAR-SDK version 1.1.2"
 
+echo "v4 Updates applied 12 Nov 2022"
+
 
