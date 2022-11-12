@@ -77,4 +77,16 @@ throttled=0x0
 Mem:           1.8Gi       1.6Gi        77Mi       7.0Mi       173Mi        91Mi
 Swap:          1.0Gi       653Mi       370Mi
 GoPiGo3 Battery Voltage: 12.6 volts
+
+
+********** ROS2 GoPiGo3 MONITOR ******************************
+Saturday 11/12/22
+ 09:23:24 up  1:01,  2 users,  load average: 0.35, 0.21, 0.12
+temp=52.5'C
+frequency(48)=1700419968
+throttled=0x0
+               total        used        free      shared  buff/cache   available
+Mem:           1.8Gi       183Mi       1.5Gi       7.0Mi       172Mi       1.5Gi
+Swap:          1.0Gi       3.0Mi       1.0Gi
+GoPiGo3 Battery Voltage: 12.5 volts
 ``` 
