@@ -1,5 +1,6 @@
 # SETUP 1: Ubuntu 22.04 LTS Server and GoPiGo3 on Pi4 2GB+
 
+11/12/2022 Added /swapfile creation
 10/13/2022 Mod for slowrunner/ROS2-GoPiGo3  
 10/12/2022 Initial  
 
@@ -138,6 +139,20 @@ $ sudo apt upgrade -y
 
 
 ==== Setup zswap (Speed improvement for compiles, and needed for Pi4 2GB to run a desktop GUI)  
+
+echo -e "\n*** Creating 1GB Swapfile"
+sudo swapoff /swapfile
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+if ! grep -q '/swapfile' /etc/fstab; then
+    sudo su -c "echo '/swapfile swap swap defaults 0 0' >> /etc/fstab"
+fi
+echo "*** 1GB swapfile created"
+free -h
+echo "Does it show Swap now?"
+
 
 sudo nano /boot/firmware/cmdline.txt  
   add to end of line:  
