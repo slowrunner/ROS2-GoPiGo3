@@ -41,14 +41,14 @@ chmod +x use1GB.py
 $ sudo reboot now
 
 ## Test Swapfile
-In another shell start monitoring memory use:  
+In one shell start monitoring memory use:  
 
 ```
 cd ~/ros2ws
 ./monitor.sh
 ```
 
-In the first shell:  
+In a second shell:  
 
 ```
 ~/systests/swap/use1GB.py
