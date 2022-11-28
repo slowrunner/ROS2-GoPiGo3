@@ -37,8 +37,10 @@ cd swap
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/systests/swap/use1GB.py
 chmod +x use1GB.py
 ```
+## REBOOT
+$ sudo reboot now
 
-# Test Swapfile
+## Test Swapfile
 In another shell start monitoring memory use:  
 
 ```
