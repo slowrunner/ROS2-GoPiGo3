@@ -1,6 +1,6 @@
 # Changes since v4
 
-## my_mapper_params_online_async.yaml: 0.01 is better value for resolution  
+## === my_mapper_params_online_async.yaml: 0.01 is better value for resolution  
 Fix: Edit ~/ros2ws/my_mapper_parames_online_async.yaml  
           change line:  
 ```          
@@ -9,7 +9,7 @@ Fix: Edit ~/ros2ws/my_mapper_parames_online_async.yaml
                 resolution: 0.01
 ```
 
-## odometer.py only detects forward/backward motion, but not spins.  
+## === odometer.py only detects forward/backward motion, but not spins.  
 Apply fix:  
 ```
     cd ~/ros2ws/src/ros2_gopigo3_node/ros2_gopigo3_node
@@ -17,15 +17,15 @@ Apply fix:
     wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/updates/odometer.py
 ```
 
-## YDLidar X4 returning zero 25% of readings
+## === YDLidar X4 returning zero 25% of readings
 Apply fix:
 ```
    cd ~/ros2ws/src/ydlidar_ros2_driver/params
    cp ydlidar.yaml ydlidar.yaml.v4
    wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/updates/ydlidar.yaml
 ```
-## Image does not have swapfile setup
-Apply fix:
+## === Image does not have swapfile setup  
+Apply fix:  
 ```
 cd ~/utils
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/utils/make1GBswapfile.sh
@@ -37,18 +37,18 @@ cd swap
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/systests/swap/use1GB.py
 chmod +x use1GB.py
 ```
-## REBOOT
-$ sudo reboot now
+Reboot before continuing:  
+$ sudo reboot now  
 
-## Test Swapfile
-In one shell start monitoring memory use:  
+Test Swapfile:  
+- In one shell start monitoring memory use:  
 
 ```
 cd ~/ros2ws
 ./monitor.sh
 ```
 
-In a second shell:  
+- In a second shell:  
 
 ```
 ~/systests/swap/use1GB.py
@@ -92,3 +92,6 @@ Mem:           1.8Gi       183Mi       1.5Gi       7.0Mi       172Mi       1.5Gi
 Swap:          1.0Gi       3.0Mi       1.0Gi
 GoPiGo3 Battery Voltage: 12.5 volts
 ``` 
+
+# === Next: Test ROS2 GoPiGo3 (and Learn A Little About ROS2!)  
+- Follow steps in [Test_ROS2_GoPiGo3.md](Test_ROS2_GoPiGo3.md) 
