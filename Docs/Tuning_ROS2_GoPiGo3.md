@@ -104,7 +104,7 @@ Note the updated wheel diameter is displayed with the default wheel base value.
 3) Select rviz2:Move Camera  
   - mouse-drag down to be looking straight down on bot  
   - shift mouse to put grid-cross under the wheels in center of big yellow circle in center of window  
- <img src="ros2desk/CenterBot.jpg" width="350"/>  
+ <img src="../Graphics/CenterBot.jpg" width="350"/>  
  
 4) Select rviz2:Measure  
   - left click on grid crossing at center of bot  
@@ -112,7 +112,7 @@ Note the updated wheel diameter is displayed with the default wheel base value.
   - Note distance to front wall displayed in lower left  
     (This is base_link-to-laser_frame X-distance plus /scan distance: laser_frame to front wall)  
     Visualization Distance from center of bot (base_link) to front wall: ______ mm  
-<img src="ros2desk/MeasureToFrontWall.jpg" width="400"/>  
+<img src="../Graphics/MeasureToFrontWall.jpg" width="400"/>  
 
   - right click to reset/clear measurement  
   - left click on grid crossing at center of bot/grid cross  
@@ -120,7 +120,7 @@ Note the updated wheel diameter is displayed with the default wheel base value.
   - Note distance to side wall displayed in lower left  
     (This is base_link-to-laser_frame Y-distance plus /scan distance: laser_frame to side wall)  
     Visualization Distance from center of bot (base_link) to front wall: ______ mm  
- <img src="ros2desk/MeasureToSideWall.jpg" width="400"/>  
+ <img src="../Graphics/MeasureToSideWall.jpg" width="400"/>  
  
   - If the displayed measurement is larger than the physical measurement,  
     decrease the appropriate x or y value (x to front wall, y to side wall)  
