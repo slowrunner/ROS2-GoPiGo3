@@ -327,9 +327,117 @@ Follow the steps in [Tuning The ROS2 GoPiGo3](Tuning_ROS2_GoPiGo3.md)
 
 [See Reference](Reference.md)
 
-# ADVANCED USERS:
+# === ADVANCED USERS:
 
-## VISUALIZATION FOR ROS2 GoPiGo3  
+## Check LIDAR Scan Reliability  
+For a robot that has YDLIDAR X4 with motor closest to front of robot:  
+1) Place the robot in its "playground"   
+such that distance to left, right, front, and rear walls or obstacle is greater than 12cm and less than 10 meters  
+
+Those distances are from /scan.range_min and /scan.range_max which ```./echo_lidar_topic.sh``` will show:  
+```
+ubuntu@ROS2HH:~/ros2ws$ ./echo_lidar_topic.sh 
+
+*** Capturing one ydLidar topic (flow-style):
+*** ros2 topic echo --once --flow-style /scan
+header:
+  stamp:
+    sec: 1669647351
+    nanosec: 329139000
+  frame_id: laser_frame
+angle_min: -3.1415927410125732
+angle_max: 3.1415927410125732         
+angle_increment: 0.011219973675906658
+time_increment: 0.00020015845075249672
+scan_time: 0.11368999630212784
+range_min: 0.11999999731779099               <<--- 120 mm
+range_max: 10.0                              <<--- 10 meters
+...
+```
+2) In one shell: Start LIDAR scanning, either with:  
+  - ./start_robot_finmark.sh | ./start_robot_dave.sh  
+or with:  
+  - ./start_scan_ydlidar_x4.sh  
+```
+ubuntu@ROS2HH:~/ros2ws$ ./start_ydlidar_x4.sh 
+
+*** Switching to ~/ros2ws
+
+*** Sourcing install/setup.bash
+
+*** Start YDLidar X4 node
+*** ros2 launch ydlidar_ros2_driver ydlidar_launch.py
+[INFO] [launch]: All log files can be found below /home/ubuntu/ros2ws/roslogs/2022-11-28-09-40-37-082133-ROS2HH-1639
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ydlidar_ros2_driver_node-1]: process started with pid [1651]
+[ydlidar_ros2_driver_node-1] [INFO] [1669646437.971762738] [ydlidar_ros2_driver_node]: [YDLIDAR INFO] Current ROS Driver Version: 1.0.2
+[ydlidar_ros2_driver_node-1] 
+[ydlidar_ros2_driver_node-1] YDLidar SDK initializing
+[ydlidar_ros2_driver_node-1] YDLidar SDK has been initialized
+[ydlidar_ros2_driver_node-1] [YDLIDAR]:SDK Version: 1.1.2
+[ydlidar_ros2_driver_node-1] LiDAR successfully connected
+[ydlidar_ros2_driver_node-1] [YDLIDAR]:Lidar running correctly ! The health status: good
+[ydlidar_ros2_driver_node-1] [YDLIDAR] Connection established in [/dev/ttyUSB0][128000]:
+[ydlidar_ros2_driver_node-1] Firmware version: 1.10
+[ydlidar_ros2_driver_node-1] Hardware version: 1
+[ydlidar_ros2_driver_node-1] Model: X4
+[ydlidar_ros2_driver_node-1] Serial: 2020062200002315
+[ydlidar_ros2_driver_node-1] LiDAR init success, Elapsed time 692 ms
+[ydlidar_ros2_driver_node-1] Start to getting intensity flag
+[ydlidar_ros2_driver_node-1] End to getting intensity flag
+[ydlidar_ros2_driver_node-1] [CYdLidar] Successed to start scan mode, Elapsed time 2074 ms
+[ydlidar_ros2_driver_node-1] [YDLIDAR] Fixed Size: 561
+[ydlidar_ros2_driver_node-1] [YDLIDAR] Sample Rate: 5K
+[ydlidar_ros2_driver_node-1] [YDLIDAR INFO1] Current Sampling Rate : 5K
+[ydlidar_ros2_driver_node-1] [YDLIDAR INFO] Now YDLIDAR is scanning ......
+
+```
+3) In a second shell:  Start scan_client:
+  - ./start_scan_client.sh
+```
+ubuntu@ROS2HH:~/ros2ws$ ./start_scan_client.sh 
+
+*** Switching to ~/ros2ws
+
+*** Sourcing install/setup.bash
+
+*** Start Scan Client node
+*** ros2 run scan_client scan_client
+
+*** /scan topic subscriber created
+
+
+************* DEBUG 0 **********
+*** Entering Scan Client Callback
+*** angle_min: -180 max: 180 increment: 0.64
+
+*** range[561] index - left 420 front 279 back 560 right 140
+
+left: 0.329 cnt: 1              <<--- THESE SHOULD ALL BE GOING UP ROUGHLY EQUALLY
+
+front: 0.404 cnt: 1             <<---
+
+back: 0.300 cnt: 1              <<---
+
+right: 0.385 cnt: 1             <<---
+
+scan_msg.ranges[277]: 0.403 always 0? no     <<--- THESE SHOULD QUICKLY ALL SAY NO 
+scan_msg.ranges[278]: 0.404 always 0? no     <<---
+scan_msg.ranges[279]: 0.404 always 0? no     <<---
+scan_msg.ranges[280]: 0.404 always 0? no     <<---
+scan_msg.ranges[281]: 0.406 always 0? no     <<---
+************* DEBUG **********
+
+left: 0.329 front: 0.404 back: 0.300 right: 0.385   <<--- These are distances from the center of the LIDAR
+
+```
+4) Ctrl-C in scan_client shell to stop it
+5) If LIDAR started with start_ydlidar_x4.sh:  Ctrl-C in start_ydlidar_x4.sh shell 
+
+
+
+
+# === VISUALIZATION FOR ROS2 GoPiGo3  
 If you have a ROS2 Desktop environment available:  
 See [ROS2 GoPiGo3 Visualization](../ros2desk/ROS2_GoPiGo3_Visualization.md)  
 
