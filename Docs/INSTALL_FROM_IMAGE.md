@@ -153,6 +153,9 @@ GOPIGO3 should:
 *** NOT A PROBLEM IF DID NOT TURN TO EXACT 90 and -90 HEADINGS  
 ```
 
-## 7) Test ROS2 GoPiGo3 (and Learn A Little About ROS2!)  
-- Follow steps in [Test_ROS2_GoPiGo3.md](Test_ROS2_GoPiGo3.md)  
+## 7) === APPLY UPDATES 
+Please apply the updates described on this page:
+[Changes Since V4](https://github.com/slowrunner/ROS2-GoPiGo3/blob/main/updates/ChangesSinceV4.md)
+
+ 
 
