@@ -266,6 +266,7 @@ pose:
 # TEST 3 - MONITOR MEMORY AND CPU 
 
 - In a separate ssh shell: Type ```./monitor.sh```  
+
 ```
 ********** ROS2 GoPiGo3 MONITOR ******************************
 Thursday 11/03/22
@@ -275,9 +276,23 @@ frequency(48)=1300324224
 throttled=0x0
                total        used        free      shared  buff/cache   available
 Mem:           1.8Gi       308Mi       1.2Gi        10Mi       300Mi       1.3Gi
-Swap:             0B          0B          0B
+Swap:             0B          0B          0B             <<<----- SWAP FIX NOT APPLIED??
 GoPiGo3 Battery Voltage: 11.3 volts
 
+```
+
+If swap is properly set up, should see 1.0Gi total swap:
+```
+********** ROS2 GoPiGo3 MONITOR ******************************
+Monday 11/28/22
+ 09:12:38 up 1 min,  1 user,  load average: 1.03, 0.39, 0.14
+temp=32.6'C
+frequency(48)=1300324224
+throttled=0x0
+               total        used        free      shared  buff/cache   available
+Mem:           1.8Gi       176Mi       1.4Gi       7.0Mi       260Mi       1.5Gi
+Swap:          1.0Gi          0B       1.0Gi                  <<<----- SWAP PROPERLY SETUP
+GoPiGo3 Battery Voltage: 11.9 volts
 ```
 
 # TEST 4 - (If your GoPiGo3 has a "Servo 1"): PUBLISHING COMMAND TOPICS TO THE ROS2 GOPIGO3  
