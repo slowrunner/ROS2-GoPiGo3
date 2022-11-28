@@ -94,4 +94,4 @@ GoPiGo3 Battery Voltage: 12.5 volts
 ``` 
 
 # === Next: Test ROS2 GoPiGo3 (and Learn A Little About ROS2!)  
-- Follow steps in [Test_ROS2_GoPiGo3.md](Test_ROS2_GoPiGo3.md) 
+- Follow steps in [Test_ROS2_GoPiGo3.md](https://github.com/slowrunner/ROS2-GoPiGo3/blob/main/Docs/Test_ROS2_GoPiGo3.md) 
