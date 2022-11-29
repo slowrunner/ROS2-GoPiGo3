@@ -80,3 +80,63 @@
 
 - versions.sh
 ```
+
+# ROS2 GoPiGo3 Node
+The ROS2 GoPiGo3 node (gopigo3_node) publishes the following topics at 30Hz:
+```
+  Publishers:
+    /battery_voltage: std_msgs/msg/Float64
+    /joint_states: sensor_msgs/msg/JointState
+    /motor/encoder/left: std_msgs/msg/Float64
+    /motor/encoder/right: std_msgs/msg/Float64
+    /motor/status: ros2_gopigo3_msg/msg/MotorStatusLR
+    /odom: nav_msgs/msg/Odometry
+    /tf: tf2_msgs/msg/TFMessage
+```
+and subscribes to the following "command" topics:
+```
+  Subscribers:
+    /cmd_vel: geometry_msgs/msg/Twist
+    /led/blinker/left: std_msgs/msg/UInt8
+    /led/blinker/right: std_msgs/msg/UInt8
+    /led/eye/left: std_msgs/msg/ColorRGBA
+    /led/eye/right: std_msgs/msg/ColorRGBA
+    /led/wifi: std_msgs/msg/ColorRGBA
+    /motor/dps/both: std_msgs/msg/Int16
+    /motor/dps/left: std_msgs/msg/Int16
+    /motor/dps/right: std_msgs/msg/Int16
+    /motor/position/both: std_msgs/msg/Int16
+    /motor/position/left: std_msgs/msg/Int16
+    /motor/position/right: std_msgs/msg/Int16
+    /motor/pwm/both: std_msgs/msg/Int8
+    /motor/pwm/left: std_msgs/msg/Int8
+    /motor/pwm/right: std_msgs/msg/Int8
+    /servo/position/S1: std_msgs/msg/Float64
+    /servo/position/S2: std_msgs/msg/Float64
+    /servo/pulse_width/S1: std_msgs/msg/Int16
+    /servo/pulse_width/S2: std_msgs/msg/Int16
+```
+and offers the following "services":
+```
+  Service Servers:
+    /gopigo3_node/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /gopigo3_node/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /gopigo3_node/get_parameters: rcl_interfaces/srv/GetParameters
+    /gopigo3_node/list_parameters: rcl_interfaces/srv/ListParameters
+    /gopigo3_node/set_parameters: rcl_interfaces/srv/SetParameters
+    /gopigo3_node/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+    /odom/reset: std_srvs/srv/Trigger
+    /power/off: std_srvs/srv/Trigger
+    /power/on: std_srvs/srv/Trigger
+    /reset: std_srvs/srv/Trigger
+    /spi: ros2_gopigo3_msg/srv/SPI
+```
+
+# IMU Node
+The ROS2 GoPiGo3 IMU Node (imu_sensor) reads the BNO055 9DOF with 100Hz fusion processor IMU at 30Hz and publishes:
+```
+/imu_sensor/imu [sensor_msgs/msg/Imu]
+/imu_sensor/magnetometer [sensor_msgs/msg/MagneticField]  (actual rate of change is 20Hz)
+/imu_sensor/temp [sensor_msgs/msg/Temperature]
+/tf [tf2_msgs/msg/TFMessage]
+```
