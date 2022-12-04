@@ -25,9 +25,9 @@ import subprocess
 from easygopigo3 import EasyGoPiGo3
 
 
-SAFETY_SHUTDOWN_vBatt = 9.25   #  ~15m before battery cutoff
+SAFETY_SHUTDOWN_vBatt = 9.2   #  ~15m before battery cutoff
 REV_PROTECT_DIODE = 0.7
-WARNING_LOW_vBatt = 9.45       # Give ~10 minutes Advance Warning before safety shutdown
+WARNING_LOW_vBatt = 9.3       # Give ~10 minutes Advance Warning before safety shutdown
 # WARNING_LOW_vBatt = 11.4       # testing
 
 DEBUG = False
@@ -73,7 +73,7 @@ class SafetyNode(Node):
     self.loghandler.setFormatter(self.logformatter)
     self.safetyLog.addHandler(self.loghandler)
 
-    self.safetyLog.info('ROS2_GoPiGo3 Safety Shutdown Node Started')
+    self.safetyLog.info('ROS2_GoPiGo3 Safety Node Started')
 
 
     period_for_timer = 60.0  # Once every 60 seconds
@@ -133,7 +133,7 @@ class SafetyNode(Node):
           sys.exit(0)
 
       if self.vBatt < WARNING_LOW_vBatt:
-          phrase = "Battery {:2.1f} volts".format(self.vBatt)
+          phrase = "Warning, Battery {:2.1f} volts".format(self.vBatt)
           vol = 30
           # subprocess.check_output(['espeak-ng -s150 -ven-us+f5 -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
           subprocess.Popen(['espeak-ng -s150 -ven-us -a'+str(vol)+' "%s"' % phrase], stderr=subprocess.STDOUT, shell=True)
