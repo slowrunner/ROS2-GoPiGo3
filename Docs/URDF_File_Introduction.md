@@ -25,7 +25,7 @@ URDF: Unified Robot Description Format
 
 These are a few of the XML elements from the Minimal ROS2 GoPiGo3 URDF file gpgMin.urdf:  
 
-<img src="Graphics/URDF_gpgMin.jpg" width="640"/>  
+<img src="../Graphics/URDF_gpgMin.jpg" width="640"/>  
 
 Even if a GoPiGo3 robot does not have a LiDAR, ROS will know about the parts that do exist to keep track of where the robot (base_link / “robot frame” ) is in the world frame
 - when the “odometry function” announces a change (in a /odom topic message)
@@ -38,17 +38,17 @@ The gpgMin.urdf file includes an example LiDAR mounting position that would need
 These are the three URDF examples included in the ROS2 GoPiGo3 uSDcard image:
 
 gpgMin.urdf  
-<img src="Graphics/gpgMin_urdf.jpg" width="320"/>  
+<img src="../Graphics/gpgMin_urdf.jpg" width="320"/>  
 
 finmark.urdf  
-<img src="Graphics/finmark_urdf.jpg" width="320"/>  
+<img src="../Graphics/finmark_urdf.jpg" width="320"/>  
 
 dave.urdf (no jokes please - I didn’t model Dave’s pants and his goggles)  
-<img src="Graphics/dave_urdf.jpg" width="320"/>  
+<img src="../Graphics/dave_urdf.jpg" width="320"/>  
 
-<img src="Graphics/Dave_LFQtr.jpg" width="320"/>  
+<img src="../Graphics/Dave_LFQtr.jpg" width="320"/>  
  
 
 This is the URDF file of Bernardo R Japon, the author of the “Hands On ROS: ROS For Robotics Programming” showing the use of xacro to the fullest:  
 
-<img src="Graphics/HandsOnROS_gopigo3_urdf.jpg" width="320"/>  
+<img src="../Graphics/HandsOnROS_gopigo3_urdf.jpg" width="320"/>  
