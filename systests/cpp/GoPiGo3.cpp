@@ -18,6 +18,8 @@ GoPiGo3::GoPiGo3(){
     }
   }
   Address = 8;
+
+  load_robot_constants();
 }
 
 int GoPiGo3::spi_read_8(uint8_t msg_type, uint8_t &value){
@@ -190,6 +192,118 @@ int GoPiGo3::get_id(char *str){
   for(int i = 0; i < 16; i++){
     sprintf((str + (i * 2)), "%02X", spi_array_in[i + 4]);
   }
+  return ERROR_NONE;
+}
+
+
+bool GoPiGo3::check_serial_number_for_16_ticks(std::string serial_file_path){
+
+    // Returns true if GoPiGo3 serial is in file "/home/pi/Dexter/.list_of_serial_numbers.pkl"
+    char serial[33] = "00000000000000000000000000000000";
+    get_id(serial);
+    std::string serials;
+
+    // Read serials file into string
+    std::ifstream file(serial_file_path);
+    if(file.is_open()) {
+        std::stringstream buffer;
+        buffer << file.rdbuf();
+        serials = buffer.str();
+    }
+
+    bool key_found = (serials.find(serial) != std::string::npos);
+    return key_found;
+}
+
+int GoPiGo3::load_robot_constants(std::string config_file_path){
+
+    // loads GoPiGo3 constants from /home/pi/Dexter/gpg3_config.json if exists
+    // otherwise sets default constants based on presence of serial in /home/pi/Dexter/.list_of_serial_numbers.pkl file
+
+    std::string keys[4] = {"wheel-diameter", "wheel-base-width", "ticks", "motor_gear_ratio"};
+
+    // create a JSON string object from the file
+    //    /home/pi/Dexter/gpg3_config.json
+    //    {"wheel-diameter": 66.1, "wheel-base-width": 105.59, "ticks": 16, "motor_gear_ratio": 120}
+    std::string gpg3_config;
+    std::ifstream input(config_file_path);
+    std::stringstream buffer;
+    input >> buffer.rdbuf();
+    gpg3_config = buffer.str();
+
+    // std::cout << "gpg3_config: " << '"'+gpg3_config+'"' << std::endl;
+
+
+
+    // replace a occurances of close-brace with comma to make value extraction consistent for last key:value
+    replace(gpg3_config.begin(), gpg3_config.end(), '}', ',');
+
+    // print string
+    // std::cout << gpg3_config << '\n';
+    // count elements
+    // auto n_keys = count(gpg3_config.cbegin(), gpg3_config.cend(), ':');
+    // std::cout << "n_keys in gpg3_config: " << n_keys << std::endl;
+
+    std::string value_string;
+    // test if key found in string
+    for (auto &&key: keys){
+        // std::cout << "\nprocessing key: " << key << std::endl;
+        auto pos_key = gpg3_config.find(key);
+        // std::cout << std::boolalpha << "key: " << '"'+key+'"' << " found: " << (pos_key != string::npos) << std::endl;
+        if (pos_key != std::string::npos){
+            auto key_string = gpg3_config.substr(pos_key);
+            // std::cout << "key_string: " << '"'+key_string+'"' << std::endl;
+            auto pos_colon = key_string.find(':');
+            // std::cout << std::boolalpha << "colon found:" << (pos_colon != std::string::npos) << std::endl;
+            // std::cout << "pos_colon: " << pos_colon << std::endl;
+            value_string = key_string.substr(pos_colon+1);
+            auto pos_comma = value_string.find(',');
+            // std::cout << std::boolalpha << "comma found:" << (pos_comma != std::string::npos) << std::endl;
+            // std::cout << "pos_comma: " << pos_comma << std::endl;
+
+            value_string = value_string.substr(0, pos_comma);
+            // std::cout << key << ": value_string: " << '"'+value_string+'"' << std::endl;
+        }
+        if (key == keys[0]) { // "wheel-diameter":
+            if (pos_key == std::string::npos)
+              WHEEL_DIAMETER = 66.500;
+            else
+              WHEEL_DIAMETER = stof(value_string);
+            // std::cout << std::fixed << std::setprecision(3) << "wheel_diameter: " << WHEEL_DIAMETER << std::endl;
+        }
+        else if (key == keys[1]) {  // "wheel-base-width"
+            if (pos_key == std::string::npos)
+              WHEEL_BASE_WIDTH = 117.000;
+            else
+              WHEEL_BASE_WIDTH = stof(value_string);
+            // std::cout << std::fixed << std::setprecision(3) << "WHEEL_BASE_WIDTH: " << WHEEL_BASE_WIDTH << std::endl;
+        }
+        else if (key == keys[2]) { // "ticks"
+            if (pos_key == std::string::npos) {
+
+                if (check_serial_number_for_16_ticks()){
+                    ENCODER_TICKS_PER_ROTATION = 16;
+                }
+                else {
+                    ENCODER_TICKS_PER_ROTATION = 6;
+                }
+            }
+
+            else
+              ENCODER_TICKS_PER_ROTATION = stoi(value_string);
+            // std::cout << "ENCODER_TICKS_PER_ROTATION: " << ENCODER_TICKS_PER_ROTATION << std::endl;
+        }
+        else if (key == keys[3]) { //"motor_gear_ratio"
+            if (pos_key == std::string::npos)
+              MOTOR_GEAR_RATIO = 120;
+            else
+              MOTOR_GEAR_RATIO = stoi(value_string);
+            // std::cout << "MOTOR_GEAR_RATIO: " << MOTOR_GEAR_RATIO << std::endl;
+        }
+
+   }  // end for
+
+
   return ERROR_NONE;
 }
 

@@ -15,7 +15,13 @@ int main(){
 	signal(SIGINT, exit_signal_handler); // register the exit function for Ctrl+C
 	
 	GPG.detect();
-	
+
+	printf("\n**** GoPiGo3 Robot Constants:\n");
+	printf(" - WHEEL_DIAMETER: %.3f mm\n", GPG.WHEEL_DIAMETER);
+	printf(" - WHEEL_BASE_WIDTH: %.3f mm\n", GPG.WHEEL_BASE_WIDTH);
+	printf(" - ENCODER_TICKS_PER_ROTATION: %d\n", GPG.ENCODER_TICKS_PER_ROTATION);
+	printf(" - MOTOR_GEAR_RATIO: %d\n", GPG.MOTOR_GEAR_RATIO);
+
 	bool keepLooping = true;
         printf("\n****");
 	printf("\n        fwd w ");
