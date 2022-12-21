@@ -216,8 +216,29 @@ bool GoPiGo3::check_serial_number_for_16_ticks(std::string serial_file_path){
 }
 
 int GoPiGo3::load_robot_constants(std::string config_file_path){
+    /*
+        Load wheel diameter and wheel base width constants for the GoPiGo3 from file.
+        This method gets called by the constructor.
+        :param string config_file_path = "/home/pi/Dexter/gpg3_config.json": Path to JSON config file that stores the wheel diameter and wheel base width for the GoPiGo3.
 
-    // loads GoPiGo3 constants from /home/pi/Dexter/gpg3_config.json if exists
+        Here's how the JSON config file must look like before reading it. The supported format is JSON so that anyone can
+        edit their own config file if they don't want to go through saving the values by using the API.
+        .. code-block:: json
+            {
+                "wheel-diameter": 66.5,
+                "wheel-base-width": 117,
+                "ticks": 6,
+                "motor_gear_ratio": 120
+            }
+        If the file doesn't exist, one gets written for the user.
+        If the file is empty, the file will be overwritten with appropriate default values.
+        If the file has content, the robot constants are redefined based on that content. 
+        If the tick and gear_ratio are missing, default values will be supplied based on the serial number of the GoPiGo3
+    */
+
+
+
+    // Load GoPiGo3 constants from /home/pi/Dexter/gpg3_config.json if exists
     // otherwise sets default constants based on presence of serial in /home/pi/Dexter/.list_of_serial_numbers.pkl file
 
     std::string keys[4] = {"wheel-diameter", "wheel-base-width", "ticks", "motor_gear_ratio"};
@@ -238,11 +259,8 @@ int GoPiGo3::load_robot_constants(std::string config_file_path){
     // replace a occurances of close-brace with comma to make value extraction consistent for last key:value
     replace(gpg3_config.begin(), gpg3_config.end(), '}', ',');
 
-    // print string
-    // std::cout << gpg3_config << '\n';
     // count elements
-    // auto n_keys = count(gpg3_config.cbegin(), gpg3_config.cend(), ':');
-    // std::cout << "n_keys in gpg3_config: " << n_keys << std::endl;
+    auto n_keys = count(gpg3_config.cbegin(), gpg3_config.cend(), ':');
 
     std::string value_string;
     // test if key found in string
@@ -301,11 +319,94 @@ int GoPiGo3::load_robot_constants(std::string config_file_path){
             // std::cout << "MOTOR_GEAR_RATIO: " << MOTOR_GEAR_RATIO << std::endl;
         }
 
-   }  // end for
+    }  // end for
 
+    WHEEL_CIRCUMFERENCE = WHEEL_DIAMETER * M_PI;
+    WHEEL_BASE_CIRCUMFERENCE = WHEEL_BASE_WIDTH * M_PI;
+    MOTOR_TICKS_PER_DEGREE = ((MOTOR_GEAR_RATIO * ENCODER_TICKS_PER_ROTATION) / 360.0);
 
-  return ERROR_NONE;
+    // If the file was not present, or did not contain all four robot constants, write new robot constants file
+    if (n_keys < 4) save_robot_constants();
+    return ERROR_NONE;
 }
+
+
+int GoPiGo3::save_robot_constants(std::string config_file_path){
+    /*
+        Write wheel diameter, wheel base width, ticks, motor gear ratio constants to JSON config file
+
+        :param string config_file_path = "/home/pi/Dexter/gpg3_config.json": Path to JSON config file.
+
+        The JSON config file written will look like like this:
+        .. code-block:: json
+            {
+                "wheel-diameter": 66.5,
+                "wheel-base-width": 117,
+                "ticks": 6,
+                "motor_gear_ratio": 120
+            }
+    */
+
+
+
+
+    std::string keys[4] = {"wheel-diameter", "wheel-base-width", "ticks", "motor_gear_ratio"};
+
+    // create a JSON string object from the keys and "constants"
+    //    /home/pi/Dexter/gpg3_config.json
+    //    {"wheel-diameter": 66.1, "wheel-base-width": 105.59, "ticks": 16, "motor_gear_ratio": 120}
+    std::ostringstream gpg3_config;
+
+    gpg3_config << "{";
+    gpg3_config << "\"" << keys[0] << "\"" << ": " << std::fixed << std::setprecision(3) << WHEEL_DIAMETER << ", " ;
+    gpg3_config << "\"" << keys[1] << "\"" << ": " << std::fixed << std::setprecision(3) << WHEEL_BASE_WIDTH << ", " ;
+    gpg3_config << "\"" << keys[2] << "\"" << ": " << ENCODER_TICKS_PER_ROTATION << ", " ;
+    gpg3_config << "\"" << keys[3] << "\"" << ": " << MOTOR_GEAR_RATIO << "}" ;
+
+    std::cout << "gpg3_config: " << gpg3_config.str() << std::endl;
+
+    std::ofstream outfile(config_file_path);
+    outfile << gpg3_config.str();
+    std::cout << config_file_path << " written" << std::endl;
+
+
+
+    return ERROR_NONE;
+}
+
+
+int GoPiGo3::set_robot_constants(float wheel_diameter, float wheel_base_width, int ticks, int motor_gear_ratio){
+
+    /*
+        Set new values for the GoPiGo3 "robot constants".
+        :param float wheel_diameter: Diameter of the GoPiGo3 wheels as measured in millimeters.
+        :param float wheel_base_width: The distance between the 2 centers of the 2 wheels as measured in millimeters.
+        :param int   ticks:  Number of magnetic pole reversals in one rotation of the motor encoder disk
+        :param int   motor_gear_ratio:  Revolutions of motor shaft for each revolution of the wheel shaft
+
+        These values need to be determined when the GoPiGo3's trajectory is skewed due to minor differences between physical and effective measurements.
+
+        The GoPiGo3 class instantiates itself with default values for both constants:
+        1. ``wheel_diameter`` is by-default set to **66.5** *mm*.
+        2. ``wheel_base_width`` is by-default set to **117** *mm*.
+        3. ``ticks`` is by default set to **6**, with GoPiGos manufactured in 2021 using 16.
+        4. ``motor_gear_ratio`` is by default set to **120**.
+    */
+        WHEEL_DIAMETER = wheel_diameter;
+        WHEEL_CIRCUMFERENCE = WHEEL_DIAMETER * M_PI;
+        WHEEL_BASE_WIDTH = wheel_base_width;
+        WHEEL_BASE_CIRCUMFERENCE = WHEEL_BASE_WIDTH * M_PI;
+        MOTOR_GEAR_RATIO = motor_gear_ratio;
+        ENCODER_TICKS_PER_ROTATION = ticks;
+        MOTOR_TICKS_PER_DEGREE = ((MOTOR_GEAR_RATIO * ENCODER_TICKS_PER_ROTATION) / 360.0);
+
+        return ERROR_NONE;
+
+}
+
+
+
+
 
 int GoPiGo3::set_led(uint8_t led, uint8_t red, uint8_t green, uint8_t blue){
   spi_array_out[0] = Address;
@@ -439,6 +540,17 @@ int32_t GoPiGo3::get_motor_encoder(uint8_t port){
   get_motor_encoder(port, value);
   return value;
 }
+
+int GoPiGo3::reset_motor_encoder(uint8_t port){
+  if (port & MOTOR_LEFT){
+    offset_motor_encoder(MOTOR_LEFT, get_motor_encoder(MOTOR_LEFT));
+  }
+  if (port & MOTOR_RIGHT){
+    offset_motor_encoder(MOTOR_RIGHT, get_motor_encoder(MOTOR_RIGHT));
+  }
+  return ERROR_NONE;
+}
+
 
 int GoPiGo3::get_motor_encoder(uint8_t port, int32_t &value){
   uint8_t msg_type;

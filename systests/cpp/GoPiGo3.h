@@ -268,11 +268,16 @@ class GoPiGo3{
     int     get_version_firmware(char *str);
   // Get the serial number ID that is unique to each BrickPi3
     int     get_id(char *str);
+
+
   // Check if serial number in file of 16 tick GoPiGo3
     bool    check_serial_number_for_16_ticks(std::string serial_file_path="/home/pi/Dexter/.list_of_serial_numbers.pkl");
   // Load wheel diameter, wheel base, ticks per revolution, motor gear ratio from file if exists
     int     load_robot_constants(std::string config_file_path="/home/pi/Dexter/gpg3_config.json");
-
+  // Save wheel diameter, wheel base, ticks per revolution, motor gear ratio to JSON file
+    int     save_robot_constants(std::string config_file_path="/home/pi/Dexter/gpg3_config.json");
+  // Set new robot constant values and dependent constants
+    int     set_robot_constants(float wheel_diameter, float wheel_base_width, int ticks, int motor_gear_ratio);
 
   // Control the LED
     int     set_led(uint8_t led, uint8_t red, uint8_t green = 0, uint8_t blue = 0);
@@ -305,7 +310,8 @@ class GoPiGo3{
     int     get_motor_encoder(uint8_t port, int32_t &value);
     // Pass the port. Returns the encoder value.
     int32_t get_motor_encoder(uint8_t port);
-
+    // Set ecoder value to 0
+    int     reset_motor_encoder(uint8_t port);
 
   // Configure grove pin(s)/port(s)
     // Set grove port type
