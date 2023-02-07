@@ -1,11 +1,11 @@
 # INSTALL "ROS2 FOR GOPIGO3" FROM IMAGE
 
-Updated: 11-04-2022 (Instructions and image link)
+Updated: 2-07-2023 (SourceForge image link)
 
 "ROS2 Humble Hawksbill on Ubuntu 22.04 LTS Server (64-bit) for GoPiGo3 Robots"  
 is available as a 2.5GB image at:  
 
-https://drive.google.com/file/d/1uO9DKB0-pmleClEeG9k7rv0IqWgRzz0Z/view?usp=sharing
+https://sourceforge.net/projects/dexter-raspbian-for-robots/files/ros2hhv4.img.gz/download
 
 # Install From Image
 ## 1) Download the custom image to your computer
