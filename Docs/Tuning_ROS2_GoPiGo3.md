@@ -35,7 +35,8 @@ ubuntu@ROS2HH:~/systests/gpg_config$ ./print_gpg3_config.py
    motor_gear_ratio  :  120
 ```
 (Your ticks value may be 6 or 16 depending on your particular GoPiGo3 serial number)
-6) Refine WHEEL-DIAMETER value with ```./wheelDiaDriveTest.py```  
+
+5) Refine WHEEL-DIAMETER value with ```./wheelDiaDriveTest.py```  
    Program begins:
 ```
 ubuntu@ROS2HH:~/systests/gpg_config$ ./wheelDiaDriveTest.py 
@@ -56,7 +57,8 @@ Note the default wheel diameter is displayed this first execution.
 - When satisified with the value:  
   Type ```j``` to update the gpg3_config.json file with your effective wheel diameter value  
   Type ```q``` to quit   
-- Again print the gpg3_config.json file:  
+
+6) Again print the gpg3_config.json file:  
 ```./print_gpg3_config.py```
 
 # Finding effective WHEEL-BASE-WIDTH  
