@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+_Name=Raspberry Pi Diagnostics
+_GenericName=Raspberry Pi Diagnostics
+_Comment=Test the Raspberry Pi hardware
+Icon=rpi
+Exec=agnostics
+StartupNotify=true
+Categories=Utility;

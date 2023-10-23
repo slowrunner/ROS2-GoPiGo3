@@ -1,0 +1,77 @@
+agnostics (0.13) bullseye; urgency=medium
+
+  * Set undecorated dialogs in code
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 31 Jan 2023 09:50:51 +0000
+
+agnostics (0.12) bullseye; urgency=medium
+
+  * Add Korean translation
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 22 Nov 2022 10:26:07 +0000
+
+agnostics (0.11) bullseye; urgency=medium
+
+  * Add Polish and Lithuanian translations
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 20 Oct 2022 13:24:54 +0100
+
+agnostics (0.10) bullseye; urgency=medium
+
+  * Fix size of modal dialog
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 15 Mar 2022 10:09:31 +0000
+
+agnostics (0.9) buster; urgency=medium
+
+  * Added Italian translation
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 15 Apr 2021 16:01:46 +0100
+
+agnostics (0.8) buster; urgency=medium
+
+  * Remove hiding of app in other desktops
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 01 Apr 2021 20:35:04 +0100
+
+agnostics (0.7) buster; urgency=medium
+
+  * Added Armenian translation
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 24 Feb 2021 15:36:05 +0000
+
+agnostics (0.6) buster; urgency=medium
+
+  * Added Slovak translation
+
+ -- Simon Long <simon@raspberrypi.com>  Sun, 13 Dec 2020 12:16:59 +0000
+
+agnostics (0.5) buster; urgency=medium
+
+  * Use system text file association to open log file
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 18 Sep 2020 11:27:04 +0100
+
+agnostics (0.4) buster; urgency=medium
+
+  * Wait for specified PID while test is running
+
+ -- Simon Long <simon@raspberrypi.com>  Sun, 03 May 2020 18:42:14 +0100
+
+agnostics (0.3) buster; urgency=medium
+
+  * Restrict memory usage in SD card test
+
+ -- Simon Long <simon@raspberrypi.com>  Fri, 24 Apr 2020 10:38:54 +0100
+
+agnostics (0.2) buster; urgency=medium
+
+  * Correct version of GTK in dependencies
+
+ -- Simon Long <simon@raspberrypi.org>  Wed, 26 Feb 2020 08:16:20 +0000
+
+agnostics (0.1) buster; urgency=low
+
+  * Initial release
+
+ -- Simon Long <simon@raspberrypi.org>  Tue, 18 Feb 2020 13:14:25 +0000
