@@ -1,5 +1,6 @@
 Testing SD Card Performance on the Command Line with Pi Agnostics
 
+REF: https://www.henryleach.com/2022/12/testing-sd-card-performance-on-the-command-line-with-pi-agnostics/
 
 === original installation
 1) sudo apt install fio
@@ -29,4 +30,10 @@ Sequential write speed 21607 KB/sec (target 10000) - PASS
 Random write speed 645 IOPS (target 500) - PASS
 Random read speed 2497 IOPS (target 1500) - PASS
 
+
+Not in micro SD extender:
+
+Sequential write speed 21586 KB/sec (target 10000) - PASS
+Random write speed 704 IOPS (target 500) - PASS
+Random read speed 2494 IOPS (target 1500) - PASS
 
