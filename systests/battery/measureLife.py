@@ -58,7 +58,7 @@ def getUptime():
 def printStatus():
   global egpg
 
-  print("\n********* CARL Basic STATUS *****")
+  print("\n********* DAVE Basic STATUS *****")
   print(datetime.now().date(), getUptime())
   vBatt = egpg.get_voltage_battery()
   vVolt = egpg.volt()
