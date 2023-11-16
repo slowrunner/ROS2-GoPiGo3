@@ -21,7 +21,7 @@ https://sourceforge.net/projects/dexter-raspbian-for-robots/files/ros2hhv4.img.g
     - click Open  
 
   Select CHOOSE STORAGE (DANGER! - CHOOSE WISELY)  
-  - Select your __GB SD Card (Minimum 8GB)  
+  - Select your __GB SD Card (Minimum 16GB)  
   
   Select SETTINGS Gear in lower right  
   - Set hostname:  ROS2HH  
