@@ -1,7 +1,5 @@
 # Changes since v4
 
-(All will have been applied when v5 is released)
-
 ## === Setup simpler forking pigpiod.service for fast shutdown  
 cd ~/utils/  
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/utils/install_pigpiod.sh  
@@ -45,9 +43,9 @@ cd ~/systests
 mkdir swap
 cd swap
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/systests/swap/use1GB.py
-chmod +x use1GB.py
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/systests/swap/use2GB.py
-chmod +x use2GB.py
+wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/systests/swap/use4GB.py
+chmod +x use*.py
 ```
 
 
@@ -71,6 +69,8 @@ For Raspberry Pi boards with 1GB:
 For Raspberry Pi4 with 2GB:
 ~/systests/swap/use2GB.py
 
+For Raspberry Pi4 with 4GB:
+~/systests/swap/use4GB.py
 ```
 
 and watch for Mem: line to show very little available, and then return to full memory available  
