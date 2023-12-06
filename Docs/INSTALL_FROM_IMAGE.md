@@ -156,7 +156,13 @@ GOPIGO3 should:
 ```
 
 ## 7) === APPLY UPDATES 
-Please apply the updates described on this page:
+
+First update OS and ROS:
+```
+sudo apt update && sudo apt upgrade -y
+```
+
+Next, Please apply the updates described on this page:
 [Changes Since V4](https://github.com/slowrunner/ROS2-GoPiGo3/blob/main/updates/ChangesSinceV4.md)
 
  
