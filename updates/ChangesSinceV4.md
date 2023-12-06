@@ -11,7 +11,7 @@ wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/utils/pigpio
 
 
 ## === my_mapper_params_online_async.yaml: 0.01 is better value for resolution  
-Fix: Edit ~/ros2ws/my_mapper_parames_online_async.yaml  
+Fix: nano ~/ros2ws/my_mapper_parames_online_async.yaml  
           change line:  
 ```          
                 resolution: 0.05
