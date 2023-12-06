@@ -46,25 +46,8 @@ mkdir swap
 cd swap
 wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/systests/swap/use1GB.py
 chmod +x use1GB.py
-
-nano use2GB.py  (paste the following lines in, ctrl-x, y)
-#!/usr/bin/env python3
-
-# FILE: use2GB.py
-
-# PURPOSE:  Allocate 2 GB memory to see OS memory allocation
-
-import numpy as np
-import time
-
-print("use2GB.py: Sleeping 10s")
-time.sleep(10)
-print("use2GB.py: Starting 1GB memory allocation")
-arr = np.ones((2048,1024,1024, 1), dtype=np.uint8)
-print("use2GB.py: Finished allocation")
-time.sleep(30)
-print("use2GB.py:  Exiting")
-
+wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/systests/swap/use2GB.py
+chmod +x use2GB.py
 ```
 
 
