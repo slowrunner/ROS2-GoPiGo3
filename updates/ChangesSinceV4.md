@@ -23,7 +23,7 @@ Fix: nano ~/ros2ws/my_mapper_params_online_async.yaml
 Apply fix:  
 ```
     cd ~/ros2ws/src/ros2_gopigo3_node/ros2_gopigo3_node
-    cp odometer.py odometer.py.v4
+    mv odometer.py odometer.py.v4
     wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/updates/odometer.py
 ```
 
