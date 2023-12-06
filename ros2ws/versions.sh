@@ -2,7 +2,7 @@
 
 echo -e "\n*** VERSIONS ***"
 
-echo "*** ROS2 GoPiGo3: v4 - Nov 3, 2022"
+echo "*** ROS2 GoPiGo3: v5 - Dec 2023"
 
 echo "*** ROS 2 Humble Hawksbill ***"
 
@@ -14,6 +14,5 @@ echo "*** Custom built libcamera"
 
 echo "*** YDLIDAR-SDK version 1.1.2"
 
-echo "v4 Updates applied 12 Nov 2022"
 
 
