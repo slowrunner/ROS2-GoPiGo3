@@ -57,6 +57,8 @@ NOTE:  On some computers (e.g. Linux MATE on my 9 yr old laptop)
 ```
 
 === Verify WiFi Headless config **and add ethernet**:  
+!! MANDATORY STEP CUTS 2 MINUTES FROM BOOT UP TIME !!
+
 Re-Insert the uSD card to your computer:
 - On Mac:
   - Browse system-boot partition  
