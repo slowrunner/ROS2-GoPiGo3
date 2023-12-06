@@ -31,7 +31,7 @@ Apply fix:
 Apply fix:
 ```
    cd ~/ros2ws/src/ydlidar_ros2_driver/params
-   cp ydlidar.yaml ydlidar.yaml.v4
+   mv ydlidar.yaml ydlidar.yaml.v4
    wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/updates/ydlidar.yaml
 ```
 ## === Image does not have swapfile setup  
