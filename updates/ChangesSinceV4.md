@@ -2,11 +2,13 @@
 
 (All will have been applied when v5 is released)
 
-## === Setup simpler forking pigpiod.service for fast shutdown
-cd ~/utils/
-./install_pigpiod.sh
+## === Setup simpler forking pigpiod.service for fast shutdown  
+cd ~/utils/  
+wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/utils/install_pigpiod.sh  
+chmod +x install_pigpiod.sh  
+wget https://raw.githubusercontent.com/slowrunner/ROS2-GoPiGo3/main/utils/pigpiod.service  
+./install_pigpiod.sh  
 
-** The following were previously documented to be manually applied to a v4 image
 
 ## === my_mapper_params_online_async.yaml: 0.01 is better value for resolution  
 Fix: Edit ~/ros2ws/my_mapper_parames_online_async.yaml  
