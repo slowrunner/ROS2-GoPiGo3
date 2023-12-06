@@ -1,10 +1,8 @@
-# Changes since v4 applied to v5
+# Changes since v4
 
-(All have been applied in v5)
+(All will have been applied when v5 is released)
 
-** The following applied for v5
-
-## === Setup simpler forking pigpiod.service
+## === Setup simpler forking pigpiod.service for fast shutdown
 cd ~/utils/
 ./install_pigpiod.sh
 
