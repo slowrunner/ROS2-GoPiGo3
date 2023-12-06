@@ -1,0 +1,56 @@
+wget https://www.ydlidar.com/dowfile.html?cid=5&type=6
+wget https://raw.githubusercontent.com/lghrainbow/ydlidar_ros2_driver/humble-devel/src/ydlidar_ros2_driver_node.cpp
+wget https://raw.githubusercontent.com/lghrainbow/ydlidar_ros2_driver/humble-devel/params/ydlidar.yaml
+wget https://raw.githubusercontent.com/lghrainbow/ydlidar_ros2_driver/humble-devel/launch/ydlidar_launch.py
+wget https://raw.githubusercontent.com/lghrainbow/ydlidar_ros2_driver/humble-devel/launch/ydlidar_launch_view.py
+wget https://raw.githubusercontent.com/lakshmanmallidi/PyLidar2/master/Examples/lidar.py
+wget https://raw.githubusercontent.com/lakshmanmallidi/PyLidar2/master/Examples/LidarTest.py
+git clone https://github.com/YDLIDAR/YDLidar-SDK
+git clone https://github.com/lghrainbow/ydlidar_ros2_driver.git
+git clone https://github.com/raspberrypi/libcamera-apps.git
+git clone https://github.com/raspberrypi/libcamera.git
+sudo apt install -y ros-humble-teleop-twist-joy
+sudo chmod a+rw /dev/input/js0
+sudo usermod -a -G input pi
+sudo cp snes.config.yaml /opt/ros/humble/share/teleop_twist_joy/config/
+sudo apt install ros-humble-slam-toolbox
+sudo apt install wireless-tools
+sudo apt install -y imagemagick
+sudo apt install -y net-tools
+sudo apt install ros-humble-v4l2-camera
+sudo apt install v4l-utils
+sudo pip3 install imutils
+sudo apt install libjpeg-dev libpng-dev libtiff-dev
+sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt install libv4l-dev
+sudo apt install libxvidcore-dev libx264-dev
+sudo apt install libatlas-base-dev gfortran
+sudo apt install -y python3-opencv
+sudo modprobe bcm2835-v4l2
+sudo apt install libpcap-dev
+sudo pip3 install picamera2
+sudo pip3 install libcamera
+sudo apt-get -y install libcamera-tools
+sudo apt install python3-picamera2 --no-install-recommends
+sudo pip3 install python3-libcamera
+sudo apt install ros-humble-v4l2-camera
+sudo apt install libfcl-dev
+sudo apt install ros-humble-image-tools
+sudo apt install ros-humble-image-transport-plugins
+sudo apt install libgstreamer1.0-dev
+sudo apt install gstreamer1.0-tools
+sudo apt install webm
+sudo apt install libgstreamer-plugins-base1.0-dev
+sudo apt install gstreamer1.0-libav
+sudo apt install gstreamer1.0-plugins-good 
+sudo apt install libcamera-apps-lite
+sudo apt install -y libcamera-dev libjpeg-dev libtiff5-dev
+sudo apt install -y cmake libboost-program-options-dev libdrm-dev libexif-dev
+sudo apt install libcamera0
+sudo apt install -y libboost-dev
+sudo apt install -y libgnutls28-dev openssl libtiff5-dev
+sudo apt install -y qtbase5-dev libqt5core5a libqt5gui5 libqt5widgets5
+sudo apt install -y meson
+sudo pip3 install pyyaml ply
+sudo pip3 install --upgrade meson
+sudo apt install -y libglib2.0-dev libgstreamer-plugins-base1.0-dev

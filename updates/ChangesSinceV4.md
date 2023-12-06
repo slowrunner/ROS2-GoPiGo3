@@ -1,7 +1,17 @@
-# Changes since v4
+# Changes since v4 applied to v5
+
+(All have been applied in v5)
+
+** The following applied for v5
+
+## === Setup simpler forking pigpiod.service
+cd ~/utils/
+./install_pigpiod.sh
+
+** The following were previously documented to be manually applied to a v4 image
 
 ## === my_mapper_params_online_async.yaml: 0.01 is better value for resolution  
-Fix: Edit ~/ros2ws/my_mapper_params_online_async.yaml  
+Fix: Edit ~/ros2ws/my_mapper_parames_online_async.yaml  
           change line:  
 ```          
                 resolution: 0.05

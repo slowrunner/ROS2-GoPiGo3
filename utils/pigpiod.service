@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Unit]
 Description=Pigpio daemon to control GPIO pins via pigpio
 After=network.target syslog.target
@@ -6,6 +7,17 @@ After=network.target syslog.target
 Type=forking
 ExecStart=/usr/local/bin/pigpiod
 ExecStop=/bin/systemctl kill pigpiod
+=======
+[Unit] 
+Description=Daemon required to control GPIO pins via pigpio
+After=network.target syslog.target
+
+[Service]
+ExecStart=/usr/local/bin/pigpiod
+ExecStop=/bin/systemctl kill -s SIGKILL pigpiod
+PIDFile=pigpio.pid
+Type=forking
+>>>>>>> 3a0f0cb (prepare for v5)
 
 [Install]
 WantedBy=multi-user.target

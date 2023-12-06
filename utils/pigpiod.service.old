@@ -1,0 +1,21 @@
+[Unit]
+Description=Pigpio daemon
+After=network.target syslog.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
+StartLimitAction=reboot
+
+[Service]
+Type=simple
+ExecStartPre=/sbin/sysctl -w net.ipv4.tcp_keepalive_time=300
+ExecStartPre=/sbin/sysctl -w net.ipv4.tcp_keepalive_intvl=60
+ExecStartPre=/sbin/sysctl -w net.ipv4.tcp_keepalive_probes=5
+
+# Don't fork pigpiod
+ExecStart=/usr/local/bin/pigpiod -g
+ExecStop=
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
