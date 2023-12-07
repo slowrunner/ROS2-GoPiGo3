@@ -1,10 +1,14 @@
+version: 2
 ethernets:
-  eth0:
-    optional: true
-    dhcp4: true
+   eth0:
+     dhcp4: true
+     dhcp6: false
+     optional: true
 wifis:
+  renderer: networkd
   wlan0:
     dhcp4: true
+    dhcp6: false
     optional: true
     access-points:
       "your_SSID":
