@@ -44,7 +44,12 @@ Moving around:
    j    k    l
    m    ,    .
 
-anything else : stop
+  and arrow keys:  
+
+        ^  
+  <--   v  -->  
+
+anything else : stop  (space-bar is convenient stop)  
 
 q/z : increase/decrease max speeds by 10%
 w/x : increase/decrease only linear speed by 10%
@@ -65,7 +70,6 @@ CTRL-C to quit remote control - (does not kill ROS2 GoPiGo3 Nodes)
 3) From either shell (if do not see shell prompt, press CTRL-C in that shell):   
    ./stop_robot.sh  
    (Ignore any errors - Not a problem - investigating)  
-
 
 
 # TEST 3:  GETTING TO KNOW THE ROS2 GoPiGo3 NODES
