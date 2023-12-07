@@ -16,7 +16,7 @@ python3 ~/systests/gpg_config/print_gpg3_config.py
 
 or of course:
 
-more ~/pi/Dexter/gpg3_config.json
+more /home/pi/Dexter/gpg3_config.json
 ```
 
 # Finding effective WHEEL-DIAMETER
