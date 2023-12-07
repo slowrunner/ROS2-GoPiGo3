@@ -1,27 +1,29 @@
 # INSTALL "ROS2 FOR GOPIGO3" FROM IMAGE
 
-Updated: 2-07-2023 (SourceForge image link)
+Updated: 12-06-2023 (ROS2HH version 5 release)
 
 "ROS2 Humble Hawksbill on Ubuntu 22.04 LTS Server (64-bit) for GoPiGo3 Robots"  
-is available as a 2.5GB image at:  
+is available as a 2.7GB image at:  
 
-https://sourceforge.net/projects/dexter-raspbian-for-robots/files/ros2hhv4.img.gz/download
+https://drive.google.com/file/d/1Nm8vYG05lMGZRwcfJGgwJH7uMcJtvrpQ/view?usp=drive_link  
 
 # Install From Image
 ## 1) Download the custom image to your computer
 
 
-
-## 2) Flash SD card with Raspberry Pi Imager v1.73 or higher:  
+## 2) Flash SD card with Raspberry Pi Imager v1.81 or higher:  
   (See https://www.raspberrypi.com/software/ for latest Raspberry Pi Imager)  
+
+  Select CHOOSE DEVICE
+  - Suggest Raspberry Pi 4 (but Pi 3B+ will get you started)
   
   Select CHOOSE OS  
   - (scroll to bottom) Use custom  
-    - navigate to the saved location of the ```ros2hhv4.img.gz``` image  
+    - navigate to the saved location of the ```ROS2HHv5.img.gz``` image  
     - click Open  
 
   Select CHOOSE STORAGE (DANGER! - CHOOSE WISELY)  
-  - Select your __GB SD Card (Minimum 16GB)  
+  - Select your __GB SD Card (Minimum 16GB - image will expand to ~10GB)  
   
   Select SETTINGS Gear in lower right  
   - Set hostname:  ROS2HH  
@@ -99,7 +101,12 @@ unmount microSD card
   - Press the GoPiGo3 power (on) button to start the first boot  
   - Wait till the GoPiGo3 Green LED stops flashing  
   - Listen for "WiFi IP x.x.x.x  ... Repeating, WiFi IP x.x.x.x"  
-now ... 
+    (If after 5 minutes you do not hear the WiFi announcement,  
+     press the GoPiGo3 power button to shutdown,  
+     then press it again to power off,  
+     then press it again to power on,  
+     listen for WiFi IP ...)  
+now ...  
   - Open a command shell on your desktop/laptop  
   - Remove any existing ssh key for your GoPiGo3's IP on your desktop/laptop  
     - ssh-keygen -R x.x.x.x  
@@ -155,15 +162,8 @@ GOPIGO3 should:
 *** NOT A PROBLEM IF DID NOT TURN TO EXACT 90 and -90 HEADINGS  
 ```
 
-## 7) === APPLY UPDATES 
-
-First update OS and ROS:
-```
-sudo apt update && sudo apt upgrade -y
-```
-
-Next, Please apply the updates described on this page:
-[Changes Since V4](https://github.com/slowrunner/ROS2-GoPiGo3/blob/main/updates/ChangesSinceV4.md)
+## 7) === Next: Test ROS2 GoPiGo3 (and Learn A Little About ROS2!)  
+Follow steps in [Test_ROS2_GoPiGo3.md](https://github.com/slowrunner/ROS2-GoPiGo3/blob/main/Docs/Test_ROS2_GoPiGo3.md)  
 
  
 
