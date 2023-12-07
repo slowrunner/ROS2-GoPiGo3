@@ -7,7 +7,7 @@ ROS2 GoPiGo3 robot Dave with GoPiGo3 robot Carl
 
 [Get a GoPiGo3 robot here](https://gopigo.io/gopigo-core/)  
 
-The ROS2 GoPiGo3 Install covers:  
+The ROS2 GoPiGo3 Image covers:  
   - Ubuntu 22.04 LTS Server (64-bit) on Raspberry Pi  
   - GoPiGo3 API and Drivers  
   - ROS2 Humble Hawksbill  
